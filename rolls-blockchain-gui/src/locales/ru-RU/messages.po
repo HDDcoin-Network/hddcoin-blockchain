@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr "(Необязательно)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore HDDcoin’s blocks further? Check out <0>HDDcoin Explorer</0> built by an open source developer."
-msgstr "*Хотите посмотреть больше информации о блоках Чиа? Загляните в обозреватель блоков <0>HDDcoin Explorer</0>, созданный на основе открытого исходного кода."
+msgid "*Want to explore PecanRolls’s blocks further? Check out <0>PecanRolls Explorer</0> built by an open source developer."
+msgstr "*Хотите посмотреть больше информации о блоках Чиа? Загляните в обозреватель блоков <0>PecanRolls Explorer</0>, созданный на основе открытого исходного кода."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -48,8 +48,8 @@ msgstr "Комбайн - это служба, работающая на маши
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About HDDcoin Blockchain"
-msgstr "О программе HDDcoin Blockchain"
+msgid "About PecanRolls Blockchain"
+msgstr "О программе PecanRolls Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -234,8 +234,8 @@ msgid "Block VDF Iterations"
 msgstr "VDF итераций блока"
 
 #: src/components/block/Block.jsx:337
-msgid "Block at height {0} in the HDDcoin blockchain"
-msgstr "Блок на высоте {0} в блокчейне HDDcoin"
+msgid "Block at height {0} in the PecanRolls blockchain"
+msgstr "Блок на высоте {0} в блокчейне PecanRolls"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -340,31 +340,31 @@ msgid "Chat on KeyBase"
 msgstr "Чат в KeyBase"
 
 #: src/electron/main.tsx:419
-msgid "HDDcoin"
+msgid "PecanRolls"
 msgstr "Чиа"
 
 #: src/electron/main.tsx:358
-msgid "HDDcoin Blockchain Wiki"
+msgid "PecanRolls Blockchain Wiki"
 msgstr ""
-"Блокчейн HDDcoin на Wiki                           HDDcoin coin\n"
+"Блокчейн PecanRolls на Wiki                           PecanRolls coin\n"
 "\n"
 "Мы считаем, что криптовалютой должно быть проще пользоваться, чем наличными, ее сложнее потерять и почти невозможно украсть. Любой, кто хочет подтверждать транзакции, должен иметь возможность заниматься майнингом без одноразового оборудования или больших счетов за электроэнергию.\n"
 "9 февраля мы выпустили наш бизнес-документ и запустили основную сеть для получения вознаграждений в пятницу, 19 марта 2021 года. Транзакции будут активированы 3 мая 2021 года около 10:00 по тихоокеанскому времени. Вас также может заинтересовать наш новый согласованный рабочий документ, который впервые был реализован в бета-версии 19 12 января 2021 года.\n"
 "\n"
-"HDDcoin Network разрабатывает блокчейн и платформу интеллектуальных транзакций, созданную изобретателем BitTorrent Брэмом Коэном. Он реализует первый новый алгоритм консенсуса Накамото со времен Биткойна в 2008 году. Доказательства пространства и времени заменяют энергоемкие «доказательства работы».\n"
+"PecanRolls Network разрабатывает блокчейн и платформу интеллектуальных транзакций, созданную изобретателем BitTorrent Брэмом Коэном. Он реализует первый новый алгоритм консенсуса Накамото со времен Биткойна в 2008 году. Доказательства пространства и времени заменяют энергоемкие «доказательства работы».\n"
 "\n"
-"Chialisp - это новый язык программирования HDDcoin, который является мощным, легким для аудита и безопасным. Это упростит использование криптовалюты, чем наличные деньги или кредит. В настоящее время доступны следующие эталонные смарт-транзакции: атомарные свопы, авторизованные получатели, восстанавливаемые кошельки, кошельки с несколькими подписями, кошельки с ограничением скорости и цветные монеты. Брэм представляет Chialisp в нашем блоге.\n"
-"Вам следует ознакомиться с примечаниями к выпуску, а затем установить блокчейн HDDcoin.\n"
+"Chialisp - это новый язык программирования PecanRolls, который является мощным, легким для аудита и безопасным. Это упростит использование криптовалюты, чем наличные деньги или кредит. В настоящее время доступны следующие эталонные смарт-транзакции: атомарные свопы, авторизованные получатели, восстанавливаемые кошельки, кошельки с несколькими подписями, кошельки с ограничением скорости и цветные монеты. Брэм представляет Chialisp в нашем блоге.\n"
+"Вам следует ознакомиться с примечаниями к выпуску, а затем установить блокчейн PecanRolls.\n"
 "\n"
 "Руководство для начинающих\n"
 "\n"
 "\n"
 "Основная информация о Чиа для начала\n"
-"HDDcoin - это новый тип криптовалюты, основанный на емкости предварительно сохраненных случайных данных, которые пользователь создает и хранит в файлах, называемых графиками, что делает консенсус блокчейна чрезвычайно быстрым и экологически чистым. Это улучшение по сравнению с блокчейнами доказательства работы, которые полагаются на быстрые графические карты и специальные машины, выполняющие миллионы вычислений в секунду и тратящие много электроэнергии. HDDcoin также внесла множество улучшений в сценарии, среду сценариев, криптографию, удобство использования и масштабируемость и стремится быть простым, безопасным и мощным блокчейном.\n"
+"PecanRolls - это новый тип криптовалюты, основанный на емкости предварительно сохраненных случайных данных, которые пользователь создает и хранит в файлах, называемых графиками, что делает консенсус блокчейна чрезвычайно быстрым и экологически чистым. Это улучшение по сравнению с блокчейнами доказательства работы, которые полагаются на быстрые графические карты и специальные машины, выполняющие миллионы вычислений в секунду и тратящие много электроэнергии. PecanRolls также внесла множество улучшений в сценарии, среду сценариев, криптографию, удобство использования и масштабируемость и стремится быть простым, безопасным и мощным блокчейном.\n"
 "\n"
 "Как это работает\n"
 "\n"
-"Вы можете загрузить программное обеспечение HDDcoin на Windows, Mac или Linux. Версия для Windows автоматически запускается при установке, и Mac просто нужно открыть из каталога приложений - он загружается и начинает синхронизацию с остальной сетью и блокчейном. Полная синхронизация может занять 4–6 часов, хотя со временем эта цифра увеличивается. По сути, вы синхронизируетсь со всеми в сети, загружая всю цепочку блоков, которая включает все транзакции, когда-либо обработанные в сети. Копия базы данных блокчейна rolls будет храниться на вашем компьютере. У всех остальных есть копия.\n"
+"Вы можете загрузить программное обеспечение PecanRolls на Windows, Mac или Linux. Версия для Windows автоматически запускается при установке, и Mac просто нужно открыть из каталога приложений - он загружается и начинает синхронизацию с остальной сетью и блокчейном. Полная синхронизация может занять 4–6 часов, хотя со временем эта цифра увеличивается. По сути, вы синхронизируетсь со всеми в сети, загружая всю цепочку блоков, которая включает все транзакции, когда-либо обработанные в сети. Копия базы данных блокчейна rolls будет храниться на вашем компьютере. У всех остальных есть копия.\n"
 "\n"
 "После того, как rolls заработала, ее концепция: пользователи создают графики (каждый размером 101 гигабайт), пользователь сохраняет эти графики на компьютерном оборудовании, а затем обрабатывает созданные участки для потенциального заработка монет.\n"
 "\n"
@@ -384,10 +384,10 @@ msgstr ""
 "Руководство для начинающих\n"
 "lon12 отредактировал эту страницу 10 дней назад • 57 редакций\n"
 "Основная информация о Чиа для начала\n"
-"HDDcoin - это новый тип криптовалюты, основанный на емкости предварительно сохраненных случайных данных, которые пользователь создает и хранит в файлах, называемых графиками, что делает консенсус блокчейна чрезвычайно быстрым и экологически чистым. Это улучшение по сравнению с блокчейнами доказательства работы, которые полагаются на быстрые графические карты и специальные машины, выполняющие миллионы вычислений в секунду и тратящие много электроэнергии. HDDcoin также внесла множество улучшений в сценарии, среду сценариев, криптографию, удобство использования и масштабируемость и стремится быть простым, безопасным и мощным блокчейном.\n"
+"PecanRolls - это новый тип криптовалюты, основанный на емкости предварительно сохраненных случайных данных, которые пользователь создает и хранит в файлах, называемых графиками, что делает консенсус блокчейна чрезвычайно быстрым и экологически чистым. Это улучшение по сравнению с блокчейнами доказательства работы, которые полагаются на быстрые графические карты и специальные машины, выполняющие миллионы вычислений в секунду и тратящие много электроэнергии. PecanRolls также внесла множество улучшений в сценарии, среду сценариев, криптографию, удобство использования и масштабируемость и стремится быть простым, безопасным и мощным блокчейном.\n"
 "\n"
 "Как это работает\n"
-"Вы можете загрузить программное обеспечение HDDcoin на Windows, Mac или Linux. Версия для Windows автоматически запускается при установке, и Mac просто нужно открыть из каталога приложений - он загружается и начинает синхронизацию с остальной сетью и блокчейном. Полная синхронизация может занять 4–6 часов, хотя со временем эта цифра увеличивается. По сути, вы синхронизируете со всеми в сети, загружая всю цепочку блоков, которая включает все транзакции, когда-либо обработанные в сети. Копия базы данных блокчейна rolls будет храниться на вашем компьютере. У всех остальных есть копия.\n"
+"Вы можете загрузить программное обеспечение PecanRolls на Windows, Mac или Linux. Версия для Windows автоматически запускается при установке, и Mac просто нужно открыть из каталога приложений - он загружается и начинает синхронизацию с остальной сетью и блокчейном. Полная синхронизация может занять 4–6 часов, хотя со временем эта цифра увеличивается. По сути, вы синхронизируете со всеми в сети, загружая всю цепочку блоков, которая включает все транзакции, когда-либо обработанные в сети. Копия базы данных блокчейна rolls будет храниться на вашем компьютере. У всех остальных есть копия.\n"
 "\n"
 "После того, как rolls заработала, ее концепция: пользователи создают графики (каждый размером 101 гигабайт), пользователь сохраняет эти графики на компьютерном оборудовании, а затем обрабатывает созданные участки для потенциального заработка монет.\n"
 "\n"
@@ -415,7 +415,7 @@ msgstr ""
 "Вот почему транзакции такие зеленые /\n"
 "\n"
 "Вкладка \"Ферма\"\n"
-"Это покажет вам, сколько PLOTS-полей вы создали. Вверху будет показано, сколько HDDcoins было выращено. Также он показывает, сколько гигов участков у вас в сети. Если у вас есть 2 участка по 101 ГиБ. Затем в левом верхнем углу отображается «Общий размер участков» .\n"
+"Это покажет вам, сколько PLOTS-полей вы создали. Вверху будет показано, сколько PecanRollss было выращено. Также он показывает, сколько гигов участков у вас в сети. Если у вас есть 2 участка по 101 ГиБ. Затем в левом верхнем углу отображается «Общий размер участков» .\n"
 "2 TIB означает, что вы предлагаете такой объем хранилища для формул сети rolls. Рассчитано, как если бы у вас 101 ГиБ x 2 = 202 ГиБ.\n"
 "\n"
 "Последние испытания блоков: здесь показаны последние испытания и указатели, которые можно рассматривать как мини-лотереи. Каждые 9 секунд появляется новая вывеска, а это означает, что у вас есть новая возможность проверить свои участки и узнать, выиграли ли вы. Любая другая точка вывески будет выигрышной для кого-то в сети, поэтому каждые 18 секунд создается новый блок.\n"
@@ -502,7 +502,7 @@ msgstr ""
 "В Windows вы можете использовать rolls CLI из Windows PowerShell, что обеспечивает большую гибкость и контроль. PowerShell - это программа, в которой вы вводите команды, нажимаете клавишу ВВОД и выполняете такие действия, как изменение папок, перемещение файлов или запуск программ, таких как rolls.\n"
 "\n"
 "1. Параллельное построение с использованием PowerShell\n"
-"    cd C:\\Users\\yourUserName\\AppData\\Local\\HDDcoin-Blockchain\\app-1.0.5\\resources\\app.asar.unpacked\\daemon\\\n"
+"    cd C:\\Users\\yourUserName\\AppData\\Local\\PecanRolls-Blockchain\\app-1.0.5\\resources\\app.asar.unpacked\\daemon\\\n"
 "    start-process .\\rolls.exe -argumentlist \"plots create yourParametersGoHere\"\n"
 "    start-process ....\n"
 "\n"
@@ -514,14 +514,14 @@ msgstr ""
 "Чтобы добавить задержку между вашими параллельными процессами, вы можете поместить sleep <seconds> между каждой командой создания полей rolls rolls plots create , например чтобы отложить следующий процесс на час sleep 3600\n"
 "\n"
 "Конкретный пример:\n"
-"    cd C:\\Users\\yourUserName\\AppData\\Local\\HDDcoin-Blockchain\\app-1.0.5\\resources\\app.asar.unpacked\\daemon\\\n"
+"    cd C:\\Users\\yourUserName\\AppData\\Local\\PecanRolls-Blockchain\\app-1.0.5\\resources\\app.asar.unpacked\\daemon\\\n"
 "    start-process ./rolls.exe -argumentlist \"plots create -k 32 -b 4000 -u 128 -r 4 -t d:\\tempdrive1 -2 e:\\tempdrive2 -d F:\\plots -n 1\"\n"
 "\n"
 "Приведенная выше команда создает одио поле (указывается -n 1), для параллельного построения вам нужно повторить команду (не закрывая первую). Увеличьте значение -n для последовательного построения, то есть после завершения первого участка запускается следующий."
 
 #: src/components/wallet/standard/WalletStandard.tsx:652
-msgid "HDDcoin Wallet"
-msgstr "Кошелек HDDcoin"
+msgid "PecanRolls Wallet"
+msgstr "Кошелек PecanRolls"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -970,8 +970,8 @@ msgid "Enter a strong passphrase to secure your keys:"
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:146
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your HDDcoin wallet."
-msgstr "Введите мнемонику из 24 слов, которую вы сохранили, чтобы восстановить свой кошелек HDDcoin."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your PecanRolls wallet."
+msgstr "Введите мнемонику из 24 слов, которую вы сохранили, чтобы восстановить свой кошелек PecanRolls."
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:115
 #: src/components/wallet/EnterPassphrasePrompt.tsx:115
@@ -1917,7 +1917,7 @@ msgid "Plots Passed Filter"
 msgstr "Участки, прошедшие фильтр"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn HDDcoin. <0>Learn more</0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn PecanRolls. <0>Learn more</0>"
 msgstr "Участки - это выделенное пространство на вашем жестком диске. Участки используются для фарминга и приносят доход в чиа. <0>Подробности</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
@@ -2470,8 +2470,8 @@ msgstr "Статус:"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the HDDcoin blockchain"
-#~ msgstr "Sub Block at height {0} in the HDDcoin blockchain"
+#~ msgid "Sub Block at height {0} in the PecanRolls blockchain"
+#~ msgstr "Sub Block at height {0} in the PecanRolls blockchain"
 
 #: src/components/app/AppPassPrompt.tsx:199
 #: src/components/wallet/did/WalletDID.tsx:886
@@ -2629,7 +2629,7 @@ msgid "This feature is available only from the GUI."
 msgstr "Эта функция доступна только из графического интерфейса."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of HDDcoin that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and HDDcoin that you have just spent but is not yet in the blockchain."
+msgid "This is the amount of PecanRolls that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and PecanRolls that you have just spent but is not yet in the blockchain."
 msgstr "Это количество монет Чиа, которое в настоящее время вы можете использовать для совершения транзакций. Баланс не включает ожидающие вознаграждения за фармиг, ожидающие входящие транзакции и монеты, которые вы только что потратили, но они еще не попали в блокчейн."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
@@ -2695,8 +2695,8 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "Сделка была включена в блокчейн на указанной высоте блока"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of HDDcoin is no longer compatible with the blockchain and can not safely farm."
-msgstr "Эта версия HDDcoin больше не совместима с блокчейном и не может безопасно фармить."
+msgid "This version of PecanRolls is no longer compatible with the blockchain and can not safely farm."
+msgstr "Эта версия PecanRolls больше не совместима с блокчейном и не может безопасно фармить."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2720,8 +2720,8 @@ msgstr "Кому"
 msgid "Total Balance"
 msgstr "Итоговый баланс"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:15
-#~ msgid "Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:15
+#~ msgid "Total PecanRolls Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2942,7 +2942,7 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "Хотите присоединиться к пулу? Создайте участок NFT"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more HDDcoin? Add more plots to your farm."
+msgid "Want to earn more PecanRolls? Add more plots to your farm."
 msgstr "Хотите получать больше дохода в Чиа? Добавьте больше участков к своей ферме."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
@@ -2971,7 +2971,7 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "Вес - это общая добавленная сложность всех подблоков, включая этот"
 
 #: src/components/selectKey/SelectKey.tsx:183
-msgid "Welcome to HDDcoin. Please log in with an existing key, or create a new key."
+msgid "Welcome to PecanRolls. Please log in with an existing key, or create a new key."
 msgstr "Добро пожаловать в Чиа. Пожалуйста, войдите в систему с существующим ключом или создайте новый ключ."
 
 #: src/components/wallet/WalletAdd.tsx:66
@@ -3046,8 +3046,8 @@ msgid "You need to claim your rewards first"
 msgstr "Сначала нужно получить свою награду"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the HDDcoin application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the HDDcoin application as this version will stop working soon!"
+#~ msgid "You need to upgrade the PecanRolls application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the PecanRolls application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -3170,8 +3170,8 @@ msgstr "{0} очков {1} - {2} часов назад"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Награда за блок"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:29
-msgid "{currencyCode} Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:29
+msgid "{currencyCode} Total PecanRolls Farmed"
 msgstr "{currencyCode} Всего Чиа выращено"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28

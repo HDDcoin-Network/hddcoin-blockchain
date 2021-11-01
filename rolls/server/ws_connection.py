@@ -25,7 +25,7 @@ from rolls.util.network import class_for_type, is_localhost
 LENGTH_BYTES: int = 4
 
 
-class WSHDDcoinConnection:
+class WSPecanRollsConnection:
     """
     Represents a connection to another node. Local host and port are ours, while peer host and
     port are the host and port of the peer that we are connected to. Node_id and connection_type are
@@ -71,7 +71,7 @@ class WSHDDcoinConnection:
         self.is_outbound = is_outbound
         self.is_feeler = is_feeler
 
-        # HDDcoinConnection metrics
+        # PecanRollsConnection metrics
         self.creation_time = time.time()
         self.bytes_read = 0
         self.bytes_written = 0

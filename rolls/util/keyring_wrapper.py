@@ -20,8 +20,8 @@ from typing import Any, List, Optional, Tuple, Type, Union
 # the new passphrase.
 DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE = "$ rolls passphrase set # all the cool kids are doing it!"
 
-MAC_KEYCHAIN_MASTER_PASSPHRASE_SERVICE = "HDDcoin Passphrase"
-MAC_KEYCHAIN_MASTER_PASSPHRASE_USER = "HDDcoin Passphrase"
+MAC_KEYCHAIN_MASTER_PASSPHRASE_SERVICE = "PecanRolls Passphrase"
+MAC_KEYCHAIN_MASTER_PASSPHRASE_USER = "PecanRolls Passphrase"
 
 
 def check_macos_keychain_keys_present(mac_keychain: MacKeyring) -> bool:

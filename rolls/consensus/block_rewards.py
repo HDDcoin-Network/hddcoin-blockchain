@@ -1,6 +1,6 @@
 from rolls.util.ints import uint32, uint64
 
-# 1 HDDcoin coin = 1,000,000,000,000 = 1 trillion pecans.
+# 1 PecanRolls coin = 1,000,000,000,000 = 1 trillion pecans.
 _pecans_per_roll = 1000000000000
 _blocks_per_year = 1681920  # 32 * 6 * 24 * 365
 

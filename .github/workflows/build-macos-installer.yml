@@ -114,5 +114,5 @@ jobs:
     - name: Upload MacOS artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: HDDcoin-Installer-on-MacOS-10.15-dmg
+        name: PecanRolls-Installer-on-MacOS-10.15-dmg
         path: ${{ github.workspace }}/build_scripts/final_installer/

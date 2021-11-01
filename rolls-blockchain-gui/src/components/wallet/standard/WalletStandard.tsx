@@ -5,7 +5,7 @@ import {
   Amount,
   Fee,
   Form,
-  TextField as HDDcoinTextField,
+  TextField as RollsTextField,
   AlertDialog,
   CopyToClipboard,
   Flex,
@@ -42,7 +42,7 @@ import {
   send_transaction,
   farm_block,
 } from '../../../modules/message';
-import { /* byte_to_rolls_string, */ rolls_to_byte } from '../../../util/rolls';
+import { /* mojo_to_rolls_string, */ rolls_to_mojo } from '../../../util/rolls';
 import { openDialog } from '../../../modules/dialog';
 import { get_transaction_result } from '../../../util/transaction_result';
 import config from '../../../config/config';
@@ -238,7 +238,7 @@ function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {byte_to_rolls_string(props.balance)} {currencyCode}
+            {mojo_to_rolls_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -285,9 +285,9 @@ function BalanceCard(props: BalanceCardProps) {
         balance={balance_spendable}
         tooltip={
           <Trans>
-            This is the amount of HDDcoin that you can currently use to make
+            This is the amount of PecanRollshat you can currently use to make
             transactions. It does not include pending farming rewards, pending
-            incoming transactions, and HDDcoin that you have just spent but is not
+            incoming transactions, and PecanRollshat you have just spent but is not
             yet in the blockchain.
           </Trans>
         }
@@ -463,8 +463,8 @@ function SendCard(props: SendCardProps) {
       address = address.slice(2);
     }
 
-    const amountValue = Number.parseFloat(rolls_to_byte(amount));
-    const feeValue = Number.parseFloat(rolls_to_byte(fee));
+    const amountValue = Number.parseFloat(rolls_to_mojo(amount));
+    const feeValue = Number.parseFloat(rolls_to_mojo(fee));
 
     dispatch(send_transaction(wallet_id, amountValue, feeValue, address));
 
@@ -487,7 +487,7 @@ function SendCard(props: SendCardProps) {
       <Form methods={methods} onSubmit={handleSubmit}>
         <Grid spacing={2} container>
           <Grid xs={12} item>
-            <HDDcoinTextField
+            <PecanRollsxtField
               name="address"
               variant="filled"
               color="secondary"
@@ -639,7 +639,7 @@ export default function StandardWallet(props: StandardWalletProps) {
         <Flex flexGrow={1}>
           {showTitle && (
             <Typography variant="h5" gutterBottom>
-              <Trans>HDDcoin Wallet</Trans>
+              <Trans>PecanRollsallet</Trans>
             </Typography>
           )}
         </Flex>

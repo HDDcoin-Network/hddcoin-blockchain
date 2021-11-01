@@ -59,7 +59,7 @@ from rolls.wallet.wallet_puzzle_store import WalletPuzzleStore
 from rolls.wallet.wallet_sync_store import WalletSyncStore
 from rolls.wallet.wallet_transaction_store import WalletTransactionStore
 from rolls.wallet.wallet_user_store import WalletUserStore
-from rolls.server.server import HDDcoinServer
+from rolls.server.server import PecanRollsServer
 from rolls.wallet.did_wallet.did_wallet import DIDWallet
 
 
@@ -114,7 +114,7 @@ class WalletStateManager:
     interested_store: WalletInterestedStore
     pool_store: WalletPoolStore
     weight_proof_handler: Any
-    server: HDDcoinServer
+    server: PecanRollsServer
     root_path: Path
 
     @staticmethod
@@ -123,7 +123,7 @@ class WalletStateManager:
         config: Dict,
         db_path: Path,
         constants: ConsensusConstants,
-        server: HDDcoinServer,
+        server: PecanRollsServer,
         root_path: Path,
         name: str = None,
     ):

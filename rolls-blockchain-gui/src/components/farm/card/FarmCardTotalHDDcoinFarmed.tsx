@@ -6,7 +6,7 @@ import FarmCard from './FarmCard';
 import { byte_to_rolls } from '../../../util/rolls';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 
-export default function FarmCardTotalHDDcoinFarmed() {
+export default function FarmCardTotalPecanRollsFarmed() {
   const currencyCode = useCurrencyCode();
 
   const loading = useSelector(
@@ -17,7 +17,7 @@ export default function FarmCardTotalHDDcoinFarmed() {
     (state: RootState) => state.wallet_state.farmed_amount?.farmed_amount,
   );
 
-  const totalHDDcoinFarmed = useMemo(() => {
+  const totalPecanRollsFarmed = useMemo(() => {
     if (farmedAmount !== undefined) {
       const val = BigInt(farmedAmount.toString());
       return byte_to_rolls(val);
@@ -26,8 +26,8 @@ export default function FarmCardTotalHDDcoinFarmed() {
 
   return (
     <FarmCard
-      title={<Trans>{currencyCode} Total HDDcoin Farmed</Trans>}
-      value={totalHDDcoinFarmed}
+      title={<Trans>{currencyCode} Total PecanRolls Farmed</Trans>}
+      value={totalPecanRollsFarmed}
       loading={loading}
     />
   );

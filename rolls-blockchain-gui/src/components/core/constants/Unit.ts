@@ -1,5 +1,5 @@
 enum Unit {
-  HDDCOIN = 'HDDCOIN',
+  ROLLS = 'ROLLS',
   BYTE = 'BYTE',
   COLOURED_COIN = 'COLOUREDCOIN',
 }

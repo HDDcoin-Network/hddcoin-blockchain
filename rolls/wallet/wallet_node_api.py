@@ -1,6 +1,6 @@
 from rolls.protocols import full_node_protocol, introducer_protocol, wallet_protocol
 from rolls.server.outbound_message import NodeType
-from rolls.server.ws_connection import WSHDDcoinConnection
+from rolls.server.ws_connection import WSPecanRollsConnection
 from rolls.types.mempool_inclusion_status import MempoolInclusionStatus
 from rolls.util.api_decorators import api_request, peer_required, execute_task
 from rolls.util.errors import Err
@@ -23,10 +23,10 @@ class WalletNodeAPI:
 
     @peer_required
     @api_request
-    async def respond_removals(self, response: wallet_protocol.RespondRemovals, peer: WSHDDcoinConnection):
+    async def respond_removals(self, response: wallet_protocol.RespondRemovals, peer: WSPecanRollsConnection):
         pass
 
-    async def reject_removals_request(self, response: wallet_protocol.RejectRemovalsRequest, peer: WSHDDcoinConnection):
+    async def reject_removals_request(self, response: wallet_protocol.RejectRemovalsRequest, peer: WSPecanRollsConnection):
         """
         The full node has rejected our request for removals.
         """
@@ -42,7 +42,7 @@ class WalletNodeAPI:
     @execute_task
     @peer_required
     @api_request
-    async def new_peak_wallet(self, peak: wallet_protocol.NewPeakWallet, peer: WSHDDcoinConnection):
+    async def new_peak_wallet(self, peak: wallet_protocol.NewPeakWallet, peer: WSPecanRollsConnection):
         """
         The full node sent as a new peak
         """
@@ -61,7 +61,7 @@ class WalletNodeAPI:
 
     @peer_required
     @api_request
-    async def respond_additions(self, response: wallet_protocol.RespondAdditions, peer: WSHDDcoinConnection):
+    async def respond_additions(self, response: wallet_protocol.RespondAdditions, peer: WSPecanRollsConnection):
         pass
 
     @api_request
@@ -70,7 +70,7 @@ class WalletNodeAPI:
 
     @peer_required
     @api_request
-    async def transaction_ack(self, ack: wallet_protocol.TransactionAck, peer: WSHDDcoinConnection):
+    async def transaction_ack(self, ack: wallet_protocol.TransactionAck, peer: WSPecanRollsConnection):
         """
         This is an ack for our previous SendTransaction call. This removes the transaction from
         the send queue if we have sent it to enough nodes.
@@ -94,7 +94,7 @@ class WalletNodeAPI:
     @peer_required
     @api_request
     async def respond_peers_introducer(
-        self, request: introducer_protocol.RespondPeersIntroducer, peer: WSHDDcoinConnection
+        self, request: introducer_protocol.RespondPeersIntroducer, peer: WSPecanRollsConnection
     ):
         if not self.wallet_node.has_full_node():
             await self.wallet_node.wallet_peers.respond_peers(request, peer.get_peer_info(), False)
@@ -106,7 +106,7 @@ class WalletNodeAPI:
 
     @peer_required
     @api_request
-    async def respond_peers(self, request: full_node_protocol.RespondPeers, peer: WSHDDcoinConnection):
+    async def respond_peers(self, request: full_node_protocol.RespondPeers, peer: WSPecanRollsConnection):
         if not self.wallet_node.has_full_node():
             self.log.info(f"Wallet received {len(request.peer_list)} peers.")
             await self.wallet_node.wallet_peers.respond_peers(request, peer.get_peer_info(), True)

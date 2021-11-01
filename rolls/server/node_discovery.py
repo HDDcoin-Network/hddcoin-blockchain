@@ -16,7 +16,7 @@ from rolls.protocols.protocol_message_types import ProtocolMessageTypes
 from rolls.server.address_manager import AddressManager, ExtendedPeerInfo
 from rolls.server.address_manager_store import AddressManagerStore
 from rolls.server.outbound_message import NodeType, make_msg
-from rolls.server.server import HDDcoinServer
+from rolls.server.server import PecanRollsServer
 from rolls.types.peer_info import PeerInfo, TimestampedPeerInfo
 from rolls.util.hash import std_hash
 from rolls.util.ints import uint64
@@ -37,7 +37,7 @@ class FullNodeDiscovery:
 
     def __init__(
         self,
-        server: HDDcoinServer,
+        server: PecanRollsServer,
         root_path: Path,
         target_outbound_count: int,
         peer_db_path: str,
@@ -48,7 +48,7 @@ class FullNodeDiscovery:
         default_port: Optional[int],
         log,
     ):
-        self.server: HDDcoinServer = server
+        self.server: PecanRollsServer = server
         self.message_queue: asyncio.Queue = asyncio.Queue()
         self.is_closed = False
         self.target_outbound_count = target_outbound_count
@@ -129,7 +129,7 @@ class FullNodeDiscovery:
     def add_message(self, message, data):
         self.message_queue.put_nowait((message, data))
 
-    async def on_connect(self, peer: ws.WSHDDcoinConnection):
+    async def on_connect(self, peer: ws.WSPecanRollsConnection):
         if (
             peer.is_outbound is False
             and peer.peer_server_port is not None
@@ -156,7 +156,7 @@ class FullNodeDiscovery:
             await peer.send_message(msg)
 
     # Updates timestamps each time we receive a message for outbound connections.
-    async def update_peer_timestamp_on_message(self, peer: ws.WSHDDcoinConnection):
+    async def update_peer_timestamp_on_message(self, peer: ws.WSPecanRollsConnection):
         if (
             peer.is_outbound
             and peer.peer_server_port is not None
@@ -194,7 +194,7 @@ class FullNodeDiscovery:
         if self.introducer_info is None:
             return None
 
-        async def on_connect(peer: ws.WSHDDcoinConnection):
+        async def on_connect(peer: ws.WSPecanRollsConnection):
             msg = make_msg(ProtocolMessageTypes.request_peers_introducer, introducer_protocol.RequestPeersIntroducer())
             await peer.send_message(msg)
 

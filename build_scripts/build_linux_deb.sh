@@ -12,16 +12,16 @@ else
 fi
 
 pip install setuptools_scm
-# The environment variable HDDCOIN_INSTALLER_VERSION needs to be defined
+# The environment variable ROLLS_INSTALLER_VERSION needs to be defined
 # If the env variable NOTARIZE and the username and password variables are
 # set, this will attempt to Notarize the signed DMG
-HDDCOIN_INSTALLER_VERSION=$(python installer-version.py)
+ROLLS_INSTALLER_VERSION=$(python installer-version.py)
 
-if [ ! "$HDDCOIN_INSTALLER_VERSION" ]; then
-	echo "WARNING: No environment variable HDDCOIN_INSTALLER_VERSION set. Using 0.0.0."
-	HDDCOIN_INSTALLER_VERSION="0.0.0"
+if [ ! "$ROLLS_INSTALLER_VERSION" ]; then
+	echo "WARNING: No environment variable ROLLS_INSTALLER_VERSION set. Using 0.0.0."
+	ROLLS_INSTALLER_VERSION="0.0.0"
 fi
-echo "HDDcoin Installer Version is: $HDDCOIN_INSTALLER_VERSION"
+echo "PecanRolls Installer Version is: $ROLLS_INSTALLER_VERSION"
 
 echo "Installing npm and electron packagers"
 npm install electron-packager -g
@@ -57,11 +57,11 @@ fi
 
 # sets the version for rolls-blockchain in package.json
 cp package.json package.json.orig
-jq --arg VER "$HDDCOIN_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
+jq --arg VER "$ROLLS_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
 electron-packager . rolls-blockchain --asar.unpack="**/daemon/**" --platform=linux \
---icon=src/assets/img/HDDcoin.icns --overwrite --app-bundle-id=net.rolls.blockchain \
---appVersion=$HDDCOIN_INSTALLER_VERSION
+--icon=src/assets/img/PecanRolls.icns --overwrite --app-bundle-id=net.rolls.blockchain \
+--appVersion=$ROLLS_INSTALLER_VERSION
 LAST_EXIT_CODE=$?
 
 # reset the package.json to the original
@@ -75,11 +75,11 @@ fi
 mv $DIR_NAME ../build_scripts/dist/
 cd ../build_scripts || exit
 
-echo "Create rolls-$HDDCOIN_INSTALLER_VERSION.deb"
+echo "Create rolls-$ROLLS_INSTALLER_VERSION.deb"
 rm -rf final_installer
 mkdir final_installer
 electron-installer-debian --src dist/$DIR_NAME/ --dest final_installer/ \
---arch "$PLATFORM" --options.version $HDDCOIN_INSTALLER_VERSION
+--arch "$PLATFORM" --options.version $ROLLS_INSTALLER_VERSION
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "electron-installer-debian failed!"

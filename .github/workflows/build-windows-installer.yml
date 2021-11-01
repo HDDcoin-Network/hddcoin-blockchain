@@ -91,9 +91,9 @@ jobs:
         python -m venv ..\venv
         . ..\venv\Scripts\Activate.ps1
         pip3 install setuptools_scm
-        $env:HDDCOIN_INSTALLER_VERSION = python .\build_scripts\installer-version.py -win
-        echo "$env:HDDCOIN_INSTALLER_VERSION"
-        echo "::set-output name=HDDCOIN_INSTALLER_VERSION::$env:HDDCOIN_INSTALLER_VERSION"
+        $env:ROLLS_INSTALLER_VERSION = python .\build_scripts\installer-version.py -win
+        echo "$env:ROLLS_INSTALLER_VERSION"
+        echo "::set-output name=ROLLS_INSTALLER_VERSION::$env:ROLLS_INSTALLER_VERSION"
         deactivate
 
     - name: Build Windows installer with build_scripts\build_windows.ps1
@@ -109,7 +109,7 @@ jobs:
       uses: actions/upload-artifact@v2.2.2
       with:
         name: Windows-Exe
-        path: ${{ github.workspace }}\rolls-blockchain-gui\HDDcoin-win32-x64\
+        path: ${{ github.workspace }}\rolls-blockchain-gui\PecanRolls-win32-x64\
 
     - name: Upload Installer to artifacts
       uses: actions/upload-artifact@v2.2.2
@@ -119,9 +119,9 @@ jobs:
 
     - name: Create Checksums
       env:
-        HDDCOIN_INSTALLER_VERSION: ${{ steps.version_number.outputs.HDDCOIN_INSTALLER_VERSION }}
+        ROLLS_INSTALLER_VERSION: ${{ steps.version_number.outputs.ROLLS_INSTALLER_VERSION }}
       run: |
-         certutil.exe -hashfile ${{ github.workspace }}\rolls-blockchain-gui\release-builds\windows-installer\HDDcoinSetup-${{ steps.version_number.outputs.HDDCOIN_INSTALLER_VERSION }}.exe SHA256 > ${{ github.workspace }}\rolls-blockchain-gui\release-builds\windows-installer\HDDcoinSetup-${{ steps.version_number.outputs.HDDCOIN_INSTALLER_VERSION }}.exe.sha256
+         certutil.exe -hashfile ${{ github.workspace }}\rolls-blockchain-gui\release-builds\windows-installer\PecanRollsSetup-${{ steps.version_number.outputs.ROLLS_INSTALLER_VERSION }}.exe SHA256 > ${{ github.workspace }}\rolls-blockchain-gui\release-builds\windows-installer\PecanRollsSetup-${{ steps.version_number.outputs.ROLLS_INSTALLER_VERSION }}.exe.sha256
          ls ${{ github.workspace }}\rolls-blockchain-gui\release-builds\windows-installer\
 
     - name: Get tag name

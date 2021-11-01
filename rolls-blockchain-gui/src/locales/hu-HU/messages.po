@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr "(nem kötelező)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore HDDcoin’s blocks further? Check out <0>HDDcoin Explorer</0> built by an open source developer."
-msgstr "Fel szeretnéd fedezni a HDDcoin rendszerét bővebben? Nézd meg a <0> HDDcoin Explorert</0> amit egy nyílt forráskóddal foglalkozó fejlesztő készített."
+msgid "*Want to explore PecanRolls’s blocks further? Check out <0>PecanRolls Explorer</0> built by an open source developer."
+msgstr "Fel szeretnéd fedezni a PecanRolls rendszerét bővebben? Nézd meg a <0> PecanRolls Explorert</0> amit egy nyílt forráskóddal foglalkozó fejlesztő készített."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -48,8 +48,8 @@ msgstr "A betakarító egy szolgáltatás ahol a parcellák valójában tárolá
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About HDDcoin Blockchain"
-msgstr "A HDDcoin Blockchain-ről"
+msgid "About PecanRolls Blockchain"
+msgstr "A PecanRolls Blockchain-ről"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -234,8 +234,8 @@ msgid "Block VDF Iterations"
 msgstr "VDF-iterációk blokkja"
 
 #: src/components/block/Block.jsx:337
-msgid "Block at height {0} in the HDDcoin blockchain"
-msgstr "{0} Magasságú blokk a HDDcoin blokkláncban"
+msgid "Block at height {0} in the PecanRolls blockchain"
+msgstr "{0} Magasságú blokk a PecanRolls blokkláncban"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -340,16 +340,16 @@ msgid "Chat on KeyBase"
 msgstr "Csevegés a KeyBase-n"
 
 #: src/electron/main.tsx:419
-msgid "HDDcoin"
-msgstr "HDDcoin"
+msgid "PecanRolls"
+msgstr "PecanRolls"
 
 #: src/electron/main.tsx:358
-msgid "HDDcoin Blockchain Wiki"
-msgstr "HDDcoin Blokklánc Wiki"
+msgid "PecanRolls Blockchain Wiki"
+msgstr "PecanRolls Blokklánc Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:652
-msgid "HDDcoin Wallet"
-msgstr "HDDcoin Pénztárca"
+msgid "PecanRolls Wallet"
+msgstr "PecanRolls Pénztárca"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -798,8 +798,8 @@ msgid "Enter a strong passphrase to secure your keys:"
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:146
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your HDDcoin wallet."
-msgstr "A HDDcoin pénztárca visszaállításához írja be az elmentett 24 szóból álló mnemonikát."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your PecanRolls wallet."
+msgstr "A PecanRolls pénztárca visszaállításához írja be az elmentett 24 szóból álló mnemonikát."
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:115
 #: src/components/wallet/EnterPassphrasePrompt.tsx:115
@@ -1745,8 +1745,8 @@ msgid "Plots Passed Filter"
 msgstr "Szűrőn átjutott parcellák"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn HDDcoin. <0>Learn more</0>"
-msgstr "A cserepek a termesztéshez fenntartott helyek a merevlemezen, amikből HDDcoin nyerhető. <0>Részletek</0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn PecanRolls. <0>Learn more</0>"
+msgstr "A cserepek a termesztéshez fenntartott helyek a merevlemezen, amikből PecanRolls nyerhető. <0>Részletek</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -2298,8 +2298,8 @@ msgstr "Állapot:"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the HDDcoin blockchain"
-#~ msgstr "Sub Block at height {0} in the HDDcoin blockchain"
+#~ msgid "Sub Block at height {0} in the PecanRolls blockchain"
+#~ msgstr "Sub Block at height {0} in the PecanRolls blockchain"
 
 #: src/components/app/AppPassPrompt.tsx:199
 #: src/components/wallet/did/WalletDID.tsx:886
@@ -2457,8 +2457,8 @@ msgid "This feature is available only from the GUI."
 msgstr "Ez a funkció csak a grafikus felhasználói felületrôl érhetô el."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of HDDcoin that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and HDDcoin that you have just spent but is not yet in the blockchain."
-msgstr "Ez az összeg HDDcoin, amelyet jelenleg felhasználhat tranzakciók lebonyolítására. Nem tartalmazza a függőben lévő gazdálkodási jutalmakat, a függőben lévő bejövő tranzakciókat és Chiát, amelyet most költött, de még nem tartozik a blokkláncba."
+msgid "This is the amount of PecanRolls that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and PecanRolls that you have just spent but is not yet in the blockchain."
+msgstr "Ez az összeg PecanRolls, amelyet jelenleg felhasználhat tranzakciók lebonyolítására. Nem tartalmazza a függőben lévő gazdálkodási jutalmakat, a függőben lévő bejövő tranzakciókat és Chiát, amelyet most költött, de még nem tartozik a blokkláncba."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2480,7 +2480,7 @@ msgstr "Ekkor hozta létre a blokkot a gazdálkodó, ami még az idő igazolás�
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
 msgid "This is the total amount of rolls in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Ez az összes HDDcoin mennyiség a blokkláncban az aktuális csúcs alblokkban, amelyet a privát kulcsaid vezérelnek. Ez magában foglalja a befagyasztott gazdálkodási jutalmakat, de nem a függőben lévő bejövő és kimenő tranzakciókat."
+msgstr "Ez az összes PecanRolls mennyiség a blokkláncban az aktuális csúcs alblokkban, amelyet a privát kulcsaid vezérelnek. Ez magában foglalja a befagyasztott gazdálkodási jutalmakat, de nem a függőben lévő bejövő és kimenő tranzakciókat."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2525,8 +2525,8 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "Ez a kereskedés a blokklánc ezen magasságán történt"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of HDDcoin is no longer compatible with the blockchain and can not safely farm."
-msgstr "A HDDcoin ezen verziója többé már nem kompatibilis a blokklánccal és nem biztonságos."
+msgid "This version of PecanRolls is no longer compatible with the blockchain and can not safely farm."
+msgstr "A PecanRolls ezen verziója többé már nem kompatibilis a blokklánccal és nem biztonságos."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2550,8 +2550,8 @@ msgstr "Címzett"
 msgid "Total Balance"
 msgstr "Teljes egyenleg"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:15
-#~ msgid "Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:15
+#~ msgid "Total PecanRolls Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2772,8 +2772,8 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more HDDcoin? Add more plots to your farm."
-msgstr "Szeretne többet keresni HDDcoin-val? Adjon hozzá több telket a gazdaságához (farmoláshoz)."
+msgid "Want to earn more PecanRolls? Add more plots to your farm."
+msgstr "Szeretne többet keresni PecanRolls-val? Adjon hozzá több telket a gazdaságához (farmoláshoz)."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2801,8 +2801,8 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "Az összes alblokk teljes hozzáadott nehézségének a súlya, egészen ehhez az egységig"
 
 #: src/components/selectKey/SelectKey.tsx:183
-msgid "Welcome to HDDcoin. Please log in with an existing key, or create a new key."
-msgstr "Üdvözöljük a HDDcoin-ban. Kérem jelentkezzen be egy létező kulccsal, vagy készítsen egy új kulcsot magának."
+msgid "Welcome to PecanRolls. Please log in with an existing key, or create a new key."
+msgstr "Üdvözöljük a PecanRolls-ban. Kérem jelentkezzen be egy létező kulccsal, vagy készítsen egy új kulcsot magának."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2876,8 +2876,8 @@ msgid "You need to claim your rewards first"
 msgstr ""
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the HDDcoin application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the HDDcoin application as this version will stop working soon!"
+#~ msgid "You need to upgrade the PecanRolls application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the PecanRolls application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -3000,9 +3000,9 @@ msgstr ""
 msgid "{currencyCode} Block Rewards"
 msgstr "Blokk jutalmak {currencyCode}"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:29
-msgid "{currencyCode} Total HDDcoin Farmed"
-msgstr "Teljes farmolt HDDcoin mennyiség {currencyCode}"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:29
+msgid "{currencyCode} Total PecanRolls Farmed"
+msgstr "Teljes farmolt PecanRolls mennyiség {currencyCode}"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"

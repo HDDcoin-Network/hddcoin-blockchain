@@ -48,7 +48,7 @@ kwargs = dict(
     name="rolls-blockchain",
     author="Mariano Sorgente",
     author_email="mariano@rolls.org",
-    description="HDDcoin blockchain full node, farmer, timelord, and wallet.",
+    description="PecanRolls blockchain full node, farmer, timelord, and wallet.",
     url="https://rolls.org/",
     license="Apache License",
     python_requires=">=3.7, <4",

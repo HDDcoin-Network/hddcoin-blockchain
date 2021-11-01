@@ -13,7 +13,7 @@ from rolls.util.service_groups import services_for_groups
 
 
 def launch_start_daemon(root_path: Path) -> subprocess.Popen:
-    os.environ["HDDCOIN_ROOT"] = str(root_path)
+    os.environ["ROLLS_ROOT"] = str(root_path)
     # TODO: use startupinfo=subprocess.DETACHED_PROCESS on windows
     rolls = sys.argv[0]
     process = subprocess.Popen(f"{rolls} run_daemon --wait-for-unlock".split(), stdout=subprocess.PIPE)

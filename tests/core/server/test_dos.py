@@ -12,7 +12,7 @@ from rolls.protocols.shared_protocol import Handshake
 from rolls.server.outbound_message import make_msg, Message
 from rolls.server.rate_limits import RateLimiter
 from rolls.server.server import ssl_context_for_client
-from rolls.server.ws_connection import WSHDDcoinConnection
+from rolls.server.ws_connection import WSPecanRollsConnection
 from rolls.types.peer_info import PeerInfo
 from rolls.util.ints import uint16, uint64
 from rolls.util.errors import Err
@@ -188,8 +188,8 @@ class TestDos:
 
         assert len(server_1.all_connections) == 1
 
-        ws_con: WSHDDcoinConnection = list(server_1.all_connections.values())[0]
-        ws_con_2: WSHDDcoinConnection = list(server_2.all_connections.values())[0]
+        ws_con: WSPecanRollsConnection = list(server_1.all_connections.values())[0]
+        ws_con_2: WSPecanRollsConnection = list(server_2.all_connections.values())[0]
 
         ws_con.peer_host = "1.2.3.4"
         ws_con_2.peer_host = "1.2.3.4"
@@ -241,8 +241,8 @@ class TestDos:
 
         assert len(server_1.all_connections) == 1
 
-        ws_con: WSHDDcoinConnection = list(server_1.all_connections.values())[0]
-        ws_con_2: WSHDDcoinConnection = list(server_2.all_connections.values())[0]
+        ws_con: WSPecanRollsConnection = list(server_1.all_connections.values())[0]
+        ws_con_2: WSPecanRollsConnection = list(server_2.all_connections.values())[0]
 
         ws_con.peer_host = "1.2.3.4"
         ws_con_2.peer_host = "1.2.3.4"
@@ -290,8 +290,8 @@ class TestDos:
 
         assert len(server_1.all_connections) == 1
 
-        ws_con: WSHDDcoinConnection = list(server_1.all_connections.values())[0]
-        ws_con_2: WSHDDcoinConnection = list(server_2.all_connections.values())[0]
+        ws_con: WSPecanRollsConnection = list(server_1.all_connections.values())[0]
+        ws_con_2: WSPecanRollsConnection = list(server_2.all_connections.values())[0]
 
         ws_con.peer_host = "1.2.3.4"
         ws_con_2.peer_host = "1.2.3.4"

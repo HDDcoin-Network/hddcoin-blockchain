@@ -8,8 +8,8 @@ from rolls.util.bech32m import decode_puzzle_hash, encode_puzzle_hash
 from rolls.util.condition_tools import parse_sexp_to_conditions
 from rolls.util.ints import uint32
 
-address1 = "rolls1tm2fmappqenrj3c9ngej8k33pujvspxxea6zpu7p4sx0lvle62es9ae95j"  # HDDcoin Network Inc Reserves Account-1
-address2 = "rolls1tm2fmappqenrj3c9ngej8k33pujvspxxea6zpu7p4sx0lvle62es9ae95j"  # HDDcoin Network Inc Reserves Account-1
+address1 = "rolls1tm2fmappqenrj3c9ngej8k33pujvspxxea6zpu7p4sx0lvle62es9ae95j"  # PecanRolls Network Inc Reserves Account-1
+address2 = "rolls1tm2fmappqenrj3c9ngej8k33pujvspxxea6zpu7p4sx0lvle62es9ae95j"  # PecanRolls Network Inc Reserves Account-1
 
 ph1 = decode_puzzle_hash(address1)
 ph2 = decode_puzzle_hash(address2)

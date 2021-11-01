@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr "(選用)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore HDDcoin’s blocks further? Check out <0>HDDcoin Explorer</0> built by an open source developer."
-msgstr "＊想更進一步探索 HDDcoin 區塊鍵？看看開源開發者打造的 <0>HDDcoin Explorer</0>"
+msgid "*Want to explore PecanRolls’s blocks further? Check out <0>PecanRolls Explorer</0> built by an open source developer."
+msgstr "＊想更進一步探索 PecanRolls 區塊鍵？看看開源開發者打造的 <0>PecanRolls Explorer</0>"
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -48,8 +48,8 @@ msgstr "收割機是在實際存放耕地的機器上運作的服務。塊農和
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About HDDcoin Blockchain"
-msgstr "關於 HDDcoin 區塊鏈"
+msgid "About PecanRolls Blockchain"
+msgstr "關於 PecanRolls 區塊鏈"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -234,8 +234,8 @@ msgid "Block VDF Iterations"
 msgstr "區塊 VDF 疊代次數"
 
 #: src/components/block/Block.jsx:337
-msgid "Block at height {0} in the HDDcoin blockchain"
-msgstr "HDDcoin 區塊鏈區塊高度 {0}"
+msgid "Block at height {0} in the PecanRolls blockchain"
+msgstr "PecanRolls 區塊鏈區塊高度 {0}"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -340,16 +340,16 @@ msgid "Chat on KeyBase"
 msgstr "在 KeyBase 上閒聊"
 
 #: src/electron/main.tsx:419
-msgid "HDDcoin"
-msgstr "HDDcoin"
+msgid "PecanRolls"
+msgstr "PecanRolls"
 
 #: src/electron/main.tsx:358
-msgid "HDDcoin Blockchain Wiki"
-msgstr "HDDcoin 區塊鏈維基"
+msgid "PecanRolls Blockchain Wiki"
+msgstr "PecanRolls 區塊鏈維基"
 
 #: src/components/wallet/standard/WalletStandard.tsx:652
-msgid "HDDcoin Wallet"
-msgstr "HDDcoin 錢包"
+msgid "PecanRolls Wallet"
+msgstr "PecanRolls 錢包"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -798,8 +798,8 @@ msgid "Enter a strong passphrase to secure your keys:"
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:146
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your HDDcoin wallet."
-msgstr "輸入你已存的 24 字助記符號以復原您的 HDDcoin 錢包。"
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your PecanRolls wallet."
+msgstr "輸入你已存的 24 字助記符號以復原您的 PecanRolls 錢包。"
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:115
 #: src/components/wallet/EnterPassphrasePrompt.tsx:115
@@ -818,7 +818,7 @@ msgstr "錯誤"
 
 #: src/components/wallet/standard/WalletStandard.tsx:460
 msgid "Error: Cannot send rolls to coloured address. Please enter a rolls address."
-msgstr "錯誤：不能發送 HDDcoin 到有色地址。請輸入 HDDcoin 地址。"
+msgstr "錯誤：不能發送 PecanRolls 到有色地址。請輸入 PecanRolls 地址。"
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1745,8 +1745,8 @@ msgid "Plots Passed Filter"
 msgstr "已通過篩選耕地"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn HDDcoin. <0>Learn more</0>"
-msgstr "耕地是在你硬碟上劃出的空間，用於耕種來賺取 HDDcoin 。 <0>了解更多</0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn PecanRolls. <0>Learn more</0>"
+msgstr "耕地是在你硬碟上劃出的空間，用於耕種來賺取 PecanRolls 。 <0>了解更多</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -2250,7 +2250,7 @@ msgstr "花費間隔長度 (區塊數量)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (rolls per interval): {0}"
-msgstr "花用限制（每間隔可用 HDDcoin）：{0}"
+msgstr "花用限制（每間隔可用 PecanRolls）：{0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -2298,8 +2298,8 @@ msgstr "狀態："
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the HDDcoin blockchain"
-#~ msgstr "Sub Block at height {0} in the HDDcoin blockchain"
+#~ msgid "Sub Block at height {0} in the PecanRolls blockchain"
+#~ msgstr "Sub Block at height {0} in the PecanRolls blockchain"
 
 #: src/components/app/AppPassPrompt.tsx:199
 #: src/components/wallet/did/WalletDID.tsx:886
@@ -2457,8 +2457,8 @@ msgid "This feature is available only from the GUI."
 msgstr "這個功能只能在 GUI 中提供。"
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of HDDcoin that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and HDDcoin that you have just spent but is not yet in the blockchain."
-msgstr "這是你目前可用來交易的 HDDcoin 數量。他不包括未結的耕種獎勵，未結的匯入交易和你剛花用，但還沒在區塊鏈內的 HDDcoin 。"
+msgid "This is the amount of PecanRolls that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and PecanRolls that you have just spent but is not yet in the blockchain."
+msgstr "這是你目前可用來交易的 PecanRolls 數量。他不包括未結的耕種獎勵，未結的匯入交易和你剛花用，但還沒在區塊鏈內的 PecanRolls 。"
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2478,7 +2478,7 @@ msgstr "這是塊農建立區塊的時間，這是在用時間證明最終確定
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
 msgid "This is the total amount of rolls in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "這是由你的私鑰控制的目前峰值子區塊中區塊鏈中 HDDcoin 的總量。他包括凍結耕種獎勵，但不包括未結的匯入和匯出交易。"
+msgstr "這是由你的私鑰控制的目前峰值子區塊中區塊鏈中 PecanRolls 的總量。他包括凍結耕種獎勵，但不包括未結的匯入和匯出交易。"
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2523,8 +2523,8 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "此貿易已包含在區塊鏈中的這個區塊高度"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of HDDcoin is no longer compatible with the blockchain and can not safely farm."
-msgstr "此版本的 HDDcoin 不再與區塊鏈相容，因此無法安全地進行耕種。"
+msgid "This version of PecanRolls is no longer compatible with the blockchain and can not safely farm."
+msgstr "此版本的 PecanRolls 不再與區塊鏈相容，因此無法安全地進行耕種。"
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2548,8 +2548,8 @@ msgstr "到"
 msgid "Total Balance"
 msgstr "總餘額"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:15
-#~ msgid "Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:15
+#~ msgid "Total PecanRolls Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2770,8 +2770,8 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "想加入農會？建立一個農場"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more HDDcoin? Add more plots to your farm."
-msgstr "想要獲得更多 HDDcoin？增加更多耕地到你的農場。"
+msgid "Want to earn more PecanRolls? Add more plots to your farm."
+msgstr "想要獲得更多 PecanRolls？增加更多耕地到你的農場。"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2799,8 +2799,8 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "權重是所有包括這個的子區塊的總增加難度"
 
 #: src/components/selectKey/SelectKey.tsx:183
-msgid "Welcome to HDDcoin. Please log in with an existing key, or create a new key."
-msgstr "歡迎來到 HDDcoin。請用已有的金鑰登入，或建立新的金鑰。"
+msgid "Welcome to PecanRolls. Please log in with an existing key, or create a new key."
+msgstr "歡迎來到 PecanRolls。請用已有的金鑰登入，或建立新的金鑰。"
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2874,8 +2874,8 @@ msgid "You need to claim your rewards first"
 msgstr "您需要先領取你的獎勵"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the HDDcoin application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the HDDcoin application as this version will stop working soon!"
+#~ msgid "You need to upgrade the PecanRolls application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the PecanRolls application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -2998,9 +2998,9 @@ msgstr "{0} 積分 {1} - {2} 小時前"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} 區塊獎勵"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:29
-msgid "{currencyCode} Total HDDcoin Farmed"
-msgstr "{currencyCode} 已收耕 HDDcoin"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:29
+msgid "{currencyCode} Total PecanRolls Farmed"
+msgstr "{currencyCode} 已收耕 PecanRolls"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"

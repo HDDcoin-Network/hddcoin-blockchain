@@ -62,13 +62,13 @@ export default function FarmLatestBlockChallenges() {
       />
       <Typography variant="caption">
         <Trans>
-          *Want to explore HDDcoin’s blocks further? Check out{' '}
+          *Want to explore PecanRolls’s blocks further? Check out{' '}
           <Link
             color="primary"
             href="https://www.rollsexplorer.com/"
             target="_blank"
           >
-            HDDcoin Explorer
+            PecanRolls Explorer
           </Link>{' '}
           built by an open source developer.
         </Trans>

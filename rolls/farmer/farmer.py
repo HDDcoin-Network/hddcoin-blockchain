@@ -34,7 +34,7 @@ from rolls.protocols.pool_protocol import (
 from rolls.protocols.protocol_message_types import ProtocolMessageTypes
 from rolls.server.outbound_message import NodeType, make_msg
 from rolls.server.server import ssl_context_for_root
-from rolls.server.ws_connection import WSHDDcoinConnection
+from rolls.server.ws_connection import WSPecanRollsConnection
 from rolls.ssl.create_ssl import get_mozilla_ca_crt
 from rolls.types.blockchain_format.proof_of_space import ProofOfSpace
 from rolls.types.blockchain_format.sized_bytes import bytes32
@@ -194,7 +194,7 @@ class Farmer:
     def _set_state_changed_callback(self, callback: Callable):
         self.state_changed_callback = callback
 
-    async def on_connect(self, peer: WSHDDcoinConnection):
+    async def on_connect(self, peer: WSPecanRollsConnection):
         # Sends a handshake to the harvester
         self.state_changed("add_connection", {})
         handshake = harvester_protocol.HarvesterHandshake(
@@ -218,7 +218,7 @@ class Farmer:
             ErrorResponse(uint16(PoolErrorCode.REQUEST_FAILED.value), error_message).to_json_dict()
         )
 
-    def on_disconnect(self, connection: ws.WSHDDcoinConnection):
+    def on_disconnect(self, connection: ws.WSPecanRollsConnection):
         self.log.info(f"peer disconnected {connection.get_peer_logging()}")
         self.state_changed("close_connection", {})
 
@@ -631,7 +631,7 @@ class Farmer:
                     )
         return updated
 
-    async def get_cached_harvesters(self, connection: WSHDDcoinConnection) -> HarvesterCacheEntry:
+    async def get_cached_harvesters(self, connection: WSPecanRollsConnection) -> HarvesterCacheEntry:
         host_cache = self.harvester_cache.get(connection.peer_host)
         if host_cache is None:
             host_cache = {}

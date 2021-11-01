@@ -36,8 +36,8 @@ from rolls.protocols.wallet_protocol import (
 )
 from rolls.server.node_discovery import WalletPeers
 from rolls.server.outbound_message import Message, NodeType, make_msg
-from rolls.server.server import HDDcoinServer
-from rolls.server.ws_connection import WSHDDcoinConnection
+from rolls.server.server import PecanRollsServer
+from rolls.server.ws_connection import WSPecanRollsConnection
 from rolls.types.blockchain_format.coin import Coin, hash_coin_list
 from rolls.types.blockchain_format.sized_bytes import bytes32
 from rolls.types.coin_spend import CoinSpend
@@ -70,7 +70,7 @@ class WalletNode:
     constants: ConsensusConstants
     keychain_proxy: Optional[KeychainProxy]
     local_keychain: Optional[Keychain]  # For testing only. KeychainProxy is used in normal cases
-    server: Optional[HDDcoinServer]
+    server: Optional[PecanRollsServer]
     log: logging.Logger
     wallet_peers: WalletPeers
     # Maintains the state of the wallet (blockchain and transactions), handles DB connections
@@ -346,7 +346,7 @@ class WalletNode:
 
         return messages
 
-    def set_server(self, server: HDDcoinServer):
+    def set_server(self, server: PecanRollsServer):
         self.server = server
         DNS_SERVERS_EMPTY: list = []
         # TODO: Perhaps use a different set of DNS seeders for wallets, to split the traffic.
@@ -363,7 +363,7 @@ class WalletNode:
             self.log,
         )
 
-    async def on_connect(self, peer: WSHDDcoinConnection):
+    async def on_connect(self, peer: WSPecanRollsConnection):
         if self.wallet_state_manager is None or self.backup_initialized is False:
             return None
         messages_peer_ids = await self._messages_to_resend()
@@ -408,7 +408,7 @@ class WalletNode:
                 return True
         return False
 
-    async def complete_blocks(self, header_blocks: List[HeaderBlock], peer: WSHDDcoinConnection):
+    async def complete_blocks(self, header_blocks: List[HeaderBlock], peer: WSPecanRollsConnection):
         if self.wallet_state_manager is None:
             return None
         header_block_records: List[HeaderBlockRecord] = []
@@ -458,7 +458,7 @@ class WalletNode:
                 else:
                     self.log.debug(f"Result: {result}")
 
-    async def new_peak_wallet(self, peak: wallet_protocol.NewPeakWallet, peer: WSHDDcoinConnection):
+    async def new_peak_wallet(self, peak: wallet_protocol.NewPeakWallet, peer: WSPecanRollsConnection):
         if self.wallet_state_manager is None:
             return
 
@@ -646,7 +646,7 @@ class WalletNode:
             self.log.info("Not performing sync, already caught up.")
             return None
 
-        peers: List[WSHDDcoinConnection] = self.server.get_full_node_connections()
+        peers: List[WSPecanRollsConnection] = self.server.get_full_node_connections()
         if len(peers) == 0:
             self.log.info("No peers to sync to")
             return None
@@ -669,7 +669,7 @@ class WalletNode:
 
     async def fetch_blocks_and_validate(
         self,
-        peer: WSHDDcoinConnection,
+        peer: WSPecanRollsConnection,
         height_start: uint32,
         height_end: uint32,
         fork_point_with_peak: Optional[uint32],
@@ -922,7 +922,7 @@ class WalletNode:
         return additional_coin_spends
 
     async def get_additions(
-        self, peer: WSHDDcoinConnection, block_i, additions: Optional[List[bytes32]], get_all_additions: bool = False
+        self, peer: WSPecanRollsConnection, block_i, additions: Optional[List[bytes32]], get_all_additions: bool = False
     ) -> Optional[List[Coin]]:
         if (additions is not None and len(additions) > 0) or get_all_additions:
             if get_all_additions:
@@ -956,7 +956,7 @@ class WalletNode:
             return []  # No added coins
 
     async def get_removals(
-        self, peer: WSHDDcoinConnection, block_i, additions, removals, request_all_removals=False
+        self, peer: WSPecanRollsConnection, block_i, additions, removals, request_all_removals=False
     ) -> Optional[List[Coin]]:
         assert self.wallet_state_manager is not None
         # Check if we need all removals
@@ -1007,7 +1007,7 @@ class WalletNode:
 
 
 async def wallet_next_block_check(
-    peer: WSHDDcoinConnection, potential_peek: uint32, blockchain: BlockchainInterface
+    peer: WSPecanRollsConnection, potential_peek: uint32, blockchain: BlockchainInterface
 ) -> bool:
     block_response = await peer.request_header_blocks(
         wallet_protocol.RequestHeaderBlocks(potential_peek, potential_peek)

@@ -49,7 +49,7 @@ class FarmerAPI:
     @api_request
     @peer_required
     async def new_proof_of_space(
-        self, new_proof_of_space: harvester_protocol.NewProofOfSpace, peer: ws.WSHDDcoinConnection
+        self, new_proof_of_space: harvester_protocol.NewProofOfSpace, peer: ws.WSPecanRollsConnection
     ):
         """
         This is a response from the harvester, for a NewChallenge. Here we check if the proof
@@ -511,5 +511,5 @@ class FarmerAPI:
 
     @api_request
     @peer_required
-    async def respond_plots(self, _: harvester_protocol.RespondPlots, peer: ws.WSHDDcoinConnection):
+    async def respond_plots(self, _: harvester_protocol.RespondPlots, peer: ws.WSPecanRollsConnection):
         self.farmer.log.warning(f"Respond plots came too late from: {peer.get_peer_logging()}")

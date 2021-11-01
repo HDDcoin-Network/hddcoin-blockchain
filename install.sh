@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Check current HDDcoin SSL version to prevent update on old SSL
+# Check current PecanRolls SSL version to prevent update on old SSL
 if [ -e ../.rolls/mainnet/config/ssl/ca/rolls_ca.crt ]; then
-	HDDCOIN_SSL_SERIAL=$(openssl x509 -noout -in ../.rolls/mainnet/config/ssl/ca/rolls_ca.crt -serial)
-	if [ $HDDCOIN_SSL_SERIAL = "serial=5C8A71239328650EB9FEF85CEC32BF779CA6A0C5" ]; then 
+	ROLLS_SSL_SERIAL=$(openssl x509 -noout -in ../.rolls/mainnet/config/ssl/ca/rolls_ca.crt -serial)
+	if [ $ROLLS_SSL_SERIAL = "serial=5C8A71239328650EB9FEF85CEC32BF779CA6A0C5" ]; then 
 		echo ""
 		echo "WARNING:"
-		echo "Old version of HDDcoin Blockchain SSL has been detected."
+		echo "Old version of PecanRolls Blockchain SSL has been detected."
 		echo "Please visit https://rolls.org/sslupdate/ for further instructions."
 		echo ""
 		echo "Exiting installer..."
@@ -34,7 +34,7 @@ fi
 if [ "$(uname -m)" = "armv7l" ]; then
   echo ""
 	echo "WARNING:"
-	echo "The HDDcoin Blockchain requires a 64 bit OS and this is 32 bit armv7l"
+	echo "The PecanRolls Blockchain requires a 64 bit OS and this is 32 bit armv7l"
 	echo "For more information, see"
 	echo "https://github.com/Strandedathome/rolls-blockchain/wiki/Raspberry-Pi"
 	echo "Exiting."
@@ -135,43 +135,9 @@ python -m pip install wheel
 python -m pip install --extra-index-url https://pypi.chia.net/simple/ miniupnpc==2.2.2
 python -m pip install -e . --extra-index-url https://pypi.chia.net/simple/
 
-echo "
-       ##############################################   
-     ################################################## 
-    ####    ####################################    ####
-    ####    #########                  #########    ####
-    #############        ##########        #############
-    ##########      ####################     ###########
-    ########     ##########################    #########
-    #######    ##############################    #######
-    #####    ##################################   ######
-    ####    ####################################   #####
-    ####   ###############        ###############   ####
-    ###   ##############            #############    ###
-    ###   #############     ####     #############   ###
-    ###   ############     ######     ############   ###
-    ###   #############    ######    #############   ###
-    ###   #############     ####     ############    ###
-    ####   ########  ####          ##############   ####
-    #####   ########      ######################   #####
-    ######   #########         ################   ######
-    #######    ########             #########    #######
-    ########     ########    ##        ####    #########
-    ###########     #######    #####         ###########
-    ##############         #     #####      ############
-    ##################             ######     ##########
-    #############################     ######     #######
-    ###############################      ##    #########
-    ##################################        ##########
-    ####    #############################   ####    ####
-    ####    ####################################    ####
-     ################################################## 
-       ##############################################         
-    "
-
-echo "HDDcoin blockchain install.sh complete."
+echo "PecanRolls blockchain install.sh complete! You've done it."
 echo ""
-echo "Visit our Website to learn more about HDDcoin:"
+echo "Visit our Website to learn more about PecanRolls:"
 echo "https://rolls.org"
 echo ""
 echo "Try the Quick Start Guide to running rolls-blockchain:"

@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr "(אופציונלי)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore HDDcoin’s blocks further? Check out <0>HDDcoin Explorer</0> built by an open source developer."
-msgstr "* רוצה לחקור את הבלוקים של HDDcoin עוד? בדוק את </0>HDDcoin Explorer<0> שנבנה על ידי מפתח קוד פתוח."
+msgid "*Want to explore PecanRolls’s blocks further? Check out <0>PecanRolls Explorer</0> built by an open source developer."
+msgstr "* רוצה לחקור את הבלוקים של PecanRolls עוד? בדוק את </0>PecanRolls Explorer<0> שנבנה על ידי מפתח קוד פתוח."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -48,8 +48,8 @@ msgstr "חלקה (Harvester) הוא שירות המופעל במחשב בו מא
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About HDDcoin Blockchain"
-msgstr "אודות HDDcoin Blockchain"
+msgid "About PecanRolls Blockchain"
+msgstr "אודות PecanRolls Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -230,7 +230,7 @@ msgid "Block VDF Iterations"
 msgstr "בלוק VDF איטרציות"
 
 #: src/components/block/Block.jsx:337
-msgid "Block at height {0} in the HDDcoin blockchain"
+msgid "Block at height {0} in the PecanRolls blockchain"
 msgstr "בלוק בגובה {0} בבלוקצ'יין צ'יה"
 
 #: src/components/fullNode/FullNode.jsx:331
@@ -325,15 +325,15 @@ msgid "Chat on KeyBase"
 msgstr "צ'אט ב-KeyBase"
 
 #: src/electron/main.tsx:419
-msgid "HDDcoin"
+msgid "PecanRolls"
 msgstr "צ'יה"
 
 #: src/electron/main.tsx:358
-msgid "HDDcoin Blockchain Wiki"
+msgid "PecanRolls Blockchain Wiki"
 msgstr "ארנק צ'יה"
 
 #: src/components/wallet/standard/WalletStandard.tsx:649
-msgid "HDDcoin Wallet"
+msgid "PecanRolls Wallet"
 msgstr "ארנק צ'יה"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
@@ -741,8 +741,8 @@ msgid "Edit Payout Instructions"
 msgstr "עריכת הוראות תשלום"
 
 #: src/components/wallet/WalletImport.tsx:147
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your HDDcoin wallet."
-msgstr "הקש את 24 מילות ה-Mnemonic Seed ששמרת על מנת לשחזר את ארנק ה-HDDcoin שלך."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your PecanRolls wallet."
+msgstr "הקש את 24 מילות ה-Mnemonic Seed ששמרת על מנת לשחזר את ארנק ה-PecanRolls שלך."
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
@@ -756,7 +756,7 @@ msgstr "שגיאה"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
 msgid "Error: Cannot send rolls to coloured address. Please enter a rolls address."
-msgstr "שגיאה: לא ניתן לשלוח HDDcoin לכתובת הצבעונית הזו. אנא הקש כתובת HDDcoin."
+msgstr "שגיאה: לא ניתן לשלוח PecanRolls לכתובת הצבעונית הזו. אנא הקש כתובת PecanRolls."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1583,8 +1583,8 @@ msgid "Plots Passed Filter"
 msgstr "פלוטים שעברו את המסנן"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn HDDcoin. <0>Learn more</0>"
-msgstr "לפלוטים מוקצה שטח על הדיסק הקשיח אשר משמש לקצירה ולהרוויח HDDcoin <0>למד עוד</0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn PecanRolls. <0>Learn more</0>"
+msgstr "לפלוטים מוקצה שטח על הדיסק הקשיח אשר משמש לקצירה ולהרוויח PecanRolls <0>למד עוד</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -2050,7 +2050,7 @@ msgstr "אורך משיכה למרווח (מספר בלוקים)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (rolls per interval): {0}"
-msgstr "הגבלת משיכה (HDDcoin לכל מרווח) {0}"
+msgstr "הגבלת משיכה (PecanRolls לכל מרווח) {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -2098,8 +2098,8 @@ msgstr "מצב:"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the HDDcoin blockchain"
-#~ msgstr "Sub Block at height {0} in the HDDcoin blockchain"
+#~ msgid "Sub Block at height {0} in the PecanRolls blockchain"
+#~ msgstr "Sub Block at height {0} in the PecanRolls blockchain"
 
 #: src/components/wallet/did/WalletDID.tsx:886
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:347
@@ -2248,8 +2248,8 @@ msgid "This feature is available only from the GUI."
 msgstr "האפשרות הזו זמינה רק דרך הממשק GUI."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of HDDcoin that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and HDDcoin that you have just spent but is not yet in the blockchain."
-msgstr "זהו סכום ה-HDDcoin שבהם תוכל להשתמש כעת לביצוע עסקאות. זה לא כולל תגמולים בהמתנה, עסקאות נכנסות בהמתנה ומטבעות HDDcoin שכבר משכת אבל עוד לא הופיע ב-Blockchain."
+msgid "This is the amount of PecanRolls that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and PecanRolls that you have just spent but is not yet in the blockchain."
+msgstr "זהו סכום ה-PecanRolls שבהם תוכל להשתמש כעת לביצוע עסקאות. זה לא כולל תגמולים בהמתנה, עסקאות נכנסות בהמתנה ומטבעות PecanRolls שכבר משכת אבל עוד לא הופיע ב-Blockchain."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2314,8 +2314,8 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "החלפה זו נכללת ב-Blockchain בגובה הבלוק הזה"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of HDDcoin is no longer compatible with the blockchain and can not safely farm."
-msgstr "גרסה זו של HDDcoin כבר אינה תואמת את ה-Blockchain ואינה בטוחה עוד עבור החווה שלך."
+msgid "This version of PecanRolls is no longer compatible with the blockchain and can not safely farm."
+msgstr "גרסה זו של PecanRolls כבר אינה תואמת את ה-Blockchain ואינה בטוחה עוד עבור החווה שלך."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2339,8 +2339,8 @@ msgstr "עבור"
 msgid "Total Balance"
 msgstr "יתרה כוללת"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:15
-#~ msgid "Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:15
+#~ msgid "Total PecanRolls Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2553,8 +2553,8 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "רוצה להצטרף לבריכה (Pool)? צור/י חלקת NFT"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more HDDcoin? Add more plots to your farm."
-msgstr "רוצה להרוויח עוד HDDcoin? הוסף/י עוד פלוטים לחווה שלך."
+msgid "Want to earn more PecanRolls? Add more plots to your farm."
+msgstr "רוצה להרוויח עוד PecanRolls? הוסף/י עוד פלוטים לחווה שלך."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2581,8 +2581,8 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "המשקל הוא הקושי הכולל הנוסף של כל בלוקי המשנה כולל זה"
 
 #: src/components/selectKey/SelectKey.tsx:141
-msgid "Welcome to HDDcoin. Please log in with an existing key, or create a new key."
-msgstr "ברוכים הבאים ל-HDDcoin. בבקשה התחבר עם מפתח קיים, או צור/י לעצמך מפתח חדש."
+msgid "Welcome to PecanRolls. Please log in with an existing key, or create a new key."
+msgstr "ברוכים הבאים ל-PecanRolls. בבקשה התחבר עם מפתח קיים, או צור/י לעצמך מפתח חדש."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2652,8 +2652,8 @@ msgid "You need to claim your rewards first"
 msgstr "עליך לקבל את הפרסים קודם"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the HDDcoin application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the HDDcoin application as this version will stop working soon!"
+#~ msgid "You need to upgrade the PecanRolls application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the PecanRolls application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -2744,8 +2744,8 @@ msgstr "{0} נקודות {1} - {2} שעות שחלפו"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} תגלומי בלוק"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:29
-msgid "{currencyCode} Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:29
+msgid "{currencyCode} Total PecanRolls Farmed"
 msgstr "{currencyCode} סכום צ'יה כולל שנקצר"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28

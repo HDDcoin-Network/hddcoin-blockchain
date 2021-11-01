@@ -34,15 +34,15 @@ pip install pyinstaller==4.5
 pip install setuptools_scm
 
 Write-Output "   ---"
-Write-Output "Get HDDCOIN_INSTALLER_VERSION"
-# The environment variable HDDCOIN_INSTALLER_VERSION needs to be defined
-$env:HDDCOIN_INSTALLER_VERSION = python .\build_scripts\installer-version.py -win
+Write-Output "Get ROLLS_INSTALLER_VERSION"
+# The environment variable ROLLS_INSTALLER_VERSION needs to be defined
+$env:ROLLS_INSTALLER_VERSION = python .\build_scripts\installer-version.py -win
 
-if (-not (Test-Path env:HDDCOIN_INSTALLER_VERSION)) {
-  $env:HDDCOIN_INSTALLER_VERSION = '0.0.0'
-  Write-Output "WARNING: No environment variable HDDCOIN_INSTALLER_VERSION set. Using 0.0.0"
+if (-not (Test-Path env:ROLLS_INSTALLER_VERSION)) {
+  $env:ROLLS_INSTALLER_VERSION = '0.0.0'
+  Write-Output "WARNING: No environment variable ROLLS_INSTALLER_VERSION set. Using 0.0.0"
   }
-Write-Output "HDDcoin Version is: $env:HDDCOIN_INSTALLER_VERSION"
+Write-Output "PecanRolls Version is: $env:ROLLS_INSTALLER_VERSION"
 Write-Output "   ---"
 
 Write-Output "   ---"
@@ -102,8 +102,8 @@ Write-Output "Increase the stack for rolls command for (rolls plots create) chia
 editbin.exe /STACK:8000000 daemon\rolls.exe
 Write-Output "   ---"
 
-$packageVersion = "$env:HDDCOIN_INSTALLER_VERSION"
-$packageName = "HDDcoin-$packageVersion"
+$packageVersion = "$env:ROLLS_INSTALLER_VERSION"
+$packageName = "PecanRolls-$packageVersion"
 
 Write-Output "packageName is $packageName"
 
@@ -111,14 +111,14 @@ Write-Output "   ---"
 Write-Output "fix version in package.json"
 choco install jq
 cp package.json package.json.orig
-jq --arg VER "$env:HDDCOIN_INSTALLER_VERSION" '.version=$VER' package.json > temp.json
+jq --arg VER "$env:ROLLS_INSTALLER_VERSION" '.version=$VER' package.json > temp.json
 rm package.json
 mv temp.json package.json
 Write-Output "   ---"
 
 Write-Output "   ---"
 Write-Output "electron-packager"
-electron-packager . HDDcoin --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\rolls.ico --app-version=$packageVersion
+electron-packager . PecanRolls --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\rolls.ico --app-version=$packageVersion
 Write-Output "   ---"
 
 Write-Output "   ---"
@@ -132,8 +132,8 @@ If ($env:HAS_SECRET) {
    Write-Output "   ---"
    Write-Output "Add timestamp and verify signature"
    Write-Output "   ---"
-   signtool.exe timestamp /v /t http://timestamp.comodoca.com/ .\release-builds\windows-installer\HDDcoinSetup-$packageVersion.exe
-   signtool.exe verify /v /pa .\release-builds\windows-installer\HDDcoinSetup-$packageVersion.exe
+   signtool.exe timestamp /v /t http://timestamp.comodoca.com/ .\release-builds\windows-installer\PecanRollsSetup-$packageVersion.exe
+   signtool.exe verify /v /pa .\release-builds\windows-installer\PecanRollsSetup-$packageVersion.exe
    }   Else    {
    Write-Output "Skipping timestamp and verify signatures - no authorization to install certificates"
 }

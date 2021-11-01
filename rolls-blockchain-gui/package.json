@@ -1,8 +1,8 @@
 {
     "name": "rolls-blockchain",
-    "author": "HDDcoin Network <hello@rolls.org> (https://rolls.org/)",
-    "description": "GUI for HDDcoin Blockchain",
-    "productName": "HDDcoin Blockchain",
+    "author": "PecanRolls Network <hello@rolls.org> (https://rolls.org/)",
+    "description": "GUI for PecanRolls Blockchain",
+    "productName": "PecanRolls Blockchain",
     "private": true,
     "homepage": "./",
     "main": "build/electron/main.js",

@@ -16,7 +16,7 @@ except ImportError:
 
 from rolls.rpc.rpc_server import start_rpc_server
 from rolls.server.outbound_message import NodeType
-from rolls.server.server import HDDcoinServer
+from rolls.server.server import PecanRollsServer
 from rolls.server.upnp import UPnP
 from rolls.types.peer_info import PeerInfo
 from rolls.util.rolls_logging import initialize_logging
@@ -80,7 +80,7 @@ class Service:
         inbound_rlp = self.config.get("inbound_rate_limit_percent")
         outbound_rlp = self.config.get("outbound_rate_limit_percent")
         assert inbound_rlp and outbound_rlp
-        self._server = HDDcoinServer(
+        self._server = PecanRollsServer(
             advertised_port,
             node,
             peer_api,
@@ -226,7 +226,7 @@ class Service:
 
         self._log.info("Waiting for socket to be closed (if opened)")
 
-        self._log.info("Waiting for HDDcoinServer to be closed")
+        self._log.info("Waiting for PecanRollsServer to be closed")
         await self._server.await_closed()
 
         if self._rpc_close_task:

@@ -10,7 +10,7 @@ if [ -z "$VIRTUAL_ENV" ]; then
 fi
 
 if [ "$(id -u)" = 0 ]; then
-  echo "The HDDcoin Blockchain GUI can not be installed or run by the root user."
+  echo "The PecanRolls Blockchain GUI can not be installed or run by the root user."
 	exit 1
 fi
 
@@ -111,6 +111,6 @@ else
 fi
 
 echo ""
-echo "HDDcoin blockchain install-gui.sh completed."
+echo "PecanRolls blockchain install-gui.sh completed."
 echo ""
 echo "Type 'cd rolls-blockchain-gui' and then 'npm run electron &' to start the GUI."

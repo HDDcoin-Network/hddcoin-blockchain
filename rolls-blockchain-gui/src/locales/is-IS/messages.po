@@ -23,7 +23,7 @@ msgid "(Optional)"
 msgstr "(Valfrjálst)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore HDDcoin’s blocks further? Check out <0>HDDcoin Explorer</0> built by an open source developer."
+msgid "*Want to explore PecanRolls’s blocks further? Check out <0>PecanRolls Explorer</0> built by an open source developer."
 msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
@@ -48,7 +48,7 @@ msgstr ""
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About HDDcoin Blockchain"
+msgid "About PecanRolls Blockchain"
 msgstr ""
 
 #: src/components/trading/ViewOffer.jsx:74
@@ -230,7 +230,7 @@ msgid "Block VDF Iterations"
 msgstr ""
 
 #: src/components/block/Block.jsx:337
-msgid "Block at height {0} in the HDDcoin blockchain"
+msgid "Block at height {0} in the PecanRolls blockchain"
 msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:331
@@ -325,15 +325,15 @@ msgid "Chat on KeyBase"
 msgstr ""
 
 #: src/electron/main.tsx:419
-msgid "HDDcoin"
+msgid "PecanRolls"
 msgstr ""
 
 #: src/electron/main.tsx:358
-msgid "HDDcoin Blockchain Wiki"
+msgid "PecanRolls Blockchain Wiki"
 msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:649
-msgid "HDDcoin Wallet"
+msgid "PecanRolls Wallet"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
@@ -741,7 +741,7 @@ msgid "Edit Payout Instructions"
 msgstr "Breyta Útborgunar Leiðbeiningum"
 
 #: src/components/wallet/WalletImport.tsx:147
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your HDDcoin wallet."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your PecanRolls wallet."
 msgstr ""
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
@@ -1583,7 +1583,7 @@ msgid "Plots Passed Filter"
 msgstr ""
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn HDDcoin. <0>Learn more</0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn PecanRolls. <0>Learn more</0>"
 msgstr ""
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
@@ -2097,8 +2097,8 @@ msgstr ""
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the HDDcoin blockchain"
-#~ msgstr "Sub Block at height {0} in the HDDcoin blockchain"
+#~ msgid "Sub Block at height {0} in the PecanRolls blockchain"
+#~ msgstr "Sub Block at height {0} in the PecanRolls blockchain"
 
 #: src/components/wallet/did/WalletDID.tsx:886
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:347
@@ -2247,7 +2247,7 @@ msgid "This feature is available only from the GUI."
 msgstr ""
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of HDDcoin that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and HDDcoin that you have just spent but is not yet in the blockchain."
+msgid "This is the amount of PecanRolls that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and PecanRolls that you have just spent but is not yet in the blockchain."
 msgstr ""
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
@@ -2313,7 +2313,7 @@ msgid "This trade was included on blockchain at this block height"
 msgstr ""
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of HDDcoin is no longer compatible with the blockchain and can not safely farm."
+msgid "This version of PecanRolls is no longer compatible with the blockchain and can not safely farm."
 msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:92
@@ -2338,8 +2338,8 @@ msgstr ""
 msgid "Total Balance"
 msgstr ""
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:15
-#~ msgid "Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:15
+#~ msgid "Total PecanRolls Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2552,7 +2552,7 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "Viltu taka þátt í Pool? Búðu til Plot NFT"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more HDDcoin? Add more plots to your farm."
+msgid "Want to earn more PecanRolls? Add more plots to your farm."
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
@@ -2580,7 +2580,7 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr ""
 
 #: src/components/selectKey/SelectKey.tsx:141
-msgid "Welcome to HDDcoin. Please log in with an existing key, or create a new key."
+msgid "Welcome to PecanRolls. Please log in with an existing key, or create a new key."
 msgstr ""
 
 #: src/components/wallet/WalletAdd.tsx:66
@@ -2651,8 +2651,8 @@ msgid "You need to claim your rewards first"
 msgstr "Þú þarft að sækja verðlaunin þín fyrst"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the HDDcoin application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the HDDcoin application as this version will stop working soon!"
+#~ msgid "You need to upgrade the PecanRolls application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the PecanRolls application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -2743,8 +2743,8 @@ msgstr "{0} stig {1} - {2} klukkutímum síðan"
 msgid "{currencyCode} Block Rewards"
 msgstr ""
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:29
-msgid "{currencyCode} Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:29
+msgid "{currencyCode} Total PecanRolls Farmed"
 msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28

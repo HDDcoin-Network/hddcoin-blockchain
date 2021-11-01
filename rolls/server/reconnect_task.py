@@ -1,11 +1,11 @@
 import asyncio
 import socket
 
-from rolls.server.server import HDDcoinServer
+from rolls.server.server import PecanRollsServer
 from rolls.types.peer_info import PeerInfo
 
 
-def start_reconnect_task(server: HDDcoinServer, peer_info_arg: PeerInfo, log, auth: bool):
+def start_reconnect_task(server: PecanRollsServer, peer_info_arg: PeerInfo, log, auth: bool):
     """
     Start a background task that checks connection and reconnects periodically to a peer.
     """

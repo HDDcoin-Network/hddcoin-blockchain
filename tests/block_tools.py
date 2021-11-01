@@ -1296,7 +1296,7 @@ def get_challenges(
 
 
 def get_plot_dir() -> Path:
-    cache_path = Path(os.path.expanduser(os.getenv("HDDCOIN_ROOT", "~/.rolls/"))) / "test-plots"
+    cache_path = Path(os.path.expanduser(os.getenv("ROLLS_ROOT", "~/.rolls/"))) / "test-plots"
     mkdir(cache_path)
     return cache_path
 

@@ -181,7 +181,7 @@ export default function SelectKey() {
               </Typography>
               <Typography variant="subtitle1">
                 <Trans>
-                  Welcome to HDDcoin. Please log in with an existing key, or create
+                  Welcome to PecanRolls. Please log in with an existing key, or create
                   a new key.
                 </Trans>
               </Typography>

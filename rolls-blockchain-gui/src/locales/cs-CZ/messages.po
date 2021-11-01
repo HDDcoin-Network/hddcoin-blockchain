@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr "(Volitelné)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore HDDcoin’s blocks further? Check out <0>HDDcoin Explorer</0> built by an open source developer."
-msgstr "*Chcete se o HDDcoin blocích dozvědět více? Podívej se na <0>HDDcoin Explorer</0> vytvořený open source vývojářem."
+msgid "*Want to explore PecanRolls’s blocks further? Check out <0>PecanRolls Explorer</0> built by an open source developer."
+msgstr "*Chcete se o PecanRolls blocích dozvědět více? Podívej se na <0>PecanRolls Explorer</0> vytvořený open source vývojářem."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -48,8 +48,8 @@ msgstr "Tzv. harvester (sklízeč) je služba provozovaná na počítači, kde j
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About HDDcoin Blockchain"
-msgstr "O HDDcoin Blockchainu"
+msgid "About PecanRolls Blockchain"
+msgstr "O PecanRolls Blockchainu"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -234,8 +234,8 @@ msgid "Block VDF Iterations"
 msgstr "VDF iterace bloku"
 
 #: src/components/block/Block.jsx:337
-msgid "Block at height {0} in the HDDcoin blockchain"
-msgstr "Blok v HDDcoin blockchainu ve výšce {0}"
+msgid "Block at height {0} in the PecanRolls blockchain"
+msgstr "Blok v PecanRolls blockchainu ve výšce {0}"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -340,16 +340,16 @@ msgid "Chat on KeyBase"
 msgstr "Chat na KeyBase"
 
 #: src/electron/main.tsx:419
-msgid "HDDcoin"
-msgstr "HDDcoin"
+msgid "PecanRolls"
+msgstr "PecanRolls"
 
 #: src/electron/main.tsx:358
-msgid "HDDcoin Blockchain Wiki"
-msgstr "HDDcoin Blockchain Wiki"
+msgid "PecanRolls Blockchain Wiki"
+msgstr "PecanRolls Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:652
-msgid "HDDcoin Wallet"
-msgstr "HDDcoin peněženka"
+msgid "PecanRolls Wallet"
+msgstr "PecanRolls peněženka"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -798,8 +798,8 @@ msgid "Enter a strong passphrase to secure your keys:"
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:146
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your HDDcoin wallet."
-msgstr "Zadejte 24 slov, které jste si poznamenali při zakládání vaší HDDcoin peněženky."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your PecanRolls wallet."
+msgstr "Zadejte 24 slov, které jste si poznamenali při zakládání vaší PecanRolls peněženky."
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:115
 #: src/components/wallet/EnterPassphrasePrompt.tsx:115
@@ -818,7 +818,7 @@ msgstr "Chyba"
 
 #: src/components/wallet/standard/WalletStandard.tsx:460
 msgid "Error: Cannot send rolls to coloured address. Please enter a rolls address."
-msgstr "Chyba: HDDcoin nelze odeslat na barevnou adresu. Zadejte prosím běžnou HDDcoin adresu."
+msgstr "Chyba: PecanRolls nelze odeslat na barevnou adresu. Zadejte prosím běžnou PecanRolls adresu."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1745,8 +1745,8 @@ msgid "Plots Passed Filter"
 msgstr "Pole vyhovující filtru"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn HDDcoin. <0>Learn more</0>"
-msgstr "Pole jsou soubory, které můžete vytvořit na volném místě svého disku a pomocí kterých můžete farmařit HDDcoin. <0>Zjistit více</0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn PecanRolls. <0>Learn more</0>"
+msgstr "Pole jsou soubory, které můžete vytvořit na volném místě svého disku a pomocí kterých můžete farmařit PecanRolls. <0>Zjistit více</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -2298,8 +2298,8 @@ msgstr "Stav:"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the HDDcoin blockchain"
-#~ msgstr "Sub Block at height {0} in the HDDcoin blockchain"
+#~ msgid "Sub Block at height {0} in the PecanRolls blockchain"
+#~ msgstr "Sub Block at height {0} in the PecanRolls blockchain"
 
 #: src/components/app/AppPassPrompt.tsx:199
 #: src/components/wallet/did/WalletDID.tsx:886
@@ -2457,8 +2457,8 @@ msgid "This feature is available only from the GUI."
 msgstr "Tato funkce je dostupná pouze v grafickém rozhraní."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of HDDcoin that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and HDDcoin that you have just spent but is not yet in the blockchain."
-msgstr "HDDcoin zůstatek využitelný pro transakce. Neobsahuje nezpracované odměny za farmaření, nezpracované příchozí transakce a ani převody, které ještě nebyly zaneseny do blockchainu."
+msgid "This is the amount of PecanRolls that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and PecanRolls that you have just spent but is not yet in the blockchain."
+msgstr "PecanRolls zůstatek využitelný pro transakce. Neobsahuje nezpracované odměny za farmaření, nezpracované příchozí transakce a ani převody, které ještě nebyly zaneseny do blockchainu."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2478,7 +2478,7 @@ msgstr "Čas vytvoření bloku farmářem ještě před jeho dokončením důkaz
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
 msgid "This is the total amount of rolls in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Celkový počet HDDcoin v blockchainu při aktuální sub bloku kontrolovaný vaším privátním klíčem. Zahrnuje zmrazené odměny z farmaření ale nezahrnuje čekající příchozí ani odchozí transakce."
+msgstr "Celkový počet PecanRolls v blockchainu při aktuální sub bloku kontrolovaný vaším privátním klíčem. Zahrnuje zmrazené odměny z farmaření ale nezahrnuje čekající příchozí ani odchozí transakce."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2523,8 +2523,8 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "Tento obchod byl zahrnut do blockchainu v této výšce bloku"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of HDDcoin is no longer compatible with the blockchain and can not safely farm."
-msgstr "Tato verze HDDcoin již není kompatibilní s blockchainem a nemůže bezpečně farmit."
+msgid "This version of PecanRolls is no longer compatible with the blockchain and can not safely farm."
+msgstr "Tato verze PecanRolls již není kompatibilní s blockchainem a nemůže bezpečně farmit."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2548,8 +2548,8 @@ msgstr "Komu"
 msgid "Total Balance"
 msgstr "Celkový zůstatek"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:15
-#~ msgid "Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:15
+#~ msgid "Total PecanRolls Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2770,8 +2770,8 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "Chceš se připojit k poolu? Vytvoř NFT pole"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more HDDcoin? Add more plots to your farm."
-msgstr "Chcete získat více HDDcoin? Přidejte další pole do vaší farmy."
+msgid "Want to earn more PecanRolls? Add more plots to your farm."
+msgstr "Chcete získat více PecanRolls? Přidejte další pole do vaší farmy."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2799,8 +2799,8 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "Váha je celková přidaná obtížnost všech dílčích bloků až po tento blok včetně"
 
 #: src/components/selectKey/SelectKey.tsx:183
-msgid "Welcome to HDDcoin. Please log in with an existing key, or create a new key."
-msgstr "Vítejte v HDDcoin. Přihlaste se pomocí existujícího klíče, nebo si vytvořte nový klíč."
+msgid "Welcome to PecanRolls. Please log in with an existing key, or create a new key."
+msgstr "Vítejte v PecanRolls. Přihlaste se pomocí existujícího klíče, nebo si vytvořte nový klíč."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2874,8 +2874,8 @@ msgid "You need to claim your rewards first"
 msgstr "Nejprve musíte zažádat o své odměny"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the HDDcoin application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the HDDcoin application as this version will stop working soon!"
+#~ msgid "You need to upgrade the PecanRolls application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the PecanRolls application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -2998,8 +2998,8 @@ msgstr "{0} bodů {1} - před {2} hodinami"
 msgid "{currencyCode} Block Rewards"
 msgstr "Blokové odměny {currencyCode}"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:29
-msgid "{currencyCode} Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:29
+msgid "{currencyCode} Total PecanRolls Farmed"
 msgstr "Celkem nafarmařeno {currencyCode}"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28

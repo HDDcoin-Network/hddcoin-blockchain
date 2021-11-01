@@ -12,9 +12,9 @@ from rolls.wallet.transaction_record import TransactionRecord
 
 class WalletRpcClient(RpcClient):
     """
-    Client to HDDcoin RPC, connects to a local wallet. Uses HTTP/JSON, and converts back from
+    Client to PecanRolls RPC, connects to a local wallet. Uses HTTP/JSON, and converts back from
     JSON into native python objects before returning. All api calls use POST requests.
-    Note that this is not the same as the peer protocol, or wallet protocol (which run HDDcoin's
+    Note that this is not the same as the peer protocol, or wallet protocol (which run PecanRolls's
     protocol on top of TCP), it's a separate protocol on top of HTTP that provides easy access
     to the full node.
     """

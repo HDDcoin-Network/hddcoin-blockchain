@@ -22,7 +22,7 @@ from rolls.protocols.shared_protocol import protocol_version
 from rolls.server.introducer_peers import IntroducerPeers
 from rolls.server.outbound_message import Message, NodeType
 from rolls.server.ssl_context import private_ssl_paths, public_ssl_paths
-from rolls.server.ws_connection import WSHDDcoinConnection
+from rolls.server.ws_connection import WSPecanRollsConnection
 from rolls.types.blockchain_format.sized_bytes import bytes32
 from rolls.types.peer_info import PeerInfo
 from rolls.util.errors import Err, ProtocolError
@@ -79,7 +79,7 @@ def ssl_context_for_client(
     return ssl_context
 
 
-class HDDcoinServer:
+class PecanRollsServer:
     def __init__(
         self,
         port: int,
@@ -99,10 +99,10 @@ class HDDcoinServer:
     ):
         # Keeps track of all connections to and from this node.
         logging.basicConfig(level=logging.DEBUG)
-        self.all_connections: Dict[bytes32, WSHDDcoinConnection] = {}
+        self.all_connections: Dict[bytes32, WSPecanRollsConnection] = {}
         self.tasks: Set[asyncio.Task] = set()
 
-        self.connection_by_type: Dict[NodeType, Dict[bytes32, WSHDDcoinConnection]] = {
+        self.connection_by_type: Dict[NodeType, Dict[bytes32, WSPecanRollsConnection]] = {
             NodeType.FULL_NODE: {},
             NodeType.WALLET: {},
             NodeType.HARVESTER: {},
@@ -187,7 +187,7 @@ class HDDcoinServer:
         """
         while True:
             await asyncio.sleep(600)
-            to_remove: List[WSHDDcoinConnection] = []
+            to_remove: List[WSPecanRollsConnection] = []
             for connection in self.all_connections.values():
                 if self._local_type == NodeType.FULL_NODE and connection.connection_type == NodeType.FULL_NODE:
                     if time.time() - connection.last_message_time > 1800:
@@ -252,9 +252,9 @@ class HDDcoinServer:
         peer_id = bytes32(der_cert.fingerprint(hashes.SHA256()))
         if peer_id == self.node_id:
             return ws
-        connection: Optional[WSHDDcoinConnection] = None
+        connection: Optional[WSPecanRollsConnection] = None
         try:
-            connection = WSHDDcoinConnection(
+            connection = WSPecanRollsConnection(
                 self._local_type,
                 ws,
                 self._port,
@@ -320,7 +320,7 @@ class HDDcoinServer:
         await close_event.wait()
         return ws
 
-    async def connection_added(self, connection: WSHDDcoinConnection, on_connect=None):
+    async def connection_added(self, connection: WSPecanRollsConnection, on_connect=None):
         # If we already had a connection to this peer_id, close the old one. This is secure because peer_ids are based
         # on TLS public keys
         if connection.peer_node_id in self.all_connections:
@@ -372,7 +372,7 @@ class HDDcoinServer:
                 self.rolls_ca_crt_path, self.rolls_ca_key_path, self.p2p_crt_path, self.p2p_key_path
             )
         session = None
-        connection: Optional[WSHDDcoinConnection] = None
+        connection: Optional[WSPecanRollsConnection] = None
         try:
             # Crawler/DNS introducer usually uses a lower timeout than the default
             timeout_value = (
@@ -410,7 +410,7 @@ class HDDcoinServer:
             if peer_id == self.node_id:
                 raise RuntimeError(f"Trying to connect to a peer ({target_node}) with the same peer_id: {peer_id}")
 
-            connection = WSHDDcoinConnection(
+            connection = WSPecanRollsConnection(
                 self._local_type,
                 ws,
                 self._port,
@@ -468,7 +468,7 @@ class HDDcoinServer:
 
         return False
 
-    def connection_closed(self, connection: WSHDDcoinConnection, ban_time: int):
+    def connection_closed(self, connection: WSPecanRollsConnection, ban_time: int):
         if is_localhost(connection.peer_host) and ban_time != 0:
             self.log.warning(f"Trying to ban localhost for {ban_time}, but will not ban")
             ban_time = 0
@@ -517,7 +517,7 @@ class HDDcoinServer:
             if payload_inc is None or connection_inc is None:
                 continue
 
-            async def api_call(full_message: Message, connection: WSHDDcoinConnection, task_id):
+            async def api_call(full_message: Message, connection: WSPecanRollsConnection, task_id):
                 start_time = time.time()
                 try:
                     if self.received_message_callback is not None:
@@ -604,7 +604,7 @@ class HDDcoinServer:
         self,
         messages: List[Message],
         node_type: NodeType,
-        origin_peer: WSHDDcoinConnection,
+        origin_peer: WSPecanRollsConnection,
     ):
         for node_id, connection in self.all_connections.items():
             if node_id == origin_peer.peer_node_id:
@@ -647,7 +647,7 @@ class HDDcoinServer:
             for message in messages:
                 await connection.send_message(message)
 
-    def get_outgoing_connections(self) -> List[WSHDDcoinConnection]:
+    def get_outgoing_connections(self) -> List[WSPecanRollsConnection]:
         result = []
         for _, connection in self.all_connections.items():
             if connection.is_outbound:
@@ -655,7 +655,7 @@ class HDDcoinServer:
 
         return result
 
-    def get_full_node_outgoing_connections(self) -> List[WSHDDcoinConnection]:
+    def get_full_node_outgoing_connections(self) -> List[WSPecanRollsConnection]:
         result = []
         connections = self.get_full_node_connections()
         for connection in connections:
@@ -663,10 +663,10 @@ class HDDcoinServer:
                 result.append(connection)
         return result
 
-    def get_full_node_connections(self) -> List[WSHDDcoinConnection]:
+    def get_full_node_connections(self) -> List[WSPecanRollsConnection]:
         return list(self.connection_by_type[NodeType.FULL_NODE].values())
 
-    def get_connections(self, node_type: Optional[NodeType] = None) -> List[WSHDDcoinConnection]:
+    def get_connections(self, node_type: Optional[NodeType] = None) -> List[WSPecanRollsConnection]:
         result = []
         for _, connection in self.all_connections.items():
             if node_type is None or connection.connection_type == node_type:
@@ -753,7 +753,7 @@ class HDDcoinServer:
             return inbound_count < self.config["max_inbound_timelord"]
         return True
 
-    def is_trusted_peer(self, peer: WSHDDcoinConnection, trusted_peers: Dict) -> bool:
+    def is_trusted_peer(self, peer: WSPecanRollsConnection, trusted_peers: Dict) -> bool:
         if trusted_peers is None:
             return False
         for trusted_peer in trusted_peers:

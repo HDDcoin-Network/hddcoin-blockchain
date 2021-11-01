@@ -2,7 +2,7 @@ $ErrorActionPreference = "Stop"
 
 if ([Environment]::Is64BitOperatingSystem -eq $false)
 {
-    Write-Output "HDDcoin requires a 64-bit Windows installation"
+    Write-Output "PecanRolls requires a 64-bit Windows installation"
     Exit 1
 }
 
@@ -51,7 +51,7 @@ pip install --extra-index-url https://pypi.chia.net/simple/ miniupnpc==2.2.2
 pip install --editable . --extra-index-url https://pypi.chia.net/simple/
 
 Write-Output ""
-Write-Output "HDDcoin blockchain .\Install.ps1 complete."
+Write-Output "PecanRolls blockchain .\Install.ps1 complete."
 Write-Output "For assistance join us on Keybase in the #support chat channel:"
 Write-Output "https://keybase.io/team/rolls_network.public"
 Write-Output ""

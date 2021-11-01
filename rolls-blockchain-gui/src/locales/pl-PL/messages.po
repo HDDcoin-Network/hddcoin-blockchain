@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore HDDcoin’s blocks further? Check out <0>HDDcoin Explorer</0> built by an open source developer."
-msgstr "*Chcesz dowiedzieć się więcej o blokchainie HDDcoin? Sprawdź <0>HDDcoin Explorer</0> zbudowany przez programistę otwartego oprogramowania."
+msgid "*Want to explore PecanRolls’s blocks further? Check out <0>PecanRolls Explorer</0> built by an open source developer."
+msgstr "*Chcesz dowiedzieć się więcej o blokchainie PecanRolls? Sprawdź <0>PecanRolls Explorer</0> zbudowany przez programistę otwartego oprogramowania."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -48,8 +48,8 @@ msgstr "Żniwiarz to usługa pracująca na maszynie przechowywującej działki (
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About HDDcoin Blockchain"
-msgstr "O blockchainie HDDcoin"
+msgid "About PecanRolls Blockchain"
+msgstr "O blockchainie PecanRolls"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -234,8 +234,8 @@ msgid "Block VDF Iterations"
 msgstr "Powtórzenia bloku VDF"
 
 #: src/components/block/Block.jsx:337
-msgid "Block at height {0} in the HDDcoin blockchain"
-msgstr "Blok na poziomie {0} w blockchainie HDDcoin"
+msgid "Block at height {0} in the PecanRolls blockchain"
+msgstr "Blok na poziomie {0} w blockchainie PecanRolls"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -340,16 +340,16 @@ msgid "Chat on KeyBase"
 msgstr "Czat na KeyBase"
 
 #: src/electron/main.tsx:419
-msgid "HDDcoin"
-msgstr "HDDcoin"
+msgid "PecanRolls"
+msgstr "PecanRolls"
 
 #: src/electron/main.tsx:358
-msgid "HDDcoin Blockchain Wiki"
-msgstr "Wiki Blockchainu HDDcoin"
+msgid "PecanRolls Blockchain Wiki"
+msgstr "Wiki Blockchainu PecanRolls"
 
 #: src/components/wallet/standard/WalletStandard.tsx:652
-msgid "HDDcoin Wallet"
-msgstr "Portfel HDDcoin"
+msgid "PecanRolls Wallet"
+msgstr "Portfel PecanRolls"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -798,8 +798,8 @@ msgid "Enter a strong passphrase to secure your keys:"
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:146
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your HDDcoin wallet."
-msgstr "Podaj ziarno mnemoniczne składające się z 24 słów, aby odzyskać portfel HDDcoin."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your PecanRolls wallet."
+msgstr "Podaj ziarno mnemoniczne składające się z 24 słów, aby odzyskać portfel PecanRolls."
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:115
 #: src/components/wallet/EnterPassphrasePrompt.tsx:115
@@ -1745,8 +1745,8 @@ msgid "Plots Passed Filter"
 msgstr "Działki które przeszły przez filtr"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn HDDcoin. <0>Learn more</0>"
-msgstr "Działki to przestrzeń na twoim twardym dysku wykorzystywana do farmienia i zarabiania HDDcoin. <0>Dowiedz się więcej</0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn PecanRolls. <0>Learn more</0>"
+msgstr "Działki to przestrzeń na twoim twardym dysku wykorzystywana do farmienia i zarabiania PecanRolls. <0>Dowiedz się więcej</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -2298,8 +2298,8 @@ msgstr "Stan:"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the HDDcoin blockchain"
-#~ msgstr "Sub Block at height {0} in the HDDcoin blockchain"
+#~ msgid "Sub Block at height {0} in the PecanRolls blockchain"
+#~ msgstr "Sub Block at height {0} in the PecanRolls blockchain"
 
 #: src/components/app/AppPassPrompt.tsx:199
 #: src/components/wallet/did/WalletDID.tsx:886
@@ -2457,8 +2457,8 @@ msgid "This feature is available only from the GUI."
 msgstr "Ta funkcja jest dostępna tylko z GUI."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of HDDcoin that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and HDDcoin that you have just spent but is not yet in the blockchain."
-msgstr "To jest ilość HDDcoin, której możesz obecnie użyć do dokonywania transakcji. Nie obejmuje oczekujących nagród z farmienia, oczekujących transakcji przychodzących i HDDcoin, które właśnie wydałeś, ale nie zostały potwierdzone w łańcuchu bloków."
+msgid "This is the amount of PecanRolls that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and PecanRolls that you have just spent but is not yet in the blockchain."
+msgstr "To jest ilość PecanRolls, której możesz obecnie użyć do dokonywania transakcji. Nie obejmuje oczekujących nagród z farmienia, oczekujących transakcji przychodzących i PecanRolls, które właśnie wydałeś, ale nie zostały potwierdzone w łańcuchu bloków."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2523,8 +2523,8 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "To zlecenie zostało uwzględnione w blockchainie na tej wysokości"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of HDDcoin is no longer compatible with the blockchain and can not safely farm."
-msgstr "Ta wersja HDDcoin nie jest już kompatybilna z blockchain i nie może bezpiecznie uprawiać."
+msgid "This version of PecanRolls is no longer compatible with the blockchain and can not safely farm."
+msgstr "Ta wersja PecanRolls nie jest już kompatybilna z blockchain i nie może bezpiecznie uprawiać."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2548,8 +2548,8 @@ msgstr "Do"
 msgid "Total Balance"
 msgstr "Aktualne saldo"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:15
-#~ msgid "Total HDDcoin Farmed"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:15
+#~ msgid "Total PecanRolls Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2770,8 +2770,8 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more HDDcoin? Add more plots to your farm."
-msgstr "Chcesz zarabiać więcej HDDcoin? Dodaj więcej działek do swojej farmy."
+msgid "Want to earn more PecanRolls? Add more plots to your farm."
+msgstr "Chcesz zarabiać więcej PecanRolls? Dodaj więcej działek do swojej farmy."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2799,8 +2799,8 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "Waga to całkowita dodana trudność wszystkich bloków włącznie z tym"
 
 #: src/components/selectKey/SelectKey.tsx:183
-msgid "Welcome to HDDcoin. Please log in with an existing key, or create a new key."
-msgstr "Witaj w HDDcoin. Zaloguj się z instniejącym kluczem, lub utwórz nowy klucz."
+msgid "Welcome to PecanRolls. Please log in with an existing key, or create a new key."
+msgstr "Witaj w PecanRolls. Zaloguj się z instniejącym kluczem, lub utwórz nowy klucz."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2874,8 +2874,8 @@ msgid "You need to claim your rewards first"
 msgstr ""
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the HDDcoin application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the HDDcoin application as this version will stop working soon!"
+#~ msgid "You need to upgrade the PecanRolls application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the PecanRolls application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -2998,9 +2998,9 @@ msgstr ""
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Nagroda bloku"
 
-#: src/components/farm/card/FarmCardTotalHDDcoinFarmed.tsx:29
-msgid "{currencyCode} Total HDDcoin Farmed"
-msgstr "{currencyCode} Całkowita ilość wydobytego HDDcoin"
+#: src/components/farm/card/FarmCardTotalPecanRollsFarmed.tsx:29
+msgid "{currencyCode} Total PecanRolls Farmed"
+msgstr "{currencyCode} Całkowita ilość wydobytego PecanRolls"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"

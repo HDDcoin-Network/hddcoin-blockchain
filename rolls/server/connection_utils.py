@@ -2,15 +2,15 @@ import asyncio
 import random
 from typing import Any, List, Optional, Tuple
 
-from rolls.server.ws_connection import WSHDDcoinConnection
+from rolls.server.ws_connection import WSPecanRollsConnection
 
 
 async def send_all_first_reply(
-    func: str, arg: Any, peers: List[WSHDDcoinConnection], timeout=15
-) -> Optional[Tuple[Any, WSHDDcoinConnection]]:
+    func: str, arg: Any, peers: List[WSPecanRollsConnection], timeout=15
+) -> Optional[Tuple[Any, WSPecanRollsConnection]]:
     """performs an API request to peers and returns the result of the first response and the peer that sent it."""
 
-    async def do_func(peer_x: WSHDDcoinConnection, func_x: str, arg_x: Any):
+    async def do_func(peer_x: WSPecanRollsConnection, func_x: str, arg_x: Any):
         method_to_call = getattr(peer_x, func_x)
         result_x = await method_to_call(arg_x)
         if result_x is not None:
@@ -37,10 +37,10 @@ async def send_all_first_reply(
         return None
 
 
-async def send_to_random(func: str, arg: Any, peers: List[WSHDDcoinConnection]) -> Optional[Tuple[Any, WSHDDcoinConnection]]:
+async def send_to_random(func: str, arg: Any, peers: List[WSPecanRollsConnection]) -> Optional[Tuple[Any, WSPecanRollsConnection]]:
     """performs an API request to peers and returns the result of the first response and the peer that sent it."""
 
-    async def do_func(peer_x: WSHDDcoinConnection, func_x: str, arg_x: Any):
+    async def do_func(peer_x: WSPecanRollsConnection, func_x: str, arg_x: Any):
         method_to_call = getattr(peer_x, func_x)
         result_x = await method_to_call(arg_x)
         if result_x is not None:

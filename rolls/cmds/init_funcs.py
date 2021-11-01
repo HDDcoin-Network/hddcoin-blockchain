@@ -347,16 +347,16 @@ def rolls_init(root_path: Path, *, should_check_keys: bool = True, fix_ssl_permi
     protected Keychain. When launching the daemon from the GUI, we want the GUI to
     handle unlocking the keychain.
     """
-    if os.environ.get("HDDCOIN_ROOT", None) is not None:
+    if os.environ.get("ROLLS_ROOT", None) is not None:
         print(
-            f"warning, your HDDCOIN_ROOT is set to {os.environ['HDDCOIN_ROOT']}. "
+            f"warning, your ROLLS_ROOT is set to {os.environ['ROLLS_ROOT']}. "
             f"Please unset the environment variable and run rolls init again\n"
             f"or manually migrate config.yaml"
         )
 
-    print(f"HDDcoin directory {root_path}")
+    print(f"PecanRolls directory {root_path}")
     if root_path.is_dir() and Path(root_path / "config" / "config.yaml").exists():
-        # This is reached if HDDCOIN_ROOT is set, or if user has run rolls init twice
+        # This is reached if ROLLS_ROOT is set, or if user has run rolls init twice
         # before a new update.
         if fix_ssl_permissions:
             fix_ssl(root_path)

@@ -2,7 +2,7 @@ $ErrorActionPreference = "Stop"
 
 if ($null -eq (Get-ChildItem env:VIRTUAL_ENV -ErrorAction SilentlyContinue))
 {
-    Write-Output "This script requires that the HDDcoin Python virtual environment is activated."
+    Write-Output "This script requires that the PecanRolls Python virtual environment is activated."
     Write-Output "Execute '.\venv\Scripts\Activate.ps1' before running."
     Exit 1
 }
@@ -26,6 +26,6 @@ npm run build
 py ..\installhelper.py
 
 Write-Output ""
-Write-Output "HDDcoin blockchain Install-gui.ps1 completed."
+Write-Output "PecanRolls blockchain Install-gui.ps1 completed."
 Write-Output ""
 Write-Output "Type 'cd rolls-blockchain-gui' and then 'npm run electron' to start the GUI."

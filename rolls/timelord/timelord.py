@@ -14,7 +14,7 @@ from rolls.consensus.pot_iterations import calculate_sp_iters, is_overflow_block
 from rolls.protocols import timelord_protocol
 from rolls.protocols.protocol_message_types import ProtocolMessageTypes
 from rolls.server.outbound_message import NodeType, make_msg
-from rolls.server.server import HDDcoinServer
+from rolls.server.server import PecanRollsServer
 from rolls.timelord.iters_from_block import iters_from_block
 from rolls.timelord.timelord_state import LastState
 from rolls.timelord.types import Chain, IterationType, StateType
@@ -44,7 +44,7 @@ class Timelord:
         self.free_clients: List[Tuple[str, asyncio.StreamReader, asyncio.StreamWriter]] = []
         self.potential_free_clients: List = []
         self.ip_whitelist = self.config["vdf_clients"]["ip"]
-        self.server: Optional[HDDcoinServer] = None
+        self.server: Optional[PecanRollsServer] = None
         self.chain_type_to_stream: Dict[Chain, Tuple[str, asyncio.StreamReader, asyncio.StreamWriter]] = {}
         self.chain_start_time: Dict = {}
         # Chains that currently don't have a vdf_client.
@@ -116,7 +116,7 @@ class Timelord:
     async def _await_closed(self):
         pass
 
-    def set_server(self, server: HDDcoinServer):
+    def set_server(self, server: PecanRollsServer):
         self.server = server
 
     async def _handle_client(self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter):

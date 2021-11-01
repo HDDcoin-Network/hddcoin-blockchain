@@ -1,4 +1,4 @@
-export { default as HDDcoin } from './HDDcoin';
+export { default as PecanRolls } from './PecanRolls';
 export { default as Farm } from './Farm';
 export { default as Home } from './Home';
 export { default as Keys } from './Keys';

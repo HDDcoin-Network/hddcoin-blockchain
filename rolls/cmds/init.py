@@ -27,7 +27,7 @@ def init_cmd(ctx: click.Context, create_certs: str, fix_ssl_permissions: bool, *
     - Shut down all rolls daemon processes with `rolls stop all -d`
     - Run `rolls init -c [directory]` on your remote harvester,
       where [directory] is the the copy of your Farming Machine CA directory
-    - Get more details on remote harvester on HDDcoin wiki:
+    - Get more details on remote harvester on PecanRolls wiki:
       https://github.com/Strandedathome/rolls-blockchain/wiki/Farming-on-many-machines
     """
     from pathlib import Path

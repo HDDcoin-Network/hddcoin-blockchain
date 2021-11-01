@@ -335,7 +335,7 @@ export default function Block() {
         title={
           <Back variant="h5">
             <Trans>
-              Block at height {blockRecord.height} in the HDDcoin blockchain
+              Block at height {blockRecord.height} in the PecanRolls blockchain
             </Trans>
           </Back>
         }

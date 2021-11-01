@@ -45,7 +45,7 @@ const getExecutablePath = (dist_file) => {
   return path.join(__dirname, PY_MAC_DIST_FOLDER, dist_file);
 };
 
-const getHDDcoinVersion = () => {
+const getPecanRollsVersion = () => {
   let version = null;
   const exePath = getExecutablePath('rolls');
   // first see if we can get a rolls exe in a standard location relative to where we are
@@ -71,7 +71,7 @@ const getHDDcoinVersion = () => {
   return version;
 };
 
-const startHDDcoinDaemon = () => {
+const startPecanRollsDaemon = () => {
   let script = getScriptPath(PY_DIST_FILE);
   let processOptions = {};
   //processOptions.detached = true;
@@ -138,7 +138,7 @@ const startHDDcoinDaemon = () => {
 };
 
 module.exports = {
-  startHDDcoinDaemon,
-  getHDDcoinVersion,
+  startPecanRollsDaemon,
+  getPecanRollsVersion,
   guessPackaged,
 };

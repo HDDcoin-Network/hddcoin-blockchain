@@ -12,7 +12,7 @@ const convert = (amount, from, to) => {
   return Number.parseFloat(amountInFromUnit.div(units.getUnit(to)));
 };
 
-class HDDcoin {
+class PecanRolls {
   constructor(value, unit) {
     this._value = value;
     this._unit = unit;
@@ -73,7 +73,7 @@ class HDDcoin {
   }
 }
 
-export const rolls_formatter = (value, unit) => new HDDcoin(value, unit);
+export const rolls_formatter = (value, unit) => new PecanRolls(value, unit);
 
 rolls_formatter.convert = convert;
 rolls_formatter.setDisplay = units.setDisplay;
