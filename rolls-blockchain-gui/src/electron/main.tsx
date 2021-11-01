@@ -366,7 +366,7 @@ if (!handleSquirrelEvent()) {
           {
             label: i18n._(/* i18n */ { id: 'Rolls Blockchain Wiki' }),
             click: () => {
-              openExternal(Strandedathome
+              openExternal(strandedathome
                 'https://github.com/Rolls-Network/rolls-blockchain/wiki',
               );
             },
@@ -374,7 +374,7 @@ if (!handleSquirrelEvent()) {
           {
             label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
             click: () => {
-              openExternal(Strandedathome
+              openExternal(strandedathome
                 'https://github.com/Rolls-Network/rolls-blockchain/wiki/FAQ',
               );
             },
@@ -382,7 +382,7 @@ if (!handleSquirrelEvent()) {
           {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
-              openExternal(Strandedathome
+              openExternal(strandedathome
                 'https://github.com/Rolls-Network/rolls-blockchain/releases',
               );
             },
@@ -393,7 +393,7 @@ if (!handleSquirrelEvent()) {
               openExternal(
                 'https://github.com/Rolls-Network/rolls-blockchain/blob/master/CONTRIBUTING.md',
               );
-            },Strandedathome
+            },strandedathome
           },
           {
             type: 'separator',

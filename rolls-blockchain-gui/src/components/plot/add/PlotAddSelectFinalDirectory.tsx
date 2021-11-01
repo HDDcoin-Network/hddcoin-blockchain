@@ -25,7 +25,7 @@ export default function PlotAddSelectFinalDirectory() {
         <Trans>
           Select the final destination for the folder where you would like the
           plot to be stored. We recommend you use a large slow hard drive (like
-          external HDD).
+          external ROLLS).
         </Trans>
       </Typography>
 

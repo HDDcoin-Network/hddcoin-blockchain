@@ -14,11 +14,11 @@ The goal of PecanRolls is to reshape the global financial system through the pow
 
 **BLOCKCHAIN SPECIFICATION:**
 - Launch date: July 8th 2021
-- Cryptocurrency coin: HDD
+- Cryptocurrency coin: ROLLS
 - Lowest coin denomination: Bytes
-- Conversion: 1 HDD = 1,000,000,000,000 Bytes
+- Conversion: 1 ROLLS = 1,000,000,000,000 Bytes
 - Blocks per 24 hours target: 4,608
-- Farmed rewards per block: 2 HDD
+- Farmed rewards per block: 2 ROLLS
 - Halving period for block rewards: 3 years
 
 **BLOCKCHAIN RESOURCES:**
@@ -44,7 +44,7 @@ You can install PecanRolls by building from source, or by using the latest binar
 (A.) To **install from available binaries**, download executables from the correct **Releases page**:
 
    - for solo farming, get them here ->
-   https://github.com/Strandedathome/rolls-blockchain/releases
+   https://github.com/strandedathome/rolls-blockchain/releases
    - for pool farming with FoxyPool (OG), get them here ->
    https://github.com/felixbrucker/rolls-blockchain/releases
 
@@ -64,7 +64,7 @@ You can install PecanRolls by building from source, or by using the latest binar
 # Checkout the correct source (either for solo or pool farming)
 
    ## for solo farming, use this source ## ->
-   git clone https://github.com/Strandedathome/rolls-blockchain.git
+   git clone https://github.com/strandedathome/rolls-blockchain.git
 
    ## for pool farming with FoxyPool (OG), use this source ## ->
    git clone https://github.com/felixbrucker/rolls-blockchain.git

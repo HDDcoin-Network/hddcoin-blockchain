@@ -36,7 +36,7 @@ if [ "$(uname -m)" = "armv7l" ]; then
 	echo "WARNING:"
 	echo "The PecanRolls Blockchain requires a 64 bit OS and this is 32 bit armv7l"
 	echo "For more information, see"
-	echo "https://github.com/Strandedathome/rolls-blockchain/wiki/Raspberry-Pi"
+	echo "https://github.com/strandedathome/rolls-blockchain/wiki/Raspberry-Pi"
 	echo "Exiting."
 	exit 1
 fi
@@ -141,7 +141,7 @@ echo "Visit our Website to learn more about PecanRolls:"
 echo "https://rolls.org"
 echo ""
 echo "Try the Quick Start Guide to running rolls-blockchain:"
-echo "https://github.com/Strandedathome/rolls-blockchain/wiki/Quick-Start-Guide"
+echo "https://github.com/strandedathome/rolls-blockchain/wiki/Quick-Start-Guide"
 echo ""
 echo "To install the GUI type 'sh install-gui.sh' after '. ./activate'."
 echo ""

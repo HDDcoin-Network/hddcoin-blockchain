@@ -66,7 +66,7 @@ export default function PlotAddChooseSize() {
           }
           <Link
             target="_blank"
-            href="https://github.com/Strandedathome/rolls-blockchain/wiki/k-sizes"
+            href="https://github.com/strandedathome/rolls-blockchain/wiki/k-sizes"
           >
             Learn more
           </Link>

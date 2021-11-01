@@ -38,7 +38,7 @@ export default function PlotOverviewHero() {
               }
               <Link
                 target="_blank"
-                href="https://github.com/Strandedathome/rolls-blockchain/wiki/Network-Architecture"
+                href="https://github.com/strandedathome/rolls-blockchain/wiki/Network-Architecture"
               >
                 Learn more
               </Link>

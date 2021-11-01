@@ -5,9 +5,9 @@ We are happy that you are taking a look at the code for PecanRolls, a proof of s
 
 A lot of fascinating new cryptography and blockchain concepts are used and implemented here.
 This repo includes the code for the PecanRolls full node, farmer, and timelord (in rolls folder), which are all written in python.
-It also includes a verifiable delay function implementation that it imports from the [chiavdf repo](https://github.com/Strandedathome/chiavdf) (in c/c++), and a proof of space implementation that it imports from the [chiapos repo](https://github.com/Strandedathome/chiapos). BLS signatures are imported from the [bls-signatures repo](https://github.com/Strandedathome/bls-signatures) as blspy. There is an additional dependency on the [chiabip158 repo](https://github.com/Strandedathome/chiabip158). For major platforms, binary and source wheels are shipped to PyPI from each dependent repo. Then rolls-blockchain can pip install those from PyPI or they can be prepackaged as is done for the Windows installer. On unsupported platforms, pip will fall back to the source distributions, to be compiled locally.
+It also includes a verifiable delay function implementation that it imports from the [chiavdf repo](https://github.com/strandedathome/chiavdf) (in c/c++), and a proof of space implementation that it imports from the [chiapos repo](https://github.com/strandedathome/chiapos). BLS signatures are imported from the [bls-signatures repo](https://github.com/strandedathome/bls-signatures) as blspy. There is an additional dependency on the [chiabip158 repo](https://github.com/strandedathome/chiabip158). For major platforms, binary and source wheels are shipped to PyPI from each dependent repo. Then rolls-blockchain can pip install those from PyPI or they can be prepackaged as is done for the Windows installer. On unsupported platforms, pip will fall back to the source distributions, to be compiled locally.
 
-If you want to learn more about this project, read the [wiki](https://github.com/Strandedathome/rolls-blockchain/wiki), or check out the [green paper](https://www.rolls.org/assets/PecanRollsGreenPaper.pdf).
+If you want to learn more about this project, read the [wiki](https://github.com/strandedathome/rolls-blockchain/wiki), or check out the [green paper](https://www.rolls.org/assets/PecanRollsGreenPaper.pdf).
 
 ## Contributions
 
@@ -63,7 +63,7 @@ If you want verbose logging for tests, edit the `tests/pytest.ini` file.
 
 ## Pre-Commit
 
-We provide a [pre-commit configuration](https://github.com/Strandedathome/rolls-blockchain/blob/main/.pre-commit-config.yaml) which triggers several useful
+We provide a [pre-commit configuration](https://github.com/strandedathome/rolls-blockchain/blob/main/.pre-commit-config.yaml) which triggers several useful
 hooks (including linters/formatter) before each commit you make if you installed and set up [pre-commit](https://pre-commit.com/). This will help
 to reduce the time you spend on failed CI jobs.
 
@@ -92,7 +92,7 @@ workflow.
 3. Install BlackConnect plugin
 4. Set to run python black on save
 5. Set line length to 120
-6. Install these linters https://github.com/Strandedathome/rolls-blockchain/tree/main/.github/linters
+6. Install these linters https://github.com/strandedathome/rolls-blockchain/tree/main/.github/linters
 
 ## Testnets and review environments
 

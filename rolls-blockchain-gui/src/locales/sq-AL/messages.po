@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: rolls-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: sq\n"
-"X-Crowdin-File: /[Strandedathome.rolls-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[strandedathome.rolls-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -940,7 +940,7 @@ msgid "Fee"
 msgstr "Tarifa"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (THDD)"
+#~ msgid "Fee (TROLLS)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1145,16 +1145,16 @@ msgid "Join a Pool"
 msgstr "Bashkohu me një poll"
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-msgid "Join a pool and get consistent HDD farming rewards. The average returns are the same, but it is much less volatile."
-msgstr "Anëtarësohuni në një pishinë dhe merrni shpërblime të qëndrueshme HDD. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm."
+msgid "Join a pool and get consistent ROLLS farming rewards. The average returns are the same, but it is much less volatile."
+msgstr "Anëtarësohuni në një pishinë dhe merrni shpërblime të qëndrueshme ROLLS. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-msgid "Join a pool and get consistent HDD farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-msgstr "Anëtarësohuni në një poll dhe merrni shpërblime të qëndrueshme në HDD. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm. Caktoni një komplot NFT. Ju lehtë mund të ndërroni pollet pa pasur nevojë të ri-plotoni."
+msgid "Join a pool and get consistent ROLLS farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+msgstr "Anëtarësohuni në një poll dhe merrni shpërblime të qëndrueshme në ROLLS. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm. Caktoni një komplot NFT. Ju lehtë mund të ndërroni pollet pa pasur nevojë të ri-plotoni."
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-msgid "Join a pool and get more consistent HDD farming rewards. Create a plot NFT and assign your new plots to a group."
-msgstr "Bashkohuni me një poll dhe merrni shpërblime më të qëndrueshme HDD. Krijoni një plot NFT dhe caktoni plotet tuaja të reja në një grup."
+msgid "Join a pool and get more consistent ROLLS farming rewards. Create a plot NFT and assign your new plots to a group."
+msgstr "Bashkohuni me një poll dhe merrni shpërblime më të qëndrueshme ROLLS. Krijoni një plot NFT dhe caktoni plotet tuaja të reja në një grup."
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
 msgid "K-Size"
@@ -1429,8 +1429,8 @@ msgid "Not found Plots"
 msgstr "Nuk gjenden Plotet"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:188
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HDD reward for pooling plots."
-msgstr "Vini re se kjo nuk ndryshon adresat tuaja të grumbullimit të pagesave. Kjo ndikon vetëm në komplotet e formatit të vjetër dhe në shpërblimin 0.25HDD për komplotet e bashkimit."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25ROLLS reward for pooling plots."
+msgstr "Vini re se kjo nuk ndryshon adresat tuaja të grumbullimit të pagesave. Kjo ndikon vetëm në komplotet e formatit të vjetër dhe në shpërblimin 0.25ROLLS për komplotet e bashkimit."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:118
 #: src/components/plotNFT/PlotNFTCard.tsx:160
@@ -2100,8 +2100,8 @@ msgid "Select Wallet Type"
 msgstr "Zgjidhni Llojin e Portofolit"
 
 #: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:25
-msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
-msgstr "Zgjidhni destinacionin përfundimtar për dosjen ku dëshironi të ruhet ploti. Ne ju rekomandojmë të përdorni një hard disk të ngadaltë (si HDD i jashtëm)."
+msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external ROLLS)."
+msgstr "Zgjidhni destinacionin përfundimtar për dosjen ku dëshironi të ruhet ploti. Ne ju rekomandojmë të përdorni një hard disk të ngadaltë (si ROLLS i jashtëm)."
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:41
 #~ msgid "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast SSD."
@@ -2135,8 +2135,8 @@ msgid "Self Pooling"
 msgstr "Vetë grumbullimi"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-msgid "Self pool. When you win a block you will earn HDD rewards."
-msgstr "Vetë grumbullimi. Kur të fitoni një bllok, do të fitoni shpërblime HDD."
+msgid "Self pool. When you win a block you will earn ROLLS rewards."
+msgstr "Vetë grumbullimi. Kur të fitoni një bllok, do të fitoni shpërblime ROLLS."
 
 #: src/components/trading/CreateOffer.jsx:164
 #: src/components/trading/TradesTable.tsx:47
@@ -2213,8 +2213,8 @@ msgid "Skips adding a final directory to harvester for farming"
 msgstr "Kalon duke shtuar një direktori përfundimtare"
 
 #: src/components/pool/PoolHero.tsx:26
-msgid "Smooth out your HDD farming rewards by joining a pool."
-msgstr "Z'busni shpërblimet tuaja HDD duke u bashkuar me një poll."
+msgid "Smooth out your ROLLS farming rewards by joining a pool."
+msgstr "Z'busni shpërblimet tuaja ROLLS duke u bashkuar me një poll."
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 msgid "Something went wrong"
@@ -2332,23 +2332,23 @@ msgstr "Sinkronizimi <0/>/<1/>"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "THDD Block Rewards"
+#~ msgid "TROLLS Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "THDD Farming Rewards"
+#~ msgid "TROLLS Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "THDD Fees Collected"
+#~ msgid "TROLLS Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "THDD User Fees"
-#~ msgstr "THDD User Fees"
+#~ msgid "TROLLS User Fees"
+#~ msgstr "TROLLS User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "THDD User Transaction Fees"
+#~ msgid "TROLLS User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2434,8 +2434,8 @@ msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Tarifat totale të transaksioneve në këtë bllok. Shpërblyer për fermerin."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HDD address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-msgstr "Këto janë udhëzimet se si fermeri dëshiron të paguhet. Si parazgjedhje kjo do të jetë një adresë HDD, por mund të vendoset në çdo varg me madhësi më të vogël se 1024 karaktere, kështu që mund të përfaqësojë një tjetër identifikues të bllokut ose sistemit të pagesave."
+msgid "These are the instructions for how the farmer wants to get paid. By default this will be an ROLLS address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+msgstr "Këto janë udhëzimet se si fermeri dëshiron të paguhet. Si parazgjedhje kjo do të jetë një adresë ROLLS, por mund të vendoset në çdo varg me madhësi më të vogël se 1024 karaktere, kështu që mund të përfaqësojë një tjetër identifikues të bllokut ose sistemit të pagesave."
 
 #: src/components/plot/PlotsFailed.tsx:40
 msgid "These plots are invalid, you might want to delete them."

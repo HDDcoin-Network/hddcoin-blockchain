@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: rolls-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: ar\n"
-"X-Crowdin-File: /[Strandedathome.rolls-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[strandedathome.rolls-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -940,7 +940,7 @@ msgid "Fee"
 msgstr "الرسوم"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (THDD)"
+#~ msgid "Fee (TROLLS)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1145,15 +1145,15 @@ msgid "Join a Pool"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-msgid "Join a pool and get consistent HDD farming rewards. The average returns are the same, but it is much less volatile."
+msgid "Join a pool and get consistent ROLLS farming rewards. The average returns are the same, but it is much less volatile."
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-msgid "Join a pool and get consistent HDD farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+msgid "Join a pool and get consistent ROLLS farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
 msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-msgid "Join a pool and get more consistent HDD farming rewards. Create a plot NFT and assign your new plots to a group."
+msgid "Join a pool and get more consistent ROLLS farming rewards. Create a plot NFT and assign your new plots to a group."
 msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
@@ -1429,7 +1429,7 @@ msgid "Not found Plots"
 msgstr "لم يتم العثور على القطع"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:188
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HDD reward for pooling plots."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25ROLLS reward for pooling plots."
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:118
@@ -2100,8 +2100,8 @@ msgid "Select Wallet Type"
 msgstr "أختر نوع المحفظة"
 
 #: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:25
-msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
-msgstr "حدد الوجهة النهائية للمجلد حيث تريد تخزين القطعة. ننصحك باستخدام قرص صلب بمساحة كبيرة (مثل HDD)."
+msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external ROLLS)."
+msgstr "حدد الوجهة النهائية للمجلد حيث تريد تخزين القطعة. ننصحك باستخدام قرص صلب بمساحة كبيرة (مثل ROLLS)."
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:41
 #~ msgid "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast SSD."
@@ -2109,7 +2109,7 @@ msgstr "حدد الوجهة النهائية للمجلد حيث تريد تخز
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:41
 msgid "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast drive."
-msgstr "حدد الوجهة النهائية للمجلد حيث تريد تخزين القطعة. ننصحك باستخدام قرص صلب بمساحة كبيرة (مثل HDD)."
+msgstr "حدد الوجهة النهائية للمجلد حيث تريد تخزين القطعة. ننصحك باستخدام قرص صلب بمساحة كبيرة (مثل ROLLS)."
 
 #: src/components/plot/add/PlotAddNFT.tsx:81
 msgid "Select your Plot NFT"
@@ -2135,7 +2135,7 @@ msgid "Self Pooling"
 msgstr ""
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-msgid "Self pool. When you win a block you will earn HDD rewards."
+msgid "Self pool. When you win a block you will earn ROLLS rewards."
 msgstr ""
 
 #: src/components/trading/CreateOffer.jsx:164
@@ -2213,7 +2213,7 @@ msgid "Skips adding a final directory to harvester for farming"
 msgstr "تخطي إضافة دليل نهائي إلى الحصاد من أجل الزراعة"
 
 #: src/components/pool/PoolHero.tsx:26
-msgid "Smooth out your HDD farming rewards by joining a pool."
+msgid "Smooth out your ROLLS farming rewards by joining a pool."
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
@@ -2332,23 +2332,23 @@ msgstr "مزامنة <0/><1/>"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "THDD Block Rewards"
+#~ msgid "TROLLS Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "THDD Farming Rewards"
+#~ msgid "TROLLS Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "THDD Fees Collected"
+#~ msgid "TROLLS Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "THDD User Fees"
-#~ msgstr "THDD User Fees"
+#~ msgid "TROLLS User Fees"
+#~ msgstr "TROLLS User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "THDD User Transaction Fees"
+#~ msgid "TROLLS User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2434,7 +2434,7 @@ msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "مجموع رسوم المعاملات في هذه الكتلة. مكافأة للمزارع."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HDD address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+msgid "These are the instructions for how the farmer wants to get paid. By default this will be an ROLLS address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 msgstr ""
 
 #: src/components/plot/PlotsFailed.tsx:40

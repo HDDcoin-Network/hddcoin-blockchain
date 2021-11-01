@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: rolls-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: he\n"
-"X-Crowdin-File: /[Strandedathome.rolls-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[strandedathome.rolls-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -866,7 +866,7 @@ msgid "Fee"
 msgstr "דמי"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (THDD)"
+#~ msgid "Fee (TROLLS)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1071,16 +1071,16 @@ msgid "Join a Pool"
 msgstr "הצטרף/י לבריכה (Pool)"
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-msgid "Join a pool and get consistent HDD farming rewards. The average returns are the same, but it is much less volatile."
-msgstr "הצטרף/י לבריכה (Pool) וקבל/י תגמולים עקביים של חקלאות (Farming) - HDD. התשואה הממוצעת זהה, אך היא הרבה פחות תנודתית."
+msgid "Join a pool and get consistent ROLLS farming rewards. The average returns are the same, but it is much less volatile."
+msgstr "הצטרף/י לבריכה (Pool) וקבל/י תגמולים עקביים של חקלאות (Farming) - ROLLS. התשואה הממוצעת זהה, אך היא הרבה פחות תנודתית."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-msgid "Join a pool and get consistent HDD farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-msgstr "הצטרף/י לבריכה (Pool) וקבל/י תגמולים עקביים של חקלאות (Farming) - HDD. התשואה הממוצעת זהה, אך היא הרבה פחות תנודתית. הקצה/י פלוטים אל פלוט NFT. תוכל/י להחליף בריכה (Pool) בקלות מבלי שתצטרך/י ליצור פלוטים מחדש."
+msgid "Join a pool and get consistent ROLLS farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+msgstr "הצטרף/י לבריכה (Pool) וקבל/י תגמולים עקביים של חקלאות (Farming) - ROLLS. התשואה הממוצעת זהה, אך היא הרבה פחות תנודתית. הקצה/י פלוטים אל פלוט NFT. תוכל/י להחליף בריכה (Pool) בקלות מבלי שתצטרך/י ליצור פלוטים מחדש."
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-msgid "Join a pool and get more consistent HDD farming rewards. Create a plot NFT and assign your new plots to a group."
-msgstr "הצטרף/י לבריכה (Pool) וקבל/י תגמולים עקביים של חקלאות (Farming) - HDD. צור/י פלוט NFT והקצה/י את הפלוטים החדשים שלך לקבוצה."
+msgid "Join a pool and get more consistent ROLLS farming rewards. Create a plot NFT and assign your new plots to a group."
+msgstr "הצטרף/י לבריכה (Pool) וקבל/י תגמולים עקביים של חקלאות (Farming) - ROLLS. צור/י פלוט NFT והקצה/י את הפלוטים החדשים שלך לקבוצה."
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
 msgid "K-Size"
@@ -1322,8 +1322,8 @@ msgid "Not found Plots"
 msgstr "לא נמצאו פלוטים"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:184
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HDD reward for pooling plots."
-msgstr "שים/י לב שזה לא משנה את כתובות תשלומי הבריכות (Pooling Payout Addresses) שלך. זה משפיע רק על פלוטים בפורמט ישן, ועל התגמול של 0.25HDD על פלוטים של בריכות (Pooling Plots)."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25ROLLS reward for pooling plots."
+msgstr "שים/י לב שזה לא משנה את כתובות תשלומי הבריכות (Pooling Payout Addresses) שלך. זה משפיע רק על פלוטים בפורמט ישן, ועל התגמול של 0.25ROLLS על פלוטים של בריכות (Pooling Plots)."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:118
 #: src/components/plotNFT/PlotNFTCard.tsx:160
@@ -1925,7 +1925,7 @@ msgid "Select Wallet Type"
 msgstr "בחר סוג ארנק"
 
 #: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:25
-msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
+msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external ROLLS)."
 msgstr "בחר את הספרייה הסופית בה את/ה רוצה לאחסן את הפלוטים שלך. אנו ממליצים להשתמש בכונן קשיח בנפח גדול ואיטי (כמו כונן קשיח חיצוני)."
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:41
@@ -1960,8 +1960,8 @@ msgid "Self Pooling"
 msgstr "בריכה עצמאית (Self Pooling)"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-msgid "Self pool. When you win a block you will earn HDD rewards."
-msgstr "בריכה עצמאית (Self Pooling). כשתזכה/י בבלוק תתוגמל/י בפרסים של HDD."
+msgid "Self pool. When you win a block you will earn ROLLS rewards."
+msgstr "בריכה עצמאית (Self Pooling). כשתזכה/י בבלוק תתוגמל/י בפרסים של ROLLS."
 
 #: src/components/trading/CreateOffer.jsx:164
 #: src/components/trading/TradesTable.tsx:47
@@ -2013,8 +2013,8 @@ msgid "Skips adding a final directory to harvester for farming"
 msgstr "דלג על הוספת ספרייה סופית עבור harvester בשביל farming"
 
 #: src/components/pool/PoolHero.tsx:26
-msgid "Smooth out your HDD farming rewards by joining a pool."
-msgstr "החלק את פרסי החקלאות שלך ב- HDD על ידי הצטרפות לבריכה (Pool)."
+msgid "Smooth out your ROLLS farming rewards by joining a pool."
+msgstr "החלק את פרסי החקלאות שלך ב- ROLLS על ידי הצטרפות לבריכה (Pool)."
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 msgid "Something went wrong"
@@ -2127,23 +2127,23 @@ msgstr "מסנכרן"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "THDD Block Rewards"
+#~ msgid "TROLLS Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "THDD Farming Rewards"
+#~ msgid "TROLLS Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "THDD Fees Collected"
+#~ msgid "TROLLS Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "THDD User Fees"
-#~ msgstr "THDD User Fees"
+#~ msgid "TROLLS User Fees"
+#~ msgstr "TROLLS User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "THDD User Transaction Fees"
+#~ msgid "TROLLS User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2225,8 +2225,8 @@ msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "סך דמי העסקאות בבלוק הנוכחי. אשר תוגמל החלקאי."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HDD address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-msgstr "אלה ההנחיות כיצד החקלאי/ת רוצה לקבל תשלום. כברירת מחדל זו תהיה כתובת HDD, אך ניתן להגדיר אותה לכל מחרוזת בגודל של פחות מ -1024 תווים, כך שהיא יכולה לייצג מערכת blockchain נוספת או מזהה מערכת התשלומים (Payment System Identifier)."
+msgid "These are the instructions for how the farmer wants to get paid. By default this will be an ROLLS address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+msgstr "אלה ההנחיות כיצד החקלאי/ת רוצה לקבל תשלום. כברירת מחדל זו תהיה כתובת ROLLS, אך ניתן להגדיר אותה לכל מחרוזת בגודל של פחות מ -1024 תווים, כך שהיא יכולה לייצג מערכת blockchain נוספת או מזהה מערכת התשלומים (Payment System Identifier)."
 
 #: src/components/plot/PlotsFailed.tsx:40
 msgid "These plots are invalid, you might want to delete them."

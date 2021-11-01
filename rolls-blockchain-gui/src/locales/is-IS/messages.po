@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: rolls-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: is\n"
-"X-Crowdin-File: /[Strandedathome.rolls-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[strandedathome.rolls-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -866,7 +866,7 @@ msgid "Fee"
 msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (THDD)"
+#~ msgid "Fee (TROLLS)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1071,16 +1071,16 @@ msgid "Join a Pool"
 msgstr "Taka þátt í Pool"
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-msgid "Join a pool and get consistent HDD farming rewards. The average returns are the same, but it is much less volatile."
-msgstr "Taktu þátt í pool og fáðu stöðugan HDD farming verðlaun. Meðaltals útborgunin er sú sama, en mun minni óstöðleiki."
+msgid "Join a pool and get consistent ROLLS farming rewards. The average returns are the same, but it is much less volatile."
+msgstr "Taktu þátt í pool og fáðu stöðugan ROLLS farming verðlaun. Meðaltals útborgunin er sú sama, en mun minni óstöðleiki."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-msgid "Join a pool and get consistent HDD farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-msgstr "Taktu þátt í pool og fáðu stöðugan HDD farming verðlaun. Meðaltals útborgunin er sú sama, en mun minni óstöðleiki. Úthlutaðu plots til plot NFT. Þú getur léttilega breytt um pool án þess að endur-plotta."
+msgid "Join a pool and get consistent ROLLS farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+msgstr "Taktu þátt í pool og fáðu stöðugan ROLLS farming verðlaun. Meðaltals útborgunin er sú sama, en mun minni óstöðleiki. Úthlutaðu plots til plot NFT. Þú getur léttilega breytt um pool án þess að endur-plotta."
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-msgid "Join a pool and get more consistent HDD farming rewards. Create a plot NFT and assign your new plots to a group."
-msgstr "Taktu þátt í pool og fáðu enn stöðugri HDD farming verðlaun. Búðu til plot NFT og úthlutaðu nýju plots í hóp."
+msgid "Join a pool and get more consistent ROLLS farming rewards. Create a plot NFT and assign your new plots to a group."
+msgstr "Taktu þátt í pool og fáðu enn stöðugri ROLLS farming verðlaun. Búðu til plot NFT og úthlutaðu nýju plots í hóp."
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
 msgid "K-Size"
@@ -1322,8 +1322,8 @@ msgid "Not found Plots"
 msgstr ""
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:184
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HDD reward for pooling plots."
-msgstr "Athugið að þetta breytir ekki þínum pooling útborgunar addresses. Þetta hefur bara áhrif á gömul sniðuð plots, og 0.25HDD verðlaunin fyrir pooling plots."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25ROLLS reward for pooling plots."
+msgstr "Athugið að þetta breytir ekki þínum pooling útborgunar addresses. Þetta hefur bara áhrif á gömul sniðuð plots, og 0.25ROLLS verðlaunin fyrir pooling plots."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:118
 #: src/components/plotNFT/PlotNFTCard.tsx:160
@@ -1924,7 +1924,7 @@ msgid "Select Wallet Type"
 msgstr ""
 
 #: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:25
-msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
+msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external ROLLS)."
 msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:41
@@ -1959,8 +1959,8 @@ msgid "Self Pooling"
 msgstr "Sjálf Pooling"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-msgid "Self pool. When you win a block you will earn HDD rewards."
-msgstr "Sjálf pool. Þegar þú vinnur bálka þá færðu HDD verðlaun."
+msgid "Self pool. When you win a block you will earn ROLLS rewards."
+msgstr "Sjálf pool. Þegar þú vinnur bálka þá færðu ROLLS verðlaun."
 
 #: src/components/trading/CreateOffer.jsx:164
 #: src/components/trading/TradesTable.tsx:47
@@ -2012,8 +2012,8 @@ msgid "Skips adding a final directory to harvester for farming"
 msgstr ""
 
 #: src/components/pool/PoolHero.tsx:26
-msgid "Smooth out your HDD farming rewards by joining a pool."
-msgstr "Jafnaðu út HDD farming verðlaunin þín og taktu þátt í pool."
+msgid "Smooth out your ROLLS farming rewards by joining a pool."
+msgstr "Jafnaðu út ROLLS farming verðlaunin þín og taktu þátt í pool."
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 msgid "Something went wrong"
@@ -2126,23 +2126,23 @@ msgstr ""
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "THDD Block Rewards"
+#~ msgid "TROLLS Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "THDD Farming Rewards"
+#~ msgid "TROLLS Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "THDD Fees Collected"
+#~ msgid "TROLLS Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "THDD User Fees"
-#~ msgstr "THDD User Fees"
+#~ msgid "TROLLS User Fees"
+#~ msgstr "TROLLS User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "THDD User Transaction Fees"
+#~ msgid "TROLLS User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2224,8 +2224,8 @@ msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HDD address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-msgstr "Þetta er leiðbeiningar um hvernig farmer vill fá borgað. Venjulega þá mun þetta ver HDD addressa, en það getur verið sett sem hvaða strengur sem er minni en 1024 karakterar, það getur tilheyrt annarri bálkakeðju eða borgunar kerfisauðkenningu."
+msgid "These are the instructions for how the farmer wants to get paid. By default this will be an ROLLS address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+msgstr "Þetta er leiðbeiningar um hvernig farmer vill fá borgað. Venjulega þá mun þetta ver ROLLS addressa, en það getur verið sett sem hvaða strengur sem er minni en 1024 karakterar, það getur tilheyrt annarri bálkakeðju eða borgunar kerfisauðkenningu."
 
 #: src/components/plot/PlotsFailed.tsx:40
 msgid "These plots are invalid, you might want to delete them."

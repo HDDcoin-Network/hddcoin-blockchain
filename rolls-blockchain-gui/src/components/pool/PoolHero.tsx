@@ -24,7 +24,7 @@ export default function PoolHero() {
           <StyledPoolIcon color="primary" />
           <Typography variant="body1">
             <Trans>
-              Smooth out your HDD farming rewards by joining a pool.
+              Smooth out your ROLLS farming rewards by joining a pool.
             </Trans>
           </Typography>
           <Button onClick={handleJoinPool} variant="contained" color="primary">

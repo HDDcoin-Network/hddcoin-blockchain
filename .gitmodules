@@ -1,8 +1,8 @@
 [submodule "rolls-blockchain-gui"]
 	path = rolls-blockchain-gui
-	url = https://github.com/Strandedathome/rolls-blockchain-gui.git
+	url = https://github.com/strandedathome/rolls-blockchain-gui.git
 	branch = pools
 [submodule "mozilla-ca"]
 	path = mozilla-ca
-	url = https://github.com/Strandedathome/mozilla-ca.git
+	url = https://github.com/strandedathome/mozilla-ca.git
         branch = main

@@ -144,7 +144,7 @@ export default function About(props: Props) {
         </VersionsTable>
 
         <BugReport
-          href="https://github.com/Strandedathome/rolls-blockchain/issues"
+          href="https://github.com/strandedathome/rolls-blockchain/issues"
           target="_blank"
         >
           Report an issue
