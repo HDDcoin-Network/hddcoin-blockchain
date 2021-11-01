@@ -3,13 +3,13 @@ from unittest import TestCase
 
 from blspy import AugSchemeMPL, BasicSchemeMPL, G1Element, G2Element
 
-from hddcoin.types.blockchain_format.program import Program
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.coin_spend import CoinSpend
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.util.condition_tools import ConditionOpcode
-from hddcoin.util.hash import std_hash
-from hddcoin.wallet.puzzles import (
+from rolls.types.blockchain_format.program import Program
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.coin_spend import CoinSpend
+from rolls.types.spend_bundle import SpendBundle
+from rolls.util.condition_tools import ConditionOpcode
+from rolls.util.hash import std_hash
+from rolls.wallet.puzzles import (
     p2_conditions,
     p2_delegated_conditions,
     p2_delegated_puzzle,

@@ -3,12 +3,12 @@ import logging
 import pytest
 from clvm.casts import int_to_bytes
 
-from hddcoin.consensus.blockchain import Blockchain
-from hddcoin.full_node.hint_store import HintStore
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.condition_opcodes import ConditionOpcode
-from hddcoin.types.condition_with_args import ConditionWithArgs
-from hddcoin.types.spend_bundle import SpendBundle
+from rolls.consensus.blockchain import Blockchain
+from rolls.full_node.hint_store import HintStore
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.condition_opcodes import ConditionOpcode
+from rolls.types.condition_with_args import ConditionWithArgs
+from rolls.types.spend_bundle import SpendBundle
 from tests.core.full_node.test_coin_store import DBConnection
 from tests.wallet_tools import WalletTool
 from tests.setup_nodes import bt

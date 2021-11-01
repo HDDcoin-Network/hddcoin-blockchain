@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Check current HDDcoin SSL version to prevent update on old SSL
-if [ -e ../.hddcoin/mainnet/config/ssl/ca/hddcoin_ca.crt ]; then
-	HDDCOIN_SSL_SERIAL=$(openssl x509 -noout -in ../.hddcoin/mainnet/config/ssl/ca/hddcoin_ca.crt -serial)
+if [ -e ../.rolls/mainnet/config/ssl/ca/rolls_ca.crt ]; then
+	HDDCOIN_SSL_SERIAL=$(openssl x509 -noout -in ../.rolls/mainnet/config/ssl/ca/rolls_ca.crt -serial)
 	if [ $HDDCOIN_SSL_SERIAL = "serial=5C8A71239328650EB9FEF85CEC32BF779CA6A0C5" ]; then 
 		echo ""
 		echo "WARNING:"
 		echo "Old version of HDDcoin Blockchain SSL has been detected."
-		echo "Please visit https://hddcoin.org/sslupdate/ for further instructions."
+		echo "Please visit https://rolls.org/sslupdate/ for further instructions."
 		echo ""
 		echo "Exiting installer..."
 		echo ""
@@ -36,7 +36,7 @@ if [ "$(uname -m)" = "armv7l" ]; then
 	echo "WARNING:"
 	echo "The HDDcoin Blockchain requires a 64 bit OS and this is 32 bit armv7l"
 	echo "For more information, see"
-	echo "https://github.com/HDDcoin-Network/hddcoin-blockchain/wiki/Raspberry-Pi"
+	echo "https://github.com/Strandedathome/rolls-blockchain/wiki/Raspberry-Pi"
 	echo "Exiting."
 	exit 1
 fi
@@ -172,11 +172,11 @@ echo "
 echo "HDDcoin blockchain install.sh complete."
 echo ""
 echo "Visit our Website to learn more about HDDcoin:"
-echo "https://hddcoin.org"
+echo "https://rolls.org"
 echo ""
-echo "Try the Quick Start Guide to running hddcoin-blockchain:"
-echo "https://github.com/HDDcoin-Network/hddcoin-blockchain/wiki/Quick-Start-Guide"
+echo "Try the Quick Start Guide to running rolls-blockchain:"
+echo "https://github.com/Strandedathome/rolls-blockchain/wiki/Quick-Start-Guide"
 echo ""
 echo "To install the GUI type 'sh install-gui.sh' after '. ./activate'."
 echo ""
-echo "Type '. ./activate' and then 'hddcoin init' to begin."
+echo "Type '. ./activate' and then 'rolls init' to begin."

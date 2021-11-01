@@ -1,8 +1,8 @@
-[submodule "hddcoin-blockchain-gui"]
-	path = hddcoin-blockchain-gui
-	url = https://github.com/HDDcoin-Network/hddcoin-blockchain-gui.git
+[submodule "rolls-blockchain-gui"]
+	path = rolls-blockchain-gui
+	url = https://github.com/Strandedathome/rolls-blockchain-gui.git
 	branch = pools
 [submodule "mozilla-ca"]
 	path = mozilla-ca
-	url = https://github.com/HDDcoin-Network/mozilla-ca.git
+	url = https://github.com/Strandedathome/mozilla-ca.git
         branch = main

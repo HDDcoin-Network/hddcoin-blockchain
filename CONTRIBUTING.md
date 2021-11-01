@@ -1,13 +1,13 @@
 # Introduction
 
-Welcome to the hddcoin-blockchain project!
+Welcome to the rolls-blockchain project!
 We are happy that you are taking a look at the code for HDDcoin, a proof of space and time cryptocurrency.
 
 A lot of fascinating new cryptography and blockchain concepts are used and implemented here.
-This repo includes the code for the HDDcoin full node, farmer, and timelord (in hddcoin folder), which are all written in python.
-It also includes a verifiable delay function implementation that it imports from the [chiavdf repo](https://github.com/HDDcoin-Network/chiavdf) (in c/c++), and a proof of space implementation that it imports from the [chiapos repo](https://github.com/HDDcoin-Network/chiapos). BLS signatures are imported from the [bls-signatures repo](https://github.com/HDDcoin-Network/bls-signatures) as blspy. There is an additional dependency on the [chiabip158 repo](https://github.com/HDDcoin-Network/chiabip158). For major platforms, binary and source wheels are shipped to PyPI from each dependent repo. Then hddcoin-blockchain can pip install those from PyPI or they can be prepackaged as is done for the Windows installer. On unsupported platforms, pip will fall back to the source distributions, to be compiled locally.
+This repo includes the code for the HDDcoin full node, farmer, and timelord (in rolls folder), which are all written in python.
+It also includes a verifiable delay function implementation that it imports from the [chiavdf repo](https://github.com/Strandedathome/chiavdf) (in c/c++), and a proof of space implementation that it imports from the [chiapos repo](https://github.com/Strandedathome/chiapos). BLS signatures are imported from the [bls-signatures repo](https://github.com/Strandedathome/bls-signatures) as blspy. There is an additional dependency on the [chiabip158 repo](https://github.com/Strandedathome/chiabip158). For major platforms, binary and source wheels are shipped to PyPI from each dependent repo. Then rolls-blockchain can pip install those from PyPI or they can be prepackaged as is done for the Windows installer. On unsupported platforms, pip will fall back to the source distributions, to be compiled locally.
 
-If you want to learn more about this project, read the [wiki](https://github.com/HDDcoin-Network/hddcoin-blockchain/wiki), or check out the [green paper](https://www.hddcoin.org/assets/HDDcoinGreenPaper.pdf).
+If you want to learn more about this project, read the [wiki](https://github.com/Strandedathome/rolls-blockchain/wiki), or check out the [green paper](https://www.rolls.org/assets/HDDcoinGreenPaper.pdf).
 
 ## Contributions
 
@@ -19,7 +19,7 @@ You can visit our [Trello project board](https://trello.com/b/ZuNx7sET) to get a
 Generally, things to the left are in progress or done. Some things go through "Coming up soon", but some will come directly out of other columns.
 Usually, the things closer to the top of each column are the ones that will be worked on soonest.
 If you are interested in cryptography, math, or just like hacking in python, there are many interesting problems to work on.
-Contact any of the team members on [Keybase](https://keybase.io/team/hddcoin_network.public), which we use as the main communication method. You can also comment on any Trello card.
+Contact any of the team members on [Keybase](https://keybase.io/team/rolls_network.public), which we use as the main communication method. You can also comment on any Trello card.
 
 We ask that external contributors create a fork of the `main` branch for any feature work they wish to take on.
 
@@ -51,7 +51,7 @@ proofs of space during testing. The next time tests are run, this will not be ne
 ```bash
 . ./activate
 pip install ".[dev]"
-black hddcoin tests && mypy hddcoin tests && flake8 hddcoin tests
+black rolls tests && mypy rolls tests && flake8 rolls tests
 py.test tests -v --durations 0
 ```
 
@@ -63,7 +63,7 @@ If you want verbose logging for tests, edit the `tests/pytest.ini` file.
 
 ## Pre-Commit
 
-We provide a [pre-commit configuration](https://github.com/HDDcoin-Network/hddcoin-blockchain/blob/main/.pre-commit-config.yaml) which triggers several useful
+We provide a [pre-commit configuration](https://github.com/Strandedathome/rolls-blockchain/blob/main/.pre-commit-config.yaml) which triggers several useful
 hooks (including linters/formatter) before each commit you make if you installed and set up [pre-commit](https://pre-commit.com/). This will help
 to reduce the time you spend on failed CI jobs.
 
@@ -79,7 +79,7 @@ provided configuration with `pre-commit install`.
 4. Preferences > Settings > Python > Linting > flake8 enabled
 5. Preferences > Settings > Python > Linting > mypy enabled
 6. Preferences > Settings > Formatting > Python > Provider > black
-7. Preferences > Settings > mypy > Targets: set to `./hddcoin` and `./tests`
+7. Preferences > Settings > mypy > Targets: set to `./rolls` and `./tests`
 
 ## Configure Pycharm
 
@@ -92,12 +92,12 @@ workflow.
 3. Install BlackConnect plugin
 4. Set to run python black on save
 5. Set line length to 120
-6. Install these linters https://github.com/HDDcoin-Network/hddcoin-blockchain/tree/main/.github/linters
+6. Install these linters https://github.com/Strandedathome/rolls-blockchain/tree/main/.github/linters
 
 ## Testnets and review environments
 
 With the launch of `1.0.0` we will begin running an official `testnet`.
-Prior to the release of `1.1.0` there will be two running test nets. `testnet` and `transaction-beta-testnet`. The `transaction-beta-testnet` testnet will be a beta of the pending 1.1 release, which will enable transactions on the hddcoin blockchain.
+Prior to the release of `1.1.0` there will be two running test nets. `testnet` and `transaction-beta-testnet`. The `transaction-beta-testnet` testnet will be a beta of the pending 1.1 release, which will enable transactions on the rolls blockchain.
 Following the release of `1.1.0`, the official `testnet` will include all changes that have been accepted to the current release branch.
 
 Prior to proposing changes to `main`, proposers should consider if running a `beta testnet` review environment will make the reviewer more effective when evaluating a change.

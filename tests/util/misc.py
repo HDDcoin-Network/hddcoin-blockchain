@@ -1,6 +1,6 @@
 import pytest
-from hddcoin.util.misc import format_bytes
-from hddcoin.util.misc import format_minutes
+from rolls.util.misc import format_bytes
+from rolls.util.misc import format_minutes
 
 
 class TestMisc:

@@ -3,14 +3,14 @@ import asyncio
 import aiohttp
 import pytest
 
-from hddcoin.protocols.shared_protocol import protocol_version
-from hddcoin.server.outbound_message import NodeType
-from hddcoin.server.server import HDDcoinServer, ssl_context_for_client
-from hddcoin.server.ws_connection import WSHDDcoinConnection
-from hddcoin.ssl.create_ssl import generate_ca_signed_cert
-from hddcoin.types.peer_info import PeerInfo
+from rolls.protocols.shared_protocol import protocol_version
+from rolls.server.outbound_message import NodeType
+from rolls.server.server import HDDcoinServer, ssl_context_for_client
+from rolls.server.ws_connection import WSHDDcoinConnection
+from rolls.ssl.create_ssl import generate_ca_signed_cert
+from rolls.types.peer_info import PeerInfo
 from tests.block_tools import test_constants
-from hddcoin.util.ints import uint16
+from rolls.util.ints import uint16
 from tests.setup_nodes import (
     bt,
     self_hostname,
@@ -105,10 +105,10 @@ class TestSSL:
         pub_crt = farmer_server._private_key_path.parent / "non_valid.crt"
         pub_key = farmer_server._private_key_path.parent / "non_valid.key"
         generate_ca_signed_cert(
-            farmer_server.hddcoin_ca_crt_path.read_bytes(), farmer_server.hddcoin_ca_key_path.read_bytes(), pub_crt, pub_key
+            farmer_server.rolls_ca_crt_path.read_bytes(), farmer_server.rolls_ca_key_path.read_bytes(), pub_crt, pub_key
         )
         ssl_context = ssl_context_for_client(
-            farmer_server.hddcoin_ca_crt_path, farmer_server.hddcoin_ca_key_path, pub_crt, pub_key
+            farmer_server.rolls_ca_crt_path, farmer_server.rolls_ca_key_path, pub_crt, pub_key
         )
         connected = await establish_connection(farmer_server, 12312, ssl_context)
         assert connected is False
@@ -128,13 +128,13 @@ class TestSSL:
         pub_crt = full_node_server._private_key_path.parent / "p2p.crt"
         pub_key = full_node_server._private_key_path.parent / "p2p.key"
         generate_ca_signed_cert(
-            full_node_server.hddcoin_ca_crt_path.read_bytes(),
-            full_node_server.hddcoin_ca_key_path.read_bytes(),
+            full_node_server.rolls_ca_crt_path.read_bytes(),
+            full_node_server.rolls_ca_key_path.read_bytes(),
             pub_crt,
             pub_key,
         )
         ssl_context = ssl_context_for_client(
-            full_node_server.hddcoin_ca_crt_path, full_node_server.hddcoin_ca_key_path, pub_crt, pub_key
+            full_node_server.rolls_ca_crt_path, full_node_server.rolls_ca_key_path, pub_crt, pub_key
         )
         connected = await establish_connection(full_node_server, 12312, ssl_context)
         assert connected is True
@@ -148,10 +148,10 @@ class TestSSL:
         pub_crt = wallet_server._private_key_path.parent / "p2p.crt"
         pub_key = wallet_server._private_key_path.parent / "p2p.key"
         generate_ca_signed_cert(
-            wallet_server.hddcoin_ca_crt_path.read_bytes(), wallet_server.hddcoin_ca_key_path.read_bytes(), pub_crt, pub_key
+            wallet_server.rolls_ca_crt_path.read_bytes(), wallet_server.rolls_ca_key_path.read_bytes(), pub_crt, pub_key
         )
         ssl_context = ssl_context_for_client(
-            wallet_server.hddcoin_ca_crt_path, wallet_server.hddcoin_ca_key_path, pub_crt, pub_key
+            wallet_server.rolls_ca_crt_path, wallet_server.rolls_ca_key_path, pub_crt, pub_key
         )
         connected = await establish_connection(wallet_server, 12312, ssl_context)
         assert connected is False
@@ -180,13 +180,13 @@ class TestSSL:
         pub_crt = harvester_server._private_key_path.parent / "p2p.crt"
         pub_key = harvester_server._private_key_path.parent / "p2p.key"
         generate_ca_signed_cert(
-            harvester_server.hddcoin_ca_crt_path.read_bytes(),
-            harvester_server.hddcoin_ca_key_path.read_bytes(),
+            harvester_server.rolls_ca_crt_path.read_bytes(),
+            harvester_server.rolls_ca_key_path.read_bytes(),
             pub_crt,
             pub_key,
         )
         ssl_context = ssl_context_for_client(
-            harvester_server.hddcoin_ca_crt_path, harvester_server.hddcoin_ca_key_path, pub_crt, pub_key
+            harvester_server.rolls_ca_crt_path, harvester_server.rolls_ca_key_path, pub_crt, pub_key
         )
         connected = await establish_connection(harvester_server, 12312, ssl_context)
         assert connected is False
@@ -211,16 +211,16 @@ class TestSSL:
         introducer_api, introducer_server = introducer
 
         # Create not authenticated cert
-        pub_crt = introducer_server.hddcoin_ca_key_path.parent / "p2p.crt"
-        pub_key = introducer_server.hddcoin_ca_key_path.parent / "p2p.key"
+        pub_crt = introducer_server.rolls_ca_key_path.parent / "p2p.crt"
+        pub_key = introducer_server.rolls_ca_key_path.parent / "p2p.key"
         generate_ca_signed_cert(
-            introducer_server.hddcoin_ca_crt_path.read_bytes(),
-            introducer_server.hddcoin_ca_key_path.read_bytes(),
+            introducer_server.rolls_ca_crt_path.read_bytes(),
+            introducer_server.rolls_ca_key_path.read_bytes(),
             pub_crt,
             pub_key,
         )
         ssl_context = ssl_context_for_client(
-            introducer_server.hddcoin_ca_crt_path, introducer_server.hddcoin_ca_key_path, pub_crt, pub_key
+            introducer_server.rolls_ca_crt_path, introducer_server.rolls_ca_key_path, pub_crt, pub_key
         )
         connected = await establish_connection(introducer_server, 12312, ssl_context)
         assert connected is True
@@ -233,13 +233,13 @@ class TestSSL:
         pub_crt = timelord_server._private_key_path.parent / "p2p.crt"
         pub_key = timelord_server._private_key_path.parent / "p2p.key"
         generate_ca_signed_cert(
-            timelord_server.hddcoin_ca_crt_path.read_bytes(),
-            timelord_server.hddcoin_ca_key_path.read_bytes(),
+            timelord_server.rolls_ca_crt_path.read_bytes(),
+            timelord_server.rolls_ca_key_path.read_bytes(),
             pub_crt,
             pub_key,
         )
         ssl_context = ssl_context_for_client(
-            timelord_server.hddcoin_ca_crt_path, timelord_server.hddcoin_ca_key_path, pub_crt, pub_key
+            timelord_server.rolls_ca_crt_path, timelord_server.rolls_ca_key_path, pub_crt, pub_key
         )
         connected = await establish_connection(timelord_server, 12312, ssl_context)
         assert connected is False

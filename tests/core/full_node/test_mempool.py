@@ -6,41 +6,41 @@ from typing import Dict, List, Optional, Tuple, Callable
 
 import pytest
 
-import hddcoin.server.ws_connection as ws
+import rolls.server.ws_connection as ws
 
-from hddcoin.full_node.mempool import Mempool
-from hddcoin.full_node.full_node_api import FullNodeAPI
-from hddcoin.protocols import full_node_protocol
-from hddcoin.simulator.simulator_protocol import FarmNewBlockProtocol
-from hddcoin.types.announcement import Announcement
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.coin_spend import CoinSpend
-from hddcoin.types.condition_opcodes import ConditionOpcode
-from hddcoin.types.condition_with_args import ConditionWithArgs
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.types.mempool_item import MempoolItem
-from hddcoin.util.clvm import int_to_bytes
-from hddcoin.util.condition_tools import conditions_for_solution
-from hddcoin.util.errors import Err
-from hddcoin.util.ints import uint64
-from hddcoin.util.hash import std_hash
-from hddcoin.types.mempool_inclusion_status import MempoolInclusionStatus
-from hddcoin.util.api_decorators import api_request, peer_required, bytes_required
-from hddcoin.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from hddcoin.full_node.pending_tx_cache import PendingTxCache
+from rolls.full_node.mempool import Mempool
+from rolls.full_node.full_node_api import FullNodeAPI
+from rolls.protocols import full_node_protocol
+from rolls.simulator.simulator_protocol import FarmNewBlockProtocol
+from rolls.types.announcement import Announcement
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.coin_spend import CoinSpend
+from rolls.types.condition_opcodes import ConditionOpcode
+from rolls.types.condition_with_args import ConditionWithArgs
+from rolls.types.spend_bundle import SpendBundle
+from rolls.types.mempool_item import MempoolItem
+from rolls.util.clvm import int_to_bytes
+from rolls.util.condition_tools import conditions_for_solution
+from rolls.util.errors import Err
+from rolls.util.ints import uint64
+from rolls.util.hash import std_hash
+from rolls.types.mempool_inclusion_status import MempoolInclusionStatus
+from rolls.util.api_decorators import api_request, peer_required, bytes_required
+from rolls.full_node.mempool_check_conditions import get_name_puzzle_conditions
+from rolls.full_node.pending_tx_cache import PendingTxCache
 from blspy import G2Element
 
-from hddcoin.util.recursive_replace import recursive_replace
+from rolls.util.recursive_replace import recursive_replace
 from tests.connection_utils import connect_and_get_peer
 from tests.core.node_height import node_height_at_least
 from tests.setup_nodes import bt, setup_simulators_and_wallets
 from tests.time_out_assert import time_out_assert
-from hddcoin.types.blockchain_format.program import Program, INFINITE_COST
-from hddcoin.consensus.cost_calculator import NPCResult
-from hddcoin.types.blockchain_format.program import SerializedProgram
+from rolls.types.blockchain_format.program import Program, INFINITE_COST
+from rolls.consensus.cost_calculator import NPCResult
+from rolls.types.blockchain_format.program import SerializedProgram
 from clvm_tools import binutils
-from hddcoin.types.generator_types import BlockGenerator
+from rolls.types.generator_types import BlockGenerator
 from clvm.casts import int_from_bytes
 
 BURN_PUZZLE_HASH = b"0" * 32

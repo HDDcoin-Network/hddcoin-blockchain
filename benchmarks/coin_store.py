@@ -2,18 +2,18 @@ import asyncio
 import random
 from time import time
 from pathlib import Path
-from hddcoin.full_node.coin_store import CoinStore
+from rolls.full_node.coin_store import CoinStore
 from typing import List
 import os
 import sys
 
 import aiosqlite
-from hddcoin.util.db_wrapper import DBWrapper
-from hddcoin.consensus.coinbase import create_farmer_coin, create_pool_coin
-from hddcoin.consensus.default_constants import DEFAULT_CONSTANTS
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.util.ints import uint64
+from rolls.util.db_wrapper import DBWrapper
+from rolls.consensus.coinbase import create_farmer_coin, create_pool_coin
+from rolls.consensus.default_constants import DEFAULT_CONSTANTS
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.blockchain_format.coin import Coin
+from rolls.util.ints import uint64
 
 
 NUM_ITERS = 200

@@ -5,15 +5,15 @@ from typing import List
 import pytest
 from blspy import PrivateKey
 
-from hddcoin.pools.pool_wallet import PoolWallet
-from hddcoin.pools.pool_wallet_info import PoolState, FARMING_TO_POOL
-from hddcoin.simulator.simulator_protocol import FarmNewBlockProtocol
-from hddcoin.types.coin_spend import CoinSpend
-from hddcoin.types.full_block import FullBlock
-from hddcoin.types.peer_info import PeerInfo
-from hddcoin.util.ints import uint16, uint32
-from hddcoin.wallet.derive_keys import master_sk_to_singleton_owner_sk
-from hddcoin.wallet.wallet_state_manager import WalletStateManager
+from rolls.pools.pool_wallet import PoolWallet
+from rolls.pools.pool_wallet_info import PoolState, FARMING_TO_POOL
+from rolls.simulator.simulator_protocol import FarmNewBlockProtocol
+from rolls.types.coin_spend import CoinSpend
+from rolls.types.full_block import FullBlock
+from rolls.types.peer_info import PeerInfo
+from rolls.util.ints import uint16, uint32
+from rolls.wallet.derive_keys import master_sk_to_singleton_owner_sk
+from rolls.wallet.wallet_state_manager import WalletStateManager
 from tests.setup_nodes import self_hostname, setup_simulators_and_wallets
 
 

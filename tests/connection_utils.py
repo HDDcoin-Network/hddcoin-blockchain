@@ -7,14 +7,14 @@ from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes, serialization
 
-from hddcoin.protocols.shared_protocol import protocol_version
-from hddcoin.server.outbound_message import NodeType
-from hddcoin.server.server import HDDcoinServer, ssl_context_for_client
-from hddcoin.server.ws_connection import WSHDDcoinConnection
-from hddcoin.ssl.create_ssl import generate_ca_signed_cert
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.peer_info import PeerInfo
-from hddcoin.util.ints import uint16
+from rolls.protocols.shared_protocol import protocol_version
+from rolls.server.outbound_message import NodeType
+from rolls.server.server import HDDcoinServer, ssl_context_for_client
+from rolls.server.ws_connection import WSHDDcoinConnection
+from rolls.ssl.create_ssl import generate_ca_signed_cert
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.peer_info import PeerInfo
+from rolls.util.ints import uint16
 from tests.setup_nodes import self_hostname
 from tests.time_out_assert import time_out_assert
 
@@ -37,10 +37,10 @@ async def add_dummy_connection(
     dummy_crt_path = server._private_key_path.parent / "dummy.crt"
     dummy_key_path = server._private_key_path.parent / "dummy.key"
     generate_ca_signed_cert(
-        server.hddcoin_ca_crt_path.read_bytes(), server.hddcoin_ca_key_path.read_bytes(), dummy_crt_path, dummy_key_path
+        server.rolls_ca_crt_path.read_bytes(), server.rolls_ca_key_path.read_bytes(), dummy_crt_path, dummy_key_path
     )
     ssl_context = ssl_context_for_client(
-        server.hddcoin_ca_crt_path, server.hddcoin_ca_key_path, dummy_crt_path, dummy_key_path
+        server.rolls_ca_crt_path, server.rolls_ca_key_path, dummy_crt_path, dummy_key_path
     )
     pem_cert = x509.load_pem_x509_certificate(dummy_crt_path.read_bytes(), default_backend())
     der_cert = x509.load_der_x509_certificate(pem_cert.public_bytes(serialization.Encoding.DER), default_backend())

@@ -6,10 +6,10 @@ import time
 import pytest
 import logging
 
-from hddcoin.protocols import full_node_protocol
-from hddcoin.types.peer_info import PeerInfo
-from hddcoin.util.ints import uint16
-from hddcoin.wallet.transaction_record import TransactionRecord
+from rolls.protocols import full_node_protocol
+from rolls.types.peer_info import PeerInfo
+from rolls.util.ints import uint16
+from rolls.wallet.transaction_record import TransactionRecord
 from tests.connection_utils import connect_and_get_peer
 from tests.setup_nodes import bt, self_hostname, setup_simulators_and_wallets
 from tests.time_out_assert import time_out_assert

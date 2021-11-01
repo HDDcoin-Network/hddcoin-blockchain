@@ -1,23 +1,23 @@
 import asyncio
-from hddcoin.util.config import load_config, save_config
+from rolls.util.config import load_config, save_config
 import logging
 from pathlib import Path
 
 import pytest
 
-from hddcoin.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from hddcoin.rpc.full_node_rpc_api import FullNodeRpcApi
-from hddcoin.rpc.full_node_rpc_client import FullNodeRpcClient
-from hddcoin.rpc.rpc_server import start_rpc_server
-from hddcoin.rpc.wallet_rpc_api import WalletRpcApi
-from hddcoin.rpc.wallet_rpc_client import WalletRpcClient
-from hddcoin.simulator.simulator_protocol import FarmNewBlockProtocol
-from hddcoin.types.peer_info import PeerInfo
-from hddcoin.util.bech32m import encode_puzzle_hash
-from hddcoin.consensus.coinbase import create_puzzlehash_for_pk
-from hddcoin.wallet.derive_keys import master_sk_to_wallet_sk
-from hddcoin.util.ints import uint16, uint32
-from hddcoin.wallet.transaction_record import TransactionRecord
+from rolls.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+from rolls.rpc.full_node_rpc_api import FullNodeRpcApi
+from rolls.rpc.full_node_rpc_client import FullNodeRpcClient
+from rolls.rpc.rpc_server import start_rpc_server
+from rolls.rpc.wallet_rpc_api import WalletRpcApi
+from rolls.rpc.wallet_rpc_client import WalletRpcClient
+from rolls.simulator.simulator_protocol import FarmNewBlockProtocol
+from rolls.types.peer_info import PeerInfo
+from rolls.util.bech32m import encode_puzzle_hash
+from rolls.consensus.coinbase import create_puzzlehash_for_pk
+from rolls.wallet.derive_keys import master_sk_to_wallet_sk
+from rolls.util.ints import uint16, uint32
+from rolls.wallet.transaction_record import TransactionRecord
 from tests.setup_nodes import bt, setup_simulators_and_wallets, self_hostname
 from tests.time_out_assert import time_out_assert
 

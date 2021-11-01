@@ -38,7 +38,7 @@ steps:
   # Install an Apple certificate required to build on a macOS agent machine
   - task: InstallAppleCertificate@2
     inputs:
-      certSecureFile: 'hddcoin-apple-dev-id-app.p12'
+      certSecureFile: 'rolls-apple-dev-id-app.p12'
       certPwd: $(HDDCOIN_APPLE_DEV_ID_APP_PASS)
       keychain: temp
       deleteCert: true
@@ -91,7 +91,7 @@ steps:
       export AWS_ACCESS_KEY_ID=$(AccessKey)
       export AWS_SECRET_ACCESS_KEY=$(SecretKey)
       export AWS_DEFAULT_REGION=us-west-2
-      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/*.dmg s3://download-hddcoin-net/builds/
+      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/*.dmg s3://download-rolls-net/builds/
     displayName: "Upload to S3"
 
   - bash: |
@@ -99,7 +99,7 @@ steps:
       export HDDCOIN_VERSION="HDDcoin-"$(<version.txt)
 
       pip3 install py3createtorrent
-      py3createtorrent -f -t udp://tracker.opentrackr.org:1337/announce $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg -o $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg.torrent --webseed https://download-hddcoin-net.s3.us-west-2.amazonaws.com/install/$HDDCOIN_VERSION.dmg
+      py3createtorrent -f -t udp://tracker.opentrackr.org:1337/announce $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg -o $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg.torrent --webseed https://download-rolls-net.s3.us-west-2.amazonaws.com/install/$HDDCOIN_VERSION.dmg
       ls
     displayName: "Create torrent file"
     condition: and(succeeded(), contains(variables['build.sourceBranch'], 'refs/tags/'))
@@ -110,8 +110,8 @@ steps:
       export AWS_DEFAULT_REGION=us-west-2
       cd $(System.DefaultWorkingDirectory)/build_scripts/
       export HDDCOIN_VERSION="HDDcoin-"$(<version.txt)
-      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg s3://download-hddcoin-net/beta/HDDcoin-intel_latest_beta.dmg
-      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg.sha256 s3://download-hddcoin-net/beta/HDDcoin-intel_latest_beta.dmg.sha256
+      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg s3://download-rolls-net/beta/HDDcoin-intel_latest_beta.dmg
+      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg.sha256 s3://download-rolls-net/beta/HDDcoin-intel_latest_beta.dmg.sha256
     displayName: "Upload Beta Files"
     condition: and(succeeded(), contains(variables['build.sourceBranch'], 'refs/heads/main'))
 
@@ -121,9 +121,9 @@ steps:
       export AWS_DEFAULT_REGION=us-west-2
       cd $(System.DefaultWorkingDirectory)/build_scripts/
       export HDDCOIN_VERSION="HDDcoin-"$(<version.txt)
-      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg s3://download-hddcoin-net/install/
-      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg.sha256 s3://download-hddcoin-net/install/
-      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg.torrent s3://download-hddcoin-net/torrents/
+      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg s3://download-rolls-net/install/
+      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg.sha256 s3://download-rolls-net/install/
+      aws s3 cp $(System.DefaultWorkingDirectory)/build_scripts/final_installer/$HDDCOIN_VERSION.dmg.torrent s3://download-rolls-net/torrents/
     displayName: "Upload Release Files"
     condition: and(succeeded(), contains(variables['build.sourceBranch'], 'refs/tags/'))
 
@@ -131,6 +131,6 @@ steps:
       cd $(System.DefaultWorkingDirectory)/build_scripts/
       export HDDCOIN_TAG=$(<version.txt)
       export REPO_NAME=$(echo $(Build.Repository.Name) | cut -d'/' -f 2)
-      curl -s -XPOST -H "Authorization: Bearer $(GLUE_ACCESS_TOKEN)" --data "{\"hddcoin_ref\": \"$HDDCOIN_TAG\"}" $(GLUE_API_URL)/api/v1/${REPO_NAME}/${HDDCOIN_TAG}/success/build-macos
+      curl -s -XPOST -H "Authorization: Bearer $(GLUE_ACCESS_TOKEN)" --data "{\"rolls_ref\": \"$HDDCOIN_TAG\"}" $(GLUE_API_URL)/api/v1/${REPO_NAME}/${HDDCOIN_TAG}/success/build-macos
     displayName: "Mark installer complete"
     condition: and(succeeded(), contains(variables['build.sourceBranch'], 'refs/tags/'))

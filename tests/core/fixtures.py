@@ -6,14 +6,14 @@ from typing import List
 import aiosqlite
 import pytest
 
-from hddcoin.consensus.blockchain import Blockchain
-from hddcoin.consensus.constants import ConsensusConstants
-from hddcoin.full_node.block_store import BlockStore
-from hddcoin.full_node.coin_store import CoinStore
-from hddcoin.full_node.hint_store import HintStore
-from hddcoin.types.full_block import FullBlock
-from hddcoin.util.db_wrapper import DBWrapper
-from hddcoin.util.path import mkdir
+from rolls.consensus.blockchain import Blockchain
+from rolls.consensus.constants import ConsensusConstants
+from rolls.full_node.block_store import BlockStore
+from rolls.full_node.coin_store import CoinStore
+from rolls.full_node.hint_store import HintStore
+from rolls.types.full_block import FullBlock
+from rolls.util.db_wrapper import DBWrapper
+from rolls.util.path import mkdir
 from tests.setup_nodes import bt, test_constants
 
 
@@ -103,8 +103,8 @@ def persistent_blocks(
 ):
     # try loading from disc, if not create new blocks.db file
     # TODO hash fixtures.py and blocktool.py, add to path, delete if the files changed
-    block_path_dir = Path("~/.hddcoin/blocks").expanduser()
-    file_path = Path(f"~/.hddcoin/blocks/{db_name}").expanduser()
+    block_path_dir = Path("~/.rolls/blocks").expanduser()
+    file_path = Path(f"~/.rolls/blocks/{db_name}").expanduser()
     if not path.exists(block_path_dir):
         mkdir(block_path_dir.parent)
         mkdir(block_path_dir)

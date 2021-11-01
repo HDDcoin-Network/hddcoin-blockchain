@@ -6,13 +6,13 @@ import time
 import pytest
 from clvm_tools import binutils
 
-from hddcoin.consensus.condition_costs import ConditionCost
-from hddcoin.consensus.cost_calculator import NPCResult, calculate_cost_of_program
-from hddcoin.full_node.bundle_tools import simple_solution_generator
-from hddcoin.full_node.mempool_check_conditions import get_name_puzzle_conditions, get_puzzle_and_solution_for_coin
-from hddcoin.types.blockchain_format.program import Program, SerializedProgram
-from hddcoin.types.generator_types import BlockGenerator
-from hddcoin.wallet.puzzles import p2_delegated_puzzle_or_hidden_puzzle
+from rolls.consensus.condition_costs import ConditionCost
+from rolls.consensus.cost_calculator import NPCResult, calculate_cost_of_program
+from rolls.full_node.bundle_tools import simple_solution_generator
+from rolls.full_node.mempool_check_conditions import get_name_puzzle_conditions, get_puzzle_and_solution_for_coin
+from rolls.types.blockchain_format.program import Program, SerializedProgram
+from rolls.types.generator_types import BlockGenerator
+from rolls.wallet.puzzles import p2_delegated_puzzle_or_hidden_puzzle
 from tests.setup_nodes import bt, test_constants
 
 from .make_block_generator import make_block_generator
@@ -46,7 +46,7 @@ def large_block_generator(size):
     except FileNotFoundError:
         generator = make_block_generator(size)
         blob = bytes(generator.program)
-        #  TODO: Re-enable large-block*.hex but cache in ~/.hddcoin/subdir
+        #  TODO: Re-enable large-block*.hex but cache in ~/.rolls/subdir
         #  with open(hex_path, "w") as f:
         #      f.write(blob.hex())
         return blob

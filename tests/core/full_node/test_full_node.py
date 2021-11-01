@@ -9,38 +9,38 @@ from typing import Dict, Optional, List
 
 import pytest
 
-from hddcoin.consensus.pot_iterations import is_overflow_block
-from hddcoin.full_node.bundle_tools import detect_potential_template_generator
-from hddcoin.full_node.full_node_api import FullNodeAPI
-from hddcoin.full_node.signage_point import SignagePoint
-from hddcoin.protocols import full_node_protocol as fnp, full_node_protocol
-from hddcoin.protocols import timelord_protocol
-from hddcoin.protocols.full_node_protocol import RespondTransaction
-from hddcoin.protocols.protocol_message_types import ProtocolMessageTypes
-from hddcoin.server.address_manager import AddressManager
-from hddcoin.server.outbound_message import Message
-from hddcoin.simulator.simulator_protocol import FarmNewBlockProtocol
-from hddcoin.types.blockchain_format.classgroup import ClassgroupElement
-from hddcoin.types.blockchain_format.program import SerializedProgram
-from hddcoin.types.blockchain_format.vdf import CompressibleVDFField, VDFProof
-from hddcoin.types.condition_opcodes import ConditionOpcode
-from hddcoin.types.condition_with_args import ConditionWithArgs
-from hddcoin.types.full_block import FullBlock
-from hddcoin.types.mempool_inclusion_status import MempoolInclusionStatus
-from hddcoin.types.peer_info import PeerInfo, TimestampedPeerInfo
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.types.unfinished_block import UnfinishedBlock
+from rolls.consensus.pot_iterations import is_overflow_block
+from rolls.full_node.bundle_tools import detect_potential_template_generator
+from rolls.full_node.full_node_api import FullNodeAPI
+from rolls.full_node.signage_point import SignagePoint
+from rolls.protocols import full_node_protocol as fnp, full_node_protocol
+from rolls.protocols import timelord_protocol
+from rolls.protocols.full_node_protocol import RespondTransaction
+from rolls.protocols.protocol_message_types import ProtocolMessageTypes
+from rolls.server.address_manager import AddressManager
+from rolls.server.outbound_message import Message
+from rolls.simulator.simulator_protocol import FarmNewBlockProtocol
+from rolls.types.blockchain_format.classgroup import ClassgroupElement
+from rolls.types.blockchain_format.program import SerializedProgram
+from rolls.types.blockchain_format.vdf import CompressibleVDFField, VDFProof
+from rolls.types.condition_opcodes import ConditionOpcode
+from rolls.types.condition_with_args import ConditionWithArgs
+from rolls.types.full_block import FullBlock
+from rolls.types.mempool_inclusion_status import MempoolInclusionStatus
+from rolls.types.peer_info import PeerInfo, TimestampedPeerInfo
+from rolls.types.spend_bundle import SpendBundle
+from rolls.types.unfinished_block import UnfinishedBlock
 from tests.block_tools import get_signage_point
-from hddcoin.util.clvm import int_to_bytes
-from hddcoin.util.errors import Err
-from hddcoin.util.hash import std_hash
-from hddcoin.util.ints import uint8, uint16, uint32, uint64
-from hddcoin.util.recursive_replace import recursive_replace
-from hddcoin.util.vdf_prover import get_vdf_info_and_proof
+from rolls.util.clvm import int_to_bytes
+from rolls.util.errors import Err
+from rolls.util.hash import std_hash
+from rolls.util.ints import uint8, uint16, uint32, uint64
+from rolls.util.recursive_replace import recursive_replace
+from rolls.util.vdf_prover import get_vdf_info_and_proof
 from tests.wallet_tools import WalletTool
 from tests.core.fixtures import empty_blockchain  # noqa: F401
-from hddcoin.wallet.cc_wallet.cc_wallet import CCWallet
-from hddcoin.wallet.transaction_record import TransactionRecord
+from rolls.wallet.cc_wallet.cc_wallet import CCWallet
+from rolls.wallet.transaction_record import TransactionRecord
 
 from tests.connection_utils import add_dummy_connection, connect_and_get_peer
 from tests.core.full_node.test_coin_store import get_future_reward_coins

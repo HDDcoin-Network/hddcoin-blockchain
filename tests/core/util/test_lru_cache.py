@@ -1,6 +1,6 @@
 import unittest
 
-from hddcoin.util.lru_cache import LRUCache
+from rolls.util.lru_cache import LRUCache
 
 
 class TestLRUCache(unittest.TestCase):

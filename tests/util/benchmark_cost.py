@@ -4,14 +4,14 @@ from secrets import token_bytes
 from blspy import AugSchemeMPL, PrivateKey
 from clvm_tools import binutils
 
-from hddcoin.consensus.default_constants import DEFAULT_CONSTANTS
-from hddcoin.types.blockchain_format.program import Program, INFINITE_COST
-from hddcoin.types.condition_opcodes import ConditionOpcode
-from hddcoin.types.condition_with_args import ConditionWithArgs
-from hddcoin.util.ints import uint32
+from rolls.consensus.default_constants import DEFAULT_CONSTANTS
+from rolls.types.blockchain_format.program import Program, INFINITE_COST
+from rolls.types.condition_opcodes import ConditionOpcode
+from rolls.types.condition_with_args import ConditionWithArgs
+from rolls.util.ints import uint32
 from tests.wallet_tools import WalletTool
-from hddcoin.wallet.derive_keys import master_sk_to_wallet_sk
-from hddcoin.wallet.puzzles.p2_delegated_puzzle import puzzle_for_pk
+from rolls.wallet.derive_keys import master_sk_to_wallet_sk
+from rolls.wallet.puzzles.p2_delegated_puzzle import puzzle_for_pk
 
 
 def float_to_str(f):

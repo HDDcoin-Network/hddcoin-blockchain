@@ -1,14 +1,14 @@
 import asyncio
 import pytest
-from hddcoin.simulator.simulator_protocol import FarmNewBlockProtocol
-from hddcoin.types.peer_info import PeerInfo
-from hddcoin.util.ints import uint16, uint32, uint64
+from rolls.simulator.simulator_protocol import FarmNewBlockProtocol
+from rolls.types.peer_info import PeerInfo
+from rolls.util.ints import uint16, uint32, uint64
 from tests.setup_nodes import setup_simulators_and_wallets
-from hddcoin.wallet.did_wallet.did_wallet import DIDWallet
-from hddcoin.types.blockchain_format.program import Program
+from rolls.wallet.did_wallet.did_wallet import DIDWallet
+from rolls.types.blockchain_format.program import Program
 from blspy import AugSchemeMPL
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.consensus.block_rewards import calculate_pool_reward, calculate_base_farmer_reward
+from rolls.types.spend_bundle import SpendBundle
+from rolls.consensus.block_rewards import calculate_pool_reward, calculate_base_farmer_reward
 from tests.time_out_assert import time_out_assert
 
 

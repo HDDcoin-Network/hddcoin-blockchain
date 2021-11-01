@@ -1,11 +1,11 @@
 from typing import List, Tuple
 
-from hddcoin.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.full_block import FullBlock
-from hddcoin.types.generator_types import BlockGenerator
-from hddcoin.util.generator_tools import additions_for_npc
+from rolls.full_node.mempool_check_conditions import get_name_puzzle_conditions
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.full_block import FullBlock
+from rolls.types.generator_types import BlockGenerator
+from rolls.util.generator_tools import additions_for_npc
 
 
 def run_and_get_removals_and_additions(

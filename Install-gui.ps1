@@ -17,7 +17,7 @@ Write-Output "Running 'git submodule update --init --recursive'."
 Write-Output ""
 git submodule update --init --recursive
 
-Set-Location hddcoin-blockchain-gui
+Set-Location rolls-blockchain-gui
 
 $ErrorActionPreference = "SilentlyContinue"
 npm install --loglevel=error
@@ -28,4 +28,4 @@ py ..\installhelper.py
 Write-Output ""
 Write-Output "HDDcoin blockchain Install-gui.ps1 completed."
 Write-Output ""
-Write-Output "Type 'cd hddcoin-blockchain-gui' and then 'npm run electron' to start the GUI."
+Write-Output "Type 'cd rolls-blockchain-gui' and then 'npm run electron' to start the GUI."

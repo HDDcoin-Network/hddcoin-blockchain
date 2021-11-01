@@ -2,9 +2,9 @@ import os
 import shutil
 import tempfile
 
-from hddcoin.util.file_keyring import FileKeyring
-from hddcoin.util.keychain import Keychain
-from hddcoin.util.keyring_wrapper import KeyringWrapper
+from rolls.util.file_keyring import FileKeyring
+from rolls.util.keychain import Keychain
+from rolls.util.keyring_wrapper import KeyringWrapper
 from functools import wraps
 from keyring.util import platform_
 from keyrings.cryptfile.cryptfile import CryptFileKeyring  # pyright: reportMissingImports=false
@@ -91,7 +91,7 @@ class TempKeyring:
     def __init__(
         self,
         user: str = "testing-1.8.0",
-        service: str = "testing-hddcoin-1.8.0",
+        service: str = "testing-rolls-1.8.0",
         populate: bool = False,
         existing_keyring_path: str = None,
         delete_on_cleanup: bool = True,
@@ -114,13 +114,13 @@ class TempKeyring:
         existing_keyring_dir = Path(existing_keyring_path).parent if existing_keyring_path else None
         temp_dir = existing_keyring_dir or tempfile.mkdtemp(prefix="test_keyring_wrapper")
 
-        mock_supports_keyring_passphrase_patch = patch("hddcoin.util.keychain.supports_keyring_passphrase")
+        mock_supports_keyring_passphrase_patch = patch("rolls.util.keychain.supports_keyring_passphrase")
         mock_supports_keyring_passphrase = mock_supports_keyring_passphrase_patch.start()
 
         # Patch supports_keyring_passphrase() to return True
         mock_supports_keyring_passphrase.return_value = True
 
-        mock_supports_os_passphrase_storage_patch = patch("hddcoin.util.keychain.supports_os_passphrase_storage")
+        mock_supports_os_passphrase_storage_patch = patch("rolls.util.keychain.supports_os_passphrase_storage")
         mock_supports_os_passphrase_storage = mock_supports_os_passphrase_storage_patch.start()
 
         # Patch supports_os_passphrase_storage() to return use_os_credential_store

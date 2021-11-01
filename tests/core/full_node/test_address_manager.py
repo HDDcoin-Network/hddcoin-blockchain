@@ -6,9 +6,9 @@ from pathlib import Path
 import aiosqlite
 import pytest
 
-from hddcoin.server.address_manager import AddressManager, ExtendedPeerInfo
-from hddcoin.server.address_manager_store import AddressManagerStore
-from hddcoin.types.peer_info import PeerInfo, TimestampedPeerInfo
+from rolls.server.address_manager import AddressManager, ExtendedPeerInfo
+from rolls.server.address_manager_store import AddressManagerStore
+from rolls.types.peer_info import PeerInfo, TimestampedPeerInfo
 
 
 @pytest.fixture(scope="module")

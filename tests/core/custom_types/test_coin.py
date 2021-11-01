@@ -1,7 +1,7 @@
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.util.ints import uint64
-from hddcoin.util.hash import std_hash
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.util.ints import uint64
+from rolls.util.hash import std_hash
 import io
 
 

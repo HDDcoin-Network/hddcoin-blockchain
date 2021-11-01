@@ -5,25 +5,25 @@ import signal
 from secrets import token_bytes
 from typing import Dict, List, Optional
 
-from hddcoin.consensus.constants import ConsensusConstants
-from hddcoin.daemon.server import WebSocketServer, create_server_for_daemon, daemon_launch_lock_path, singleton
-from hddcoin.full_node.full_node_api import FullNodeAPI
-from hddcoin.server.start_farmer import service_kwargs_for_farmer
-from hddcoin.server.start_full_node import service_kwargs_for_full_node
-from hddcoin.server.start_harvester import service_kwargs_for_harvester
-from hddcoin.server.start_introducer import service_kwargs_for_introducer
-from hddcoin.server.start_service import Service
-from hddcoin.server.start_timelord import service_kwargs_for_timelord
-from hddcoin.server.start_wallet import service_kwargs_for_wallet
-from hddcoin.simulator.start_simulator import service_kwargs_for_full_node_simulator
-from hddcoin.timelord.timelord_launcher import kill_processes, spawn_process
-from hddcoin.types.peer_info import PeerInfo
-from hddcoin.util.bech32m import encode_puzzle_hash
+from rolls.consensus.constants import ConsensusConstants
+from rolls.daemon.server import WebSocketServer, create_server_for_daemon, daemon_launch_lock_path, singleton
+from rolls.full_node.full_node_api import FullNodeAPI
+from rolls.server.start_farmer import service_kwargs_for_farmer
+from rolls.server.start_full_node import service_kwargs_for_full_node
+from rolls.server.start_harvester import service_kwargs_for_harvester
+from rolls.server.start_introducer import service_kwargs_for_introducer
+from rolls.server.start_service import Service
+from rolls.server.start_timelord import service_kwargs_for_timelord
+from rolls.server.start_wallet import service_kwargs_for_wallet
+from rolls.simulator.start_simulator import service_kwargs_for_full_node_simulator
+from rolls.timelord.timelord_launcher import kill_processes, spawn_process
+from rolls.types.peer_info import PeerInfo
+from rolls.util.bech32m import encode_puzzle_hash
 from tests.block_tools import create_block_tools, create_block_tools_async, test_constants
 from tests.util.keyring import TempKeyring
-from hddcoin.util.hash import std_hash
-from hddcoin.util.ints import uint16, uint32
-from hddcoin.util.keychain import bytes_to_mnemonic
+from rolls.util.hash import std_hash
+from rolls.util.ints import uint16, uint32
+from rolls.util.keychain import bytes_to_mnemonic
 from tests.time_out_assert import time_out_assert_custom_interval
 
 

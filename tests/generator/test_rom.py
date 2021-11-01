@@ -1,23 +1,23 @@
 from clvm_tools import binutils
 from clvm_tools.clvmc import compile_clvm_text
 
-from hddcoin.full_node.generator import run_generator
-from hddcoin.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from hddcoin.types.blockchain_format.program import Program, SerializedProgram
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.condition_with_args import ConditionWithArgs
-from hddcoin.types.name_puzzle_condition import NPC
-from hddcoin.types.generator_types import BlockGenerator, GeneratorArg
-from hddcoin.util.clvm import int_to_bytes
-from hddcoin.util.condition_tools import ConditionOpcode
-from hddcoin.util.ints import uint32
-from hddcoin.wallet.puzzles.load_clvm import load_clvm
+from rolls.full_node.generator import run_generator
+from rolls.full_node.mempool_check_conditions import get_name_puzzle_conditions
+from rolls.types.blockchain_format.program import Program, SerializedProgram
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.condition_with_args import ConditionWithArgs
+from rolls.types.name_puzzle_condition import NPC
+from rolls.types.generator_types import BlockGenerator, GeneratorArg
+from rolls.util.clvm import int_to_bytes
+from rolls.util.condition_tools import ConditionOpcode
+from rolls.util.ints import uint32
+from rolls.wallet.puzzles.load_clvm import load_clvm
 
 MAX_COST = int(1e15)
 COST_PER_BYTE = int(12000)
 
 
-DESERIALIZE_MOD = load_clvm("chialisp_deserialisation.clvm", package_or_requirement="hddcoin.wallet.puzzles")
+DESERIALIZE_MOD = load_clvm("chialisp_deserialisation.clvm", package_or_requirement="rolls.wallet.puzzles")
 
 
 GENERATOR_CODE = """

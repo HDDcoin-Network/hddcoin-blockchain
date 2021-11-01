@@ -1,6 +1,6 @@
 import pytest
 
-from hddcoin.wallet.chialisp import (
+from rolls.wallet.chialisp import (
     apply,
     args,
     cons,

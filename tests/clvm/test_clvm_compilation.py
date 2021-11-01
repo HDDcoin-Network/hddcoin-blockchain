@@ -3,48 +3,48 @@ from unittest import TestCase
 
 from clvm_tools.clvmc import compile_clvm
 
-from hddcoin.types.blockchain_format.program import Program, SerializedProgram
+from rolls.types.blockchain_format.program import Program, SerializedProgram
 
 wallet_program_files = set(
     [
-        "hddcoin/wallet/puzzles/calculate_synthetic_public_key.clvm",
-        "hddcoin/wallet/puzzles/cc.clvm",
-        "hddcoin/wallet/puzzles/chialisp_deserialisation.clvm",
-        "hddcoin/wallet/puzzles/rom_bootstrap_generator.clvm",
-        "hddcoin/wallet/puzzles/generator_for_single_coin.clvm",
-        "hddcoin/wallet/puzzles/genesis-by-coin-id-with-0.clvm",
-        "hddcoin/wallet/puzzles/genesis-by-puzzle-hash-with-0.clvm",
-        "hddcoin/wallet/puzzles/lock.inner.puzzle.clvm",
-        "hddcoin/wallet/puzzles/p2_conditions.clvm",
-        "hddcoin/wallet/puzzles/p2_delegated_conditions.clvm",
-        "hddcoin/wallet/puzzles/p2_delegated_puzzle.clvm",
-        "hddcoin/wallet/puzzles/p2_delegated_puzzle_or_hidden_puzzle.clvm",
-        "hddcoin/wallet/puzzles/p2_m_of_n_delegate_direct.clvm",
-        "hddcoin/wallet/puzzles/p2_puzzle_hash.clvm",
-        "hddcoin/wallet/puzzles/rl_aggregation.clvm",
-        "hddcoin/wallet/puzzles/rl.clvm",
-        "hddcoin/wallet/puzzles/sha256tree_module.clvm",
-        "hddcoin/wallet/puzzles/singleton_top_layer.clvm",
-        "hddcoin/wallet/puzzles/did_innerpuz.clvm",
-        "hddcoin/wallet/puzzles/decompress_puzzle.clvm",
-        "hddcoin/wallet/puzzles/decompress_coin_spend_entry_with_prefix.clvm",
-        "hddcoin/wallet/puzzles/decompress_coin_spend_entry.clvm",
-        "hddcoin/wallet/puzzles/block_program_zero.clvm",
-        "hddcoin/wallet/puzzles/test_generator_deserialize.clvm",
-        "hddcoin/wallet/puzzles/test_multiple_generator_input_arguments.clvm",
-        "hddcoin/wallet/puzzles/p2_singleton.clvm",
-        "hddcoin/wallet/puzzles/pool_waitingroom_innerpuz.clvm",
-        "hddcoin/wallet/puzzles/pool_member_innerpuz.clvm",
-        "hddcoin/wallet/puzzles/singleton_launcher.clvm",
-        "hddcoin/wallet/puzzles/p2_singleton_or_delayed_puzhash.clvm",
+        "rolls/wallet/puzzles/calculate_synthetic_public_key.clvm",
+        "rolls/wallet/puzzles/cc.clvm",
+        "rolls/wallet/puzzles/chialisp_deserialisation.clvm",
+        "rolls/wallet/puzzles/rom_bootstrap_generator.clvm",
+        "rolls/wallet/puzzles/generator_for_single_coin.clvm",
+        "rolls/wallet/puzzles/genesis-by-coin-id-with-0.clvm",
+        "rolls/wallet/puzzles/genesis-by-puzzle-hash-with-0.clvm",
+        "rolls/wallet/puzzles/lock.inner.puzzle.clvm",
+        "rolls/wallet/puzzles/p2_conditions.clvm",
+        "rolls/wallet/puzzles/p2_delegated_conditions.clvm",
+        "rolls/wallet/puzzles/p2_delegated_puzzle.clvm",
+        "rolls/wallet/puzzles/p2_delegated_puzzle_or_hidden_puzzle.clvm",
+        "rolls/wallet/puzzles/p2_m_of_n_delegate_direct.clvm",
+        "rolls/wallet/puzzles/p2_puzzle_hash.clvm",
+        "rolls/wallet/puzzles/rl_aggregation.clvm",
+        "rolls/wallet/puzzles/rl.clvm",
+        "rolls/wallet/puzzles/sha256tree_module.clvm",
+        "rolls/wallet/puzzles/singleton_top_layer.clvm",
+        "rolls/wallet/puzzles/did_innerpuz.clvm",
+        "rolls/wallet/puzzles/decompress_puzzle.clvm",
+        "rolls/wallet/puzzles/decompress_coin_spend_entry_with_prefix.clvm",
+        "rolls/wallet/puzzles/decompress_coin_spend_entry.clvm",
+        "rolls/wallet/puzzles/block_program_zero.clvm",
+        "rolls/wallet/puzzles/test_generator_deserialize.clvm",
+        "rolls/wallet/puzzles/test_multiple_generator_input_arguments.clvm",
+        "rolls/wallet/puzzles/p2_singleton.clvm",
+        "rolls/wallet/puzzles/pool_waitingroom_innerpuz.clvm",
+        "rolls/wallet/puzzles/pool_member_innerpuz.clvm",
+        "rolls/wallet/puzzles/singleton_launcher.clvm",
+        "rolls/wallet/puzzles/p2_singleton_or_delayed_puzhash.clvm",
     ]
 )
 
 clvm_include_files = set(
-    ["hddcoin/wallet/puzzles/create-lock-puzzlehash.clvm", "hddcoin/wallet/puzzles/condition_codes.clvm"]
+    ["rolls/wallet/puzzles/create-lock-puzzlehash.clvm", "rolls/wallet/puzzles/condition_codes.clvm"]
 )
 
-CLVM_PROGRAM_ROOT = "hddcoin/wallet/puzzles"
+CLVM_PROGRAM_ROOT = "rolls/wallet/puzzles"
 
 
 def list_files(dir, glob):
@@ -71,7 +71,7 @@ class TestClvmCompilation(TestCase):
 
     def test_all_programs_listed(self):
         """
-        Checks to see if a new .clvm file was added to hddcoin/wallet/puzzles, but not added to `wallet_program_files`
+        Checks to see if a new .clvm file was added to rolls/wallet/puzzles, but not added to `wallet_program_files`
         """
         existing_files = list_files(CLVM_PROGRAM_ROOT, "*.clvm")
         existing_file_paths = set([Path(x).relative_to(CLVM_PROGRAM_ROOT) for x in existing_files])

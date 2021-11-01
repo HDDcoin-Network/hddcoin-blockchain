@@ -82,7 +82,7 @@ jobs:
       uses: kitek/decode-base64-into-file-action@1.0
       with:
         encoded-value: ${{ secrets.WIN_CODE_SIGN_CERT }}
-        destination-file: .\hddcoin-blockchain-gui\win_code_sign_cert.p12
+        destination-file: .\rolls-blockchain-gui\win_code_sign_cert.p12
 
     # Create our own venv outside of the git directory JUST for getting the ACTUAL version so that install can't break it
     - name: Get version number
@@ -109,20 +109,20 @@ jobs:
       uses: actions/upload-artifact@v2.2.2
       with:
         name: Windows-Exe
-        path: ${{ github.workspace }}\hddcoin-blockchain-gui\HDDcoin-win32-x64\
+        path: ${{ github.workspace }}\rolls-blockchain-gui\HDDcoin-win32-x64\
 
     - name: Upload Installer to artifacts
       uses: actions/upload-artifact@v2.2.2
       with:
         name: Windows-Installers
-        path: ${{ github.workspace }}\hddcoin-blockchain-gui\release-builds\
+        path: ${{ github.workspace }}\rolls-blockchain-gui\release-builds\
 
     - name: Create Checksums
       env:
         HDDCOIN_INSTALLER_VERSION: ${{ steps.version_number.outputs.HDDCOIN_INSTALLER_VERSION }}
       run: |
-         certutil.exe -hashfile ${{ github.workspace }}\hddcoin-blockchain-gui\release-builds\windows-installer\HDDcoinSetup-${{ steps.version_number.outputs.HDDCOIN_INSTALLER_VERSION }}.exe SHA256 > ${{ github.workspace }}\hddcoin-blockchain-gui\release-builds\windows-installer\HDDcoinSetup-${{ steps.version_number.outputs.HDDCOIN_INSTALLER_VERSION }}.exe.sha256
-         ls ${{ github.workspace }}\hddcoin-blockchain-gui\release-builds\windows-installer\
+         certutil.exe -hashfile ${{ github.workspace }}\rolls-blockchain-gui\release-builds\windows-installer\HDDcoinSetup-${{ steps.version_number.outputs.HDDCOIN_INSTALLER_VERSION }}.exe SHA256 > ${{ github.workspace }}\rolls-blockchain-gui\release-builds\windows-installer\HDDcoinSetup-${{ steps.version_number.outputs.HDDCOIN_INSTALLER_VERSION }}.exe.sha256
+         ls ${{ github.workspace }}\rolls-blockchain-gui\release-builds\windows-installer\
 
     - name: Get tag name
       if: startsWith(github.ref, 'refs/tags/')
@@ -138,7 +138,7 @@ jobs:
             Authorization="Bearer ${{ secrets.GLUE_ACCESS_TOKEN }}"
         }
         $data = @{
-            hddcoin_ref='${{ steps.tag-name.outputs.TAG_NAME }}'
+            rolls_ref='${{ steps.tag-name.outputs.TAG_NAME }}'
         }
         $json = $data | ConvertTo-Json
         $response = Invoke-RestMethod '${{ secrets.GLUE_API_URL }}/api/v1/${{ steps.tag-name.outputs.REPO_NAME }}/${{ steps.tag-name.outputs.TAG_NAME }}/success/build-windows' -Method Post -Body $json -ContentType 'application/json' -Headers $headers

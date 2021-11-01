@@ -4,17 +4,17 @@ from typing import List, Tuple, Optional
 
 from blspy import AugSchemeMPL, G1Element, G2Element, PrivateKey
 
-from hddcoin.types.blockchain_format.program import Program
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.coin_spend import CoinSpend
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.util.errors import Err
-from hddcoin.util.condition_tools import ConditionOpcode
-from hddcoin.util.ints import uint64
-from hddcoin.consensus.default_constants import DEFAULT_CONSTANTS
-from hddcoin.wallet.lineage_proof import LineageProof
-from hddcoin.wallet.puzzles import (
+from rolls.types.blockchain_format.program import Program
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.coin_spend import CoinSpend
+from rolls.types.spend_bundle import SpendBundle
+from rolls.util.errors import Err
+from rolls.util.condition_tools import ConditionOpcode
+from rolls.util.ints import uint64
+from rolls.consensus.default_constants import DEFAULT_CONSTANTS
+from rolls.wallet.lineage_proof import LineageProof
+from rolls.wallet.puzzles import (
     p2_conditions,
     p2_delegated_puzzle_or_hidden_puzzle,
     singleton_top_layer,
@@ -25,14 +25,14 @@ from tests.clvm.test_puzzles import (
     secret_exponent_for_index,
 )
 
-from hddcoin.clvm.spend_sim import SpendSim, SimClient
+from rolls.clvm.spend_sim import SpendSim, SimClient
 
 """
 This test suite aims to test:
-    - hddcoin.wallet.puzzles.singleton_top_layer.py
-    - hddcoin.wallet.puzzles.singleton_top_layer.clvm
-    - hddcoin.wallet.puzzles.p2_singleton.clvm
-    - hddcoin.wallet.puzzles.p2_singleton_or_delayed_puzhash.clvm
+    - rolls.wallet.puzzles.singleton_top_layer.py
+    - rolls.wallet.puzzles.singleton_top_layer.clvm
+    - rolls.wallet.puzzles.p2_singleton.clvm
+    - rolls.wallet.puzzles.p2_singleton_or_delayed_puzhash.clvm
 """
 
 

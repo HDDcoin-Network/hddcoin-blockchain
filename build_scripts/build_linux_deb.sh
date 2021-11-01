@@ -5,10 +5,10 @@ if [ ! "$1" ]; then
 	exit 1
 elif [ "$1" = "amd64" ]; then
 	PLATFORM="$1"
-	DIR_NAME="hddcoin-blockchain-linux-x64"
+	DIR_NAME="rolls-blockchain-linux-x64"
 else
 	PLATFORM="$1"
-	DIR_NAME="hddcoin-blockchain-linux-arm64"
+	DIR_NAME="rolls-blockchain-linux-arm64"
 fi
 
 pip install setuptools_scm
@@ -33,7 +33,7 @@ mkdir dist
 
 echo "Create executables with pyinstaller"
 pip install pyinstaller==4.5
-SPEC_FILE=$(python -c 'import hddcoin; print(hddcoin.PYINSTALLER_SPEC_PATH)')
+SPEC_FILE=$(python -c 'import rolls; print(rolls.PYINSTALLER_SPEC_PATH)')
 pyinstaller --log-level=INFO "$SPEC_FILE"
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
@@ -41,9 +41,9 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	exit $LAST_EXIT_CODE
 fi
 
-cp -r dist/daemon ../hddcoin-blockchain-gui
+cp -r dist/daemon ../rolls-blockchain-gui
 cd .. || exit
-cd hddcoin-blockchain-gui || exit
+cd rolls-blockchain-gui || exit
 
 echo "npm build"
 npm install
@@ -55,12 +55,12 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	exit $LAST_EXIT_CODE
 fi
 
-# sets the version for hddcoin-blockchain in package.json
+# sets the version for rolls-blockchain in package.json
 cp package.json package.json.orig
 jq --arg VER "$HDDCOIN_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
-electron-packager . hddcoin-blockchain --asar.unpack="**/daemon/**" --platform=linux \
---icon=src/assets/img/HDDcoin.icns --overwrite --app-bundle-id=net.hddcoin.blockchain \
+electron-packager . rolls-blockchain --asar.unpack="**/daemon/**" --platform=linux \
+--icon=src/assets/img/HDDcoin.icns --overwrite --app-bundle-id=net.rolls.blockchain \
 --appVersion=$HDDCOIN_INSTALLER_VERSION
 LAST_EXIT_CODE=$?
 
@@ -75,7 +75,7 @@ fi
 mv $DIR_NAME ../build_scripts/dist/
 cd ../build_scripts || exit
 
-echo "Create hddcoin-$HDDCOIN_INSTALLER_VERSION.deb"
+echo "Create rolls-$HDDCOIN_INSTALLER_VERSION.deb"
 rm -rf final_installer
 mkdir final_installer
 electron-installer-debian --src dist/$DIR_NAME/ --dest final_installer/ \

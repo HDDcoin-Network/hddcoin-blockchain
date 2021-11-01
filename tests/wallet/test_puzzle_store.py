@@ -6,11 +6,11 @@ import aiosqlite
 import pytest
 from blspy import AugSchemeMPL
 
-from hddcoin.util.db_wrapper import DBWrapper
-from hddcoin.util.ints import uint32
-from hddcoin.wallet.derivation_record import DerivationRecord
-from hddcoin.wallet.util.wallet_types import WalletType
-from hddcoin.wallet.wallet_puzzle_store import WalletPuzzleStore
+from rolls.util.db_wrapper import DBWrapper
+from rolls.util.ints import uint32
+from rolls.wallet.derivation_record import DerivationRecord
+from rolls.wallet.util.wallet_types import WalletType
+from rolls.wallet.wallet_puzzle_store import WalletPuzzleStore
 
 
 @pytest.fixture(scope="module")

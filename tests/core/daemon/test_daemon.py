@@ -1,9 +1,9 @@
-from hddcoin.server.outbound_message import NodeType
-from hddcoin.types.peer_info import PeerInfo
+from rolls.server.outbound_message import NodeType
+from rolls.types.peer_info import PeerInfo
 from tests.block_tools import BlockTools, create_block_tools, create_block_tools_async
-from hddcoin.util.ints import uint16
-from hddcoin.util.keyring_wrapper import DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE
-from hddcoin.util.ws_message import create_payload
+from rolls.util.ints import uint16
+from rolls.util.keyring_wrapper import DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE
+from rolls.util.ws_message import create_payload
 from tests.core.node_height import node_height_at_least
 from tests.setup_nodes import setup_daemon, self_hostname, setup_full_system
 from tests.simulation.test_simulation import test_constants_modified
@@ -116,7 +116,7 @@ class TestDaemon:
 
         read_handler = asyncio.create_task(reader(ws, message_queue))
         data = {}
-        payload = create_payload("get_blockchain_state", data, service_name, "hddcoin_full_node")
+        payload = create_payload("get_blockchain_state", data, service_name, "rolls_full_node")
         await ws.send_str(payload)
 
         await asyncio.sleep(5)

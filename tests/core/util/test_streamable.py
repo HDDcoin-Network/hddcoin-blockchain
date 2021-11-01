@@ -6,14 +6,14 @@ import io
 from clvm_tools import binutils
 from pytest import raises
 
-from hddcoin.protocols.wallet_protocol import RespondRemovals
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.blockchain_format.program import Program
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.full_block import FullBlock
-from hddcoin.types.weight_proof import SubEpochChallengeSegment
-from hddcoin.util.ints import uint8, uint32
-from hddcoin.util.streamable import (
+from rolls.protocols.wallet_protocol import RespondRemovals
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.blockchain_format.program import Program
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.full_block import FullBlock
+from rolls.types.weight_proof import SubEpochChallengeSegment
+from rolls.util.ints import uint8, uint32
+from rolls.util.streamable import (
     Streamable,
     streamable,
     parse_bool,

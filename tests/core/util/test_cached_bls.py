@@ -1,7 +1,7 @@
 import unittest
 from blspy import AugSchemeMPL
-from hddcoin.util import cached_bls
-from hddcoin.util.lru_cache import LRUCache
+from rolls.util import cached_bls
+from rolls.util.lru_cache import LRUCache
 
 
 class TestCachedBLS(unittest.TestCase):

@@ -6,22 +6,22 @@ import pytest
 from clvm.casts import int_to_bytes
 from colorlog import logging
 
-from hddcoin.consensus.block_rewards import calculate_pool_reward, calculate_base_farmer_reward
-from hddcoin.protocols import wallet_protocol, full_node_protocol
-from hddcoin.protocols.full_node_protocol import RespondTransaction
-from hddcoin.protocols.protocol_message_types import ProtocolMessageTypes
-from hddcoin.protocols.wallet_protocol import RespondToCoinUpdates, CoinStateUpdate, RespondToPhUpdates, CoinState
-from hddcoin.server.outbound_message import NodeType
-from hddcoin.simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.coin_record import CoinRecord
-from hddcoin.types.condition_opcodes import ConditionOpcode
-from hddcoin.types.condition_with_args import ConditionWithArgs
-from hddcoin.types.peer_info import PeerInfo
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.util.ints import uint16, uint32, uint64
-from hddcoin.wallet.wallet import Wallet
-from hddcoin.wallet.wallet_state_manager import WalletStateManager
+from rolls.consensus.block_rewards import calculate_pool_reward, calculate_base_farmer_reward
+from rolls.protocols import wallet_protocol, full_node_protocol
+from rolls.protocols.full_node_protocol import RespondTransaction
+from rolls.protocols.protocol_message_types import ProtocolMessageTypes
+from rolls.protocols.wallet_protocol import RespondToCoinUpdates, CoinStateUpdate, RespondToPhUpdates, CoinState
+from rolls.server.outbound_message import NodeType
+from rolls.simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.coin_record import CoinRecord
+from rolls.types.condition_opcodes import ConditionOpcode
+from rolls.types.condition_with_args import ConditionWithArgs
+from rolls.types.peer_info import PeerInfo
+from rolls.types.spend_bundle import SpendBundle
+from rolls.util.ints import uint16, uint32, uint64
+from rolls.wallet.wallet import Wallet
+from rolls.wallet.wallet_state_manager import WalletStateManager
 from tests.connection_utils import add_dummy_connection
 from tests.setup_nodes import self_hostname, setup_simulators_and_wallets, bt
 from tests.time_out_assert import time_out_assert

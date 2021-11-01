@@ -4,7 +4,7 @@ export NODE_OPTIONS="--max-old-space-size=3000"
 
 
 if [ -z "$VIRTUAL_ENV" ]; then
-  echo "This requires the hddcoin python virtual environment."
+  echo "This requires the rolls python virtual environment."
   echo "Execute '. ./activate' before running."
 	exit 1
 fi
@@ -14,7 +14,7 @@ if [ "$(id -u)" = 0 ]; then
 	exit 1
 fi
 
-# Allows overriding the branch or commit to build in hddcoin-blockchain-gui
+# Allows overriding the branch or commit to build in rolls-blockchain-gui
 SUBMODULE_BRANCH=$1
 
 UBUNTU=false
@@ -90,7 +90,7 @@ if [ ! "$CI" ]; then
 	echo "Running git submodule update."
 	echo ""
 	git submodule update
-	cd hddcoin-blockchain-gui
+	cd rolls-blockchain-gui
 
 	if [ "$SUBMODULE_BRANCH" ];
 	then
@@ -113,4 +113,4 @@ fi
 echo ""
 echo "HDDcoin blockchain install-gui.sh completed."
 echo ""
-echo "Type 'cd hddcoin-blockchain-gui' and then 'npm run electron &' to start the GUI."
+echo "Type 'cd rolls-blockchain-gui' and then 'npm run electron &' to start the GUI."

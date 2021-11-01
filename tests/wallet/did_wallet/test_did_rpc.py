@@ -2,16 +2,16 @@ import asyncio
 import logging
 import pytest
 
-from hddcoin.rpc.rpc_server import start_rpc_server
-from hddcoin.rpc.wallet_rpc_api import WalletRpcApi
-from hddcoin.rpc.wallet_rpc_client import WalletRpcClient
-from hddcoin.simulator.simulator_protocol import FarmNewBlockProtocol
-from hddcoin.types.peer_info import PeerInfo
-from hddcoin.util.ints import uint16, uint64
-from hddcoin.wallet.util.wallet_types import WalletType
+from rolls.rpc.rpc_server import start_rpc_server
+from rolls.rpc.wallet_rpc_api import WalletRpcApi
+from rolls.rpc.wallet_rpc_client import WalletRpcClient
+from rolls.simulator.simulator_protocol import FarmNewBlockProtocol
+from rolls.types.peer_info import PeerInfo
+from rolls.util.ints import uint16, uint64
+from rolls.wallet.util.wallet_types import WalletType
 from tests.setup_nodes import self_hostname, setup_simulators_and_wallets, bt
 from tests.time_out_assert import time_out_assert
-from hddcoin.wallet.did_wallet.did_wallet import DIDWallet
+from rolls.wallet.did_wallet.did_wallet import DIDWallet
 
 
 log = logging.getLogger(__name__)

@@ -1,5 +1,5 @@
 #
-# THIS FILE IS GENERATED. SEE https://github.com/HDDcoin-Network/hddcoin-blockchain/tree/main/tests#readme
+# THIS FILE IS GENERATED. SEE https://github.com/Strandedathome/rolls-blockchain/tree/main/tests#readme
 #
 name: MacOS TEST_NAME Tests
 
@@ -44,10 +44,10 @@ jobs:
 
     - name: Create keychain for CI use
       run: |
-        security create-keychain -p foo hddcoinchain
-        security default-keychain -s hddcoinchain
-        security unlock-keychain -p foo hddcoinchain
-        security set-keychain-settings -t 7200 -u hddcoinchain
+        security create-keychain -p foo rollschain
+        security default-keychain -s rollschain
+        security unlock-keychain -p foo rollschain
+        security set-keychain-settings -t 7200 -u rollschain
 
     - name: Get pip cache dir
       id: pip-cache
@@ -68,9 +68,9 @@ CHECKOUT_TEST_BLOCKS_AND_PLOTS
     - name: Link home directory
       run: |
         cd $HOME
-        ln -s $GITHUB_WORKSPACE/.hddcoin
-        echo "$HOME/.hddcoin"
-        ls -al $HOME/.hddcoin
+        ln -s $GITHUB_WORKSPACE/.rolls
+        echo "$HOME/.rolls"
+        ls -al $HOME/.rolls
 
     - name: Run install script
       env:
@@ -92,5 +92,5 @@ INSTALL_TIMELORD
         . ./activate
         ./venv/bin/py.test TEST_DIR -s -v --durations 0PYTEST_PARALLEL_ARGS
 #
-# THIS FILE IS GENERATED. SEE https://github.com/HDDcoin-Network/hddcoin-blockchain/tree/main/tests#readme
+# THIS FILE IS GENERATED. SEE https://github.com/Strandedathome/rolls-blockchain/tree/main/tests#readme
 #

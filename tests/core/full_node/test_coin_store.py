@@ -7,23 +7,23 @@ import aiosqlite
 import pytest
 import tempfile
 
-from hddcoin.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from hddcoin.consensus.blockchain import Blockchain, ReceiveBlockResult
-from hddcoin.consensus.coinbase import create_farmer_coin, create_pool_coin
-from hddcoin.full_node.block_store import BlockStore
-from hddcoin.full_node.coin_store import CoinStore
-from hddcoin.full_node.hint_store import HintStore
-from hddcoin.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.coin_record import CoinRecord
-from hddcoin.types.full_block import FullBlock
-from hddcoin.types.generator_types import BlockGenerator
-from hddcoin.util.generator_tools import tx_removals_and_additions
-from hddcoin.util.ints import uint64, uint32
+from rolls.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+from rolls.consensus.blockchain import Blockchain, ReceiveBlockResult
+from rolls.consensus.coinbase import create_farmer_coin, create_pool_coin
+from rolls.full_node.block_store import BlockStore
+from rolls.full_node.coin_store import CoinStore
+from rolls.full_node.hint_store import HintStore
+from rolls.full_node.mempool_check_conditions import get_name_puzzle_conditions
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.coin_record import CoinRecord
+from rolls.types.full_block import FullBlock
+from rolls.types.generator_types import BlockGenerator
+from rolls.util.generator_tools import tx_removals_and_additions
+from rolls.util.ints import uint64, uint32
 from tests.wallet_tools import WalletTool
-from hddcoin.util.db_wrapper import DBWrapper
+from rolls.util.db_wrapper import DBWrapper
 from tests.setup_nodes import bt, test_constants
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.blockchain_format.sized_bytes import bytes32
 
 
 @pytest.fixture(scope="module")

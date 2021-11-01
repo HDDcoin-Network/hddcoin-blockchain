@@ -4,15 +4,15 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 from blspy import G1Element, G2Element
 from clvm_tools import binutils
 
-from hddcoin.types.blockchain_format.program import Program, SerializedProgram
-from hddcoin.types.announcement import Announcement
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.coin_spend import CoinSpend
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.util.condition_tools import ConditionOpcode
-from hddcoin.util.ints import uint64
-from hddcoin.wallet.puzzles.load_clvm import load_clvm
+from rolls.types.blockchain_format.program import Program, SerializedProgram
+from rolls.types.announcement import Announcement
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.coin_spend import CoinSpend
+from rolls.types.spend_bundle import SpendBundle
+from rolls.util.condition_tools import ConditionOpcode
+from rolls.util.ints import uint64
+from rolls.wallet.puzzles.load_clvm import load_clvm
 
 from tests.clvm.coin_store import BadSpendBundleError, CoinStore, CoinTimestamp
 

@@ -106,7 +106,7 @@ jobs:
         APPLE_NOTARIZE_PASSWORD: "${{ secrets.APPLE_NOTARIZE_PASSWORD }}"
       run: |
         . ./activate
-        cd ./hddcoin-blockchain-gui
+        cd ./rolls-blockchain-gui
         git status
         cd ../build_scripts
         sh build_macos.sh

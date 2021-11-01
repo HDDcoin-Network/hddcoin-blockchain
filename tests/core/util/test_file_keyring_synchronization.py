@@ -5,8 +5,8 @@ import pytest
 import random
 import unittest
 
-from hddcoin.util.file_keyring import acquire_writer_lock, FileKeyring, FileKeyringLockTimeout
-from hddcoin.util.keyring_wrapper import KeyringWrapper
+from rolls.util.file_keyring import acquire_writer_lock, FileKeyring, FileKeyringLockTimeout
+from rolls.util.keyring_wrapper import KeyringWrapper
 from multiprocessing import Pool, TimeoutError
 from pathlib import Path
 from sys import platform

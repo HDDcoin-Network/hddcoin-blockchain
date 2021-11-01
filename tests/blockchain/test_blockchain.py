@@ -11,30 +11,30 @@ import pytest
 from blspy import AugSchemeMPL, G2Element
 from clvm.casts import int_to_bytes
 
-from hddcoin.consensus.block_rewards import calculate_base_farmer_reward
-from hddcoin.consensus.blockchain import ReceiveBlockResult
-from hddcoin.consensus.coinbase import create_farmer_coin
-from hddcoin.consensus.pot_iterations import is_overflow_block
-from hddcoin.full_node.bundle_tools import detect_potential_template_generator
-from hddcoin.types.blockchain_format.classgroup import ClassgroupElement
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.blockchain_format.foliage import TransactionsInfo
-from hddcoin.types.blockchain_format.program import SerializedProgram
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.blockchain_format.slots import InfusedChallengeChainSubSlot
-from hddcoin.types.blockchain_format.vdf import VDFInfo, VDFProof
-from hddcoin.types.condition_opcodes import ConditionOpcode
-from hddcoin.types.condition_with_args import ConditionWithArgs
-from hddcoin.types.end_of_slot_bundle import EndOfSubSlotBundle
-from hddcoin.types.full_block import FullBlock
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.types.unfinished_block import UnfinishedBlock
+from rolls.consensus.block_rewards import calculate_base_farmer_reward
+from rolls.consensus.blockchain import ReceiveBlockResult
+from rolls.consensus.coinbase import create_farmer_coin
+from rolls.consensus.pot_iterations import is_overflow_block
+from rolls.full_node.bundle_tools import detect_potential_template_generator
+from rolls.types.blockchain_format.classgroup import ClassgroupElement
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.blockchain_format.foliage import TransactionsInfo
+from rolls.types.blockchain_format.program import SerializedProgram
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.blockchain_format.slots import InfusedChallengeChainSubSlot
+from rolls.types.blockchain_format.vdf import VDFInfo, VDFProof
+from rolls.types.condition_opcodes import ConditionOpcode
+from rolls.types.condition_with_args import ConditionWithArgs
+from rolls.types.end_of_slot_bundle import EndOfSubSlotBundle
+from rolls.types.full_block import FullBlock
+from rolls.types.spend_bundle import SpendBundle
+from rolls.types.unfinished_block import UnfinishedBlock
 from tests.block_tools import create_block_tools_async, get_vdf_info_and_proof
-from hddcoin.util.errors import Err
-from hddcoin.util.hash import std_hash
-from hddcoin.util.ints import uint8, uint64, uint32
-from hddcoin.util.merkle_set import MerkleSet
-from hddcoin.util.recursive_replace import recursive_replace
+from rolls.util.errors import Err
+from rolls.util.hash import std_hash
+from rolls.util.ints import uint8, uint64, uint32
+from rolls.util.merkle_set import MerkleSet
+from rolls.util.recursive_replace import recursive_replace
 from tests.wallet_tools import WalletTool
 from tests.core.fixtures import default_400_blocks  # noqa: F401; noqa: F401
 from tests.core.fixtures import default_1000_blocks  # noqa: F401
@@ -44,7 +44,7 @@ from tests.core.fixtures import empty_blockchain  # noqa: F401
 from tests.core.fixtures import create_blockchain
 from tests.setup_nodes import bt, test_constants
 from tests.util.keyring import TempKeyring
-from hddcoin.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
+from rolls.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
     DEFAULT_HIDDEN_PUZZLE_HASH,
     calculate_synthetic_secret_key,
 )

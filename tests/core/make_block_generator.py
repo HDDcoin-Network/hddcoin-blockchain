@@ -2,15 +2,15 @@ from typing import Dict
 
 import blspy
 
-from hddcoin.full_node.bundle_tools import simple_solution_generator
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.blockchain_format.program import Program
-from hddcoin.types.coin_spend import CoinSpend
-from hddcoin.types.condition_opcodes import ConditionOpcode
-from hddcoin.types.generator_types import BlockGenerator
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.util.ints import uint64
-from hddcoin.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import puzzle_for_pk, solution_for_conditions
+from rolls.full_node.bundle_tools import simple_solution_generator
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.blockchain_format.program import Program
+from rolls.types.coin_spend import CoinSpend
+from rolls.types.condition_opcodes import ConditionOpcode
+from rolls.types.generator_types import BlockGenerator
+from rolls.types.spend_bundle import SpendBundle
+from rolls.util.ints import uint64
+from rolls.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import puzzle_for_pk, solution_for_conditions
 
 GROUP_ORDER = 0x73EDA753299D7D483339D80809A1D80553BDA402FFFE5BFEFFFFFFFF00000001
 

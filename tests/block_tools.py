@@ -16,75 +16,75 @@ from typing import Callable, Dict, List, Optional, Tuple, Any
 from blspy import AugSchemeMPL, G1Element, G2Element, PrivateKey
 from chiabip158 import PyBIP158
 
-from hddcoin.cmds.init_funcs import create_all_ssl, create_default_hddcoin_config
-from hddcoin.daemon.keychain_proxy import connect_to_keychain_and_validate, wrap_local_keychain
-from hddcoin.full_node.bundle_tools import (
+from rolls.cmds.init_funcs import create_all_ssl, create_default_rolls_config
+from rolls.daemon.keychain_proxy import connect_to_keychain_and_validate, wrap_local_keychain
+from rolls.full_node.bundle_tools import (
     best_solution_generator_from_template,
     detect_potential_template_generator,
     simple_solution_generator,
 )
-from hddcoin.util.errors import Err
-from hddcoin.full_node.generator import setup_generator_args
-from hddcoin.full_node.mempool_check_conditions import GENERATOR_MOD
-from hddcoin.plotting.create_plots import create_plots, PlotKeys
-from hddcoin.consensus.block_creation import unfinished_block_to_full_block
-from hddcoin.consensus.block_record import BlockRecord
-from hddcoin.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from hddcoin.consensus.blockchain_interface import BlockchainInterface
-from hddcoin.consensus.coinbase import create_puzzlehash_for_pk, create_farmer_coin, create_pool_coin
-from hddcoin.consensus.condition_costs import ConditionCost
-from hddcoin.consensus.constants import ConsensusConstants
-from hddcoin.consensus.default_constants import DEFAULT_CONSTANTS
-from hddcoin.consensus.deficit import calculate_deficit
-from hddcoin.consensus.full_block_to_block_record import block_to_block_record
-from hddcoin.consensus.make_sub_epoch_summary import next_sub_epoch_summary
-from hddcoin.consensus.pot_iterations import (
+from rolls.util.errors import Err
+from rolls.full_node.generator import setup_generator_args
+from rolls.full_node.mempool_check_conditions import GENERATOR_MOD
+from rolls.plotting.create_plots import create_plots, PlotKeys
+from rolls.consensus.block_creation import unfinished_block_to_full_block
+from rolls.consensus.block_record import BlockRecord
+from rolls.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+from rolls.consensus.blockchain_interface import BlockchainInterface
+from rolls.consensus.coinbase import create_puzzlehash_for_pk, create_farmer_coin, create_pool_coin
+from rolls.consensus.condition_costs import ConditionCost
+from rolls.consensus.constants import ConsensusConstants
+from rolls.consensus.default_constants import DEFAULT_CONSTANTS
+from rolls.consensus.deficit import calculate_deficit
+from rolls.consensus.full_block_to_block_record import block_to_block_record
+from rolls.consensus.make_sub_epoch_summary import next_sub_epoch_summary
+from rolls.consensus.pot_iterations import (
     calculate_ip_iters,
     calculate_iterations_quality,
     calculate_sp_interval_iters,
     calculate_sp_iters,
     is_overflow_block,
 )
-from hddcoin.consensus.vdf_info_computation import get_signage_point_vdf_info
-from hddcoin.full_node.signage_point import SignagePoint
-from hddcoin.plotting.util import PlotsRefreshParameter, PlotRefreshResult, parse_plot_info
-from hddcoin.plotting.manager import PlotManager
-from hddcoin.server.server import ssl_context_for_server
-from hddcoin.types.blockchain_format.classgroup import ClassgroupElement
-from hddcoin.types.blockchain_format.coin import Coin, hash_coin_list
-from hddcoin.types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
-from hddcoin.types.blockchain_format.pool_target import PoolTarget
-from hddcoin.types.blockchain_format.program import INFINITE_COST
-from hddcoin.types.blockchain_format.proof_of_space import ProofOfSpace
-from hddcoin.types.blockchain_format.reward_chain_block import RewardChainBlockUnfinished
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.blockchain_format.slots import (
+from rolls.consensus.vdf_info_computation import get_signage_point_vdf_info
+from rolls.full_node.signage_point import SignagePoint
+from rolls.plotting.util import PlotsRefreshParameter, PlotRefreshResult, parse_plot_info
+from rolls.plotting.manager import PlotManager
+from rolls.server.server import ssl_context_for_server
+from rolls.types.blockchain_format.classgroup import ClassgroupElement
+from rolls.types.blockchain_format.coin import Coin, hash_coin_list
+from rolls.types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
+from rolls.types.blockchain_format.pool_target import PoolTarget
+from rolls.types.blockchain_format.program import INFINITE_COST
+from rolls.types.blockchain_format.proof_of_space import ProofOfSpace
+from rolls.types.blockchain_format.reward_chain_block import RewardChainBlockUnfinished
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.blockchain_format.slots import (
     ChallengeChainSubSlot,
     InfusedChallengeChainSubSlot,
     RewardChainSubSlot,
     SubSlotProofs,
 )
-from hddcoin.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from hddcoin.types.blockchain_format.vdf import VDFInfo, VDFProof
-from hddcoin.types.end_of_slot_bundle import EndOfSubSlotBundle
-from hddcoin.types.full_block import FullBlock
-from hddcoin.types.generator_types import BlockGenerator, CompressorArg
-from hddcoin.types.spend_bundle import SpendBundle
-from hddcoin.types.unfinished_block import UnfinishedBlock
-from hddcoin.util.bech32m import encode_puzzle_hash
-from hddcoin.util.block_cache import BlockCache
-from hddcoin.util.condition_tools import ConditionOpcode
-from hddcoin.util.config import load_config, save_config
-from hddcoin.util.hash import std_hash
-from hddcoin.util.ints import uint8, uint16, uint32, uint64, uint128
-from hddcoin.util.keychain import Keychain, bytes_to_mnemonic
-from hddcoin.util.merkle_set import MerkleSet
-from hddcoin.util.prev_transaction_block import get_prev_transaction_block
-from hddcoin.util.path import mkdir
-from hddcoin.util.vdf_prover import get_vdf_info_and_proof
+from rolls.types.blockchain_format.sub_epoch_summary import SubEpochSummary
+from rolls.types.blockchain_format.vdf import VDFInfo, VDFProof
+from rolls.types.end_of_slot_bundle import EndOfSubSlotBundle
+from rolls.types.full_block import FullBlock
+from rolls.types.generator_types import BlockGenerator, CompressorArg
+from rolls.types.spend_bundle import SpendBundle
+from rolls.types.unfinished_block import UnfinishedBlock
+from rolls.util.bech32m import encode_puzzle_hash
+from rolls.util.block_cache import BlockCache
+from rolls.util.condition_tools import ConditionOpcode
+from rolls.util.config import load_config, save_config
+from rolls.util.hash import std_hash
+from rolls.util.ints import uint8, uint16, uint32, uint64, uint128
+from rolls.util.keychain import Keychain, bytes_to_mnemonic
+from rolls.util.merkle_set import MerkleSet
+from rolls.util.prev_transaction_block import get_prev_transaction_block
+from rolls.util.path import mkdir
+from rolls.util.vdf_prover import get_vdf_info_and_proof
 from tests.time_out_assert import time_out_assert
 from tests.wallet_tools import WalletTool
-from hddcoin.wallet.derive_keys import (
+from rolls.wallet.derive_keys import (
     master_sk_to_farmer_sk,
     master_sk_to_local_sk,
     master_sk_to_pool_sk,
@@ -141,7 +141,7 @@ class BlockTools:
         self.root_path = root_path
         self.local_keychain = keychain
 
-        create_default_hddcoin_config(root_path)
+        create_default_rolls_config(root_path)
         create_all_ssl(root_path)
 
         self.local_sk_cache: Dict[bytes32, Tuple[PrivateKey, Any]] = {}
@@ -182,7 +182,7 @@ class BlockTools:
             self.keychain_proxy = wrap_local_keychain(self.local_keychain, log=log)
         else:
             self.keychain_proxy = await connect_to_keychain_and_validate(
-                self.root_path, log, user="testing-1.8.0", service="hddcoin-testing-1.8.0"
+                self.root_path, log, user="testing-1.8.0", service="rolls-testing-1.8.0"
             )
 
         await self.keychain_proxy.delete_all_keys()
@@ -207,7 +207,7 @@ class BlockTools:
 
         self.farmer_pubkeys: List[G1Element] = [master_sk_to_farmer_sk(sk).get_g1() for sk in self.all_sks]
         if len(self.pool_pubkeys) == 0 or len(self.farmer_pubkeys) == 0:
-            raise RuntimeError("Keys not generated. Run `hddcoin generate keys`")
+            raise RuntimeError("Keys not generated. Run `rolls generate keys`")
 
         self.plot_manager.set_public_keys(self.farmer_pubkeys, self.pool_pubkeys)
 
@@ -1296,7 +1296,7 @@ def get_challenges(
 
 
 def get_plot_dir() -> Path:
-    cache_path = Path(os.path.expanduser(os.getenv("HDDCOIN_ROOT", "~/.hddcoin/"))) / "test-plots"
+    cache_path = Path(os.path.expanduser(os.getenv("HDDCOIN_ROOT", "~/.rolls/"))) / "test-plots"
     mkdir(cache_path)
     return cache_path
 

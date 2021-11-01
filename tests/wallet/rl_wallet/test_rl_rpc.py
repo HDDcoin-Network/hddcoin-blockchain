@@ -2,15 +2,15 @@ import asyncio
 
 import pytest
 
-from hddcoin.rpc.wallet_rpc_api import WalletRpcApi
-from hddcoin.simulator.simulator_protocol import FarmNewBlockProtocol
-from hddcoin.types.blockchain_format.coin import Coin
-from hddcoin.types.blockchain_format.sized_bytes import bytes32
-from hddcoin.types.mempool_inclusion_status import MempoolInclusionStatus
-from hddcoin.types.peer_info import PeerInfo
-from hddcoin.util.bech32m import encode_puzzle_hash
-from hddcoin.util.ints import uint16
-from hddcoin.wallet.util.wallet_types import WalletType
+from rolls.rpc.wallet_rpc_api import WalletRpcApi
+from rolls.simulator.simulator_protocol import FarmNewBlockProtocol
+from rolls.types.blockchain_format.coin import Coin
+from rolls.types.blockchain_format.sized_bytes import bytes32
+from rolls.types.mempool_inclusion_status import MempoolInclusionStatus
+from rolls.types.peer_info import PeerInfo
+from rolls.util.bech32m import encode_puzzle_hash
+from rolls.util.ints import uint16
+from rolls.wallet.util.wallet_types import WalletType
 from tests.setup_nodes import self_hostname, setup_simulators_and_wallets
 from tests.time_out_assert import time_out_assert
 from tests.wallet.sync.test_wallet_sync import wallet_height_at_least
