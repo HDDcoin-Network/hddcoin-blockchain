@@ -30,12 +30,12 @@ testnet_kwargs = {
     # Default used for tests is std_hash(b'')
     "GENESIS_CHALLENGE": bytes.fromhex("75edaa5972e6931885c5bf66191bced04497186987fd7320aeacaa54fd09fcb4"),
     # Forks of rolls should change this value to provide replay attack protection. This is set to mainnet genesis chall
-    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("49f4afb189342858dba5c1bb6b50b0deaa706088474f0c5431d65b857d54ddb5"),
+    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("29ad6d1d4d57d7af7aaf124e939a065e7532ec04ee1aa3fcc189cca554286ad0"),
     "GENESIS_PRE_FARM_POOL_PUZZLE_HASH": bytes.fromhex(
-        "5ed49df42106663947059a3323da310f24c804c6cf7420f3c1ac0cffb3f9d2b3"
+        "0x44e2a524b9f3f7013efafaf1eaae3c7198f9572f91bd8ae7cacacfded7b9c0cb"
     ),
     "GENESIS_PRE_FARM_FARMER_PUZZLE_HASH": bytes.fromhex(
-        "5ed49df42106663947059a3323da310f24c804c6cf7420f3c1ac0cffb3f9d2b3"
+        "0x44e2a524b9f3f7013efafaf1eaae3c7198f9572f91bd8ae7cacacfded7b9c0cb"
     ),
     "MAX_VDF_WITNESS_SIZE": 64,
     # Size of mempool = 50x the size of block
