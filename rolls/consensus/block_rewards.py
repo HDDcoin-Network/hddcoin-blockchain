@@ -16,8 +16,16 @@ def calculate_pool_reward(height: uint32) -> uint64:
 
     if height == 0:
         return uint64(int((7 / 8) * 1000000 * _pecans_per_roll))
-    else: 
+    elif height < 3 * _blocks_per_year:
         return uint64(int((7 / 8) * 6 * _pecans_per_roll))
+    elif height < 6 * _blocks_per_year:
+        return uint64(int((7 / 8) * 1 * _pecans_per_roll))
+    elif height < 9 * _blocks_per_year:
+        return uint64(int((7 / 8) * 0.5 * _pecans_per_roll))
+    elif height < 12 * _blocks_per_year:
+        return uint64(int((7 / 8) * 0.25 * _pecans_per_roll))
+    else:
+        return uint64(int((7 / 8) * 0.125 * _pecans_per_roll))
 
 
 def calculate_base_farmer_reward(height: uint32) -> uint64:
@@ -30,6 +38,14 @@ def calculate_base_farmer_reward(height: uint32) -> uint64:
     rates increase continuously.
     """
     if height == 0:
-        return uint64(int((7 / 8) * 1000000 * _pecans_per_roll))
-    else: 
-        return uint64(int((7 / 8) * 6 * _pecans_per_roll))
+        return uint64(int((1 / 8) * 1000000 * _pecans_per_roll))
+    elif height < 3 * _blocks_per_year:
+        return uint64(int((1 / 8) * 6 * _pecans_per_roll))
+    elif height < 6 * _blocks_per_year:
+        return uint64(int((1 / 8) * 1 * _pecans_per_roll))
+    elif height < 9 * _blocks_per_year:
+        return uint64(int((1 / 8) * 0.5 * _pecans_per_roll))
+    elif height < 12 * _blocks_per_year:
+        return uint64(int((1 / 8) * 0.25 * _pecans_per_roll))
+    else:
+        return uint64(int((1 / 8) * 0.125 * _pecans_per_roll))
