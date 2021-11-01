@@ -1,6 +1,6 @@
 # rolls-blockchain 
 
-![Alt text](https://rolls.org/images/hdd_coin_logo_website_75.png)
+![Alt text](https://rolls.org/images/rolls_coin_logo_website_75.png)
 
 HDDcoin is an eco-friendly decentralization blockchain based on the Proof of Space and Time (PoST) consensus pioneered by HDDcoin™. It maintains network robustness, in line with Satoshi Nakamoto's principles.
 

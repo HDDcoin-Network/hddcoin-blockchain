@@ -33,10 +33,10 @@ network_overrides: &network_overrides
       address_prefix: "rolls"
       default_full_node_port: 7654
     # testnet1:
-    #   address_prefix: "thdd"
+    #   address_prefix: "trolls"
     #   default_full_node_port: 38444
     # testnet2:
-    #   address_prefix: "thdd"
+    #   address_prefix: "trolls"
     #   default_full_node_port: 48444
 
 selected_network: &selected_network "mainnet"
@@ -111,7 +111,7 @@ harvester:
 
 pool:
   # Replace this with a real puzzle hash
-  # hdd_target_address: thdd102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
+  # rolls_target_address: trolls102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
   logging: *logging
   network_overrides: *network_overrides
   selected_network: *selected_network
@@ -131,7 +131,7 @@ farmer:
   pool_public_keys: []
 
   # Replace this with a real puzzle hash
-  # hdd_target_address: thdd102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
+  # rolls_target_address: trolls102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
 
   # If True, starts an RPC server at the following port
   start_rpc_server: True
