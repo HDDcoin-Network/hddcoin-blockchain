@@ -1,6 +1,6 @@
 from rolls.util.ints import uint32, uint64
 
-# 1 PecanRolls coin = 1,000,000,000,000 = 1 trillion pecans.
+# 1 PecanRolls token = 1,000,000,000,000 = 1 trillion pecans.
 _pecans_per_roll = 1000000000000
 _blocks_per_year = 1681920  # 32 * 6 * 24 * 365
 
@@ -15,17 +15,9 @@ def calculate_pool_reward(height: uint32) -> uint64:
     """
 
     if height == 0:
-        return uint64(int((7 / 8) * 3500000 * _pecans_per_roll))
-    elif height < 3 * _blocks_per_year:
-        return uint64(int((7 / 8) * 2 * _pecans_per_roll))
-    elif height < 6 * _blocks_per_year:
-        return uint64(int((7 / 8) * 1 * _pecans_per_roll))
-    elif height < 9 * _blocks_per_year:
-        return uint64(int((7 / 8) * 0.5 * _pecans_per_roll))
-    elif height < 12 * _blocks_per_year:
-        return uint64(int((7 / 8) * 0.25 * _pecans_per_roll))
-    else:
-        return uint64(int((7 / 8) * 0.125 * _pecans_per_roll))
+        return uint64(int((7 / 8) * 1000000 * _pecans_per_roll))
+    else: 
+        return uint64(int((7 / 8) * 6 * _pecans_per_roll))
 
 
 def calculate_base_farmer_reward(height: uint32) -> uint64:
@@ -38,14 +30,6 @@ def calculate_base_farmer_reward(height: uint32) -> uint64:
     rates increase continuously.
     """
     if height == 0:
-        return uint64(int((1 / 8) * 3500000 * _pecans_per_roll))
-    elif height < 3 * _blocks_per_year:
-        return uint64(int((1 / 8) * 2 * _pecans_per_roll))
-    elif height < 6 * _blocks_per_year:
-        return uint64(int((1 / 8) * 1 * _pecans_per_roll))
-    elif height < 9 * _blocks_per_year:
-        return uint64(int((1 / 8) * 0.5 * _pecans_per_roll))
-    elif height < 12 * _blocks_per_year:
-        return uint64(int((1 / 8) * 0.25 * _pecans_per_roll))
-    else:
-        return uint64(int((1 / 8) * 0.125 * _pecans_per_roll))
+        return uint64(int((7 / 8) * 1000000 * _pecans_per_roll))
+    else: 
+        return uint64(int((7 / 8) * 6 * _pecans_per_roll))
