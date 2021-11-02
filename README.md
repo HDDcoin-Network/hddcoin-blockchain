@@ -1,6 +1,6 @@
 # rolls-blockchain 
 
-![Alt text](https://rolls.org/images/rolls_coin_logo_website_75.png)
+![Alt text](https://pecanrolls.net/images/rolls_coin_logo_website_75.png)
 
 PecanRolls is an eco-friendly decentralization blockchain based on the Proof of Space and Time (PoST) consensus pioneered by PecanRolls™. It maintains network robustness, in line with Satoshi Nakamoto's principles.
 
@@ -22,10 +22,10 @@ The goal of PecanRolls is to reshape the global financial system through the pow
 - Halving period for block rewards: 3 years
 
 **BLOCKCHAIN RESOURCES:**
-- Website: https://rolls.org/
+- Website: https://pecanrolls.net/
 - Explorer: https://alltheblocks.net/rolls
 - Calculator: https://rollsforkscalculator.com/rolls
-- PecanRolls DB: https://rolls.org/downloads/blockchain_v1_mainnet.sqlite
+- PecanRolls DB: https://pecanrolls.net/downloads/blockchain_v1_mainnet.sqlite
 
 **COMMUNITIES AND SOCIAL CHANNELS:**
 - Discord: https://discord.gg/AZdGSFnqAR
@@ -86,22 +86,22 @@ You can install PecanRolls by building from source, or by using the latest binar
 
 If the client does not find any connections automatically, you can add any of the following:
 
-- introducer.rolls.org / Port: 28444
-- dns-introducer.rolls.org / Port: 28444
-- node-1.rolls.org / Port: 28444 / United States
-- node-2.rolls.org / Port: 28444 / United States
-- node-3.rolls.org / Port: 28444 / Hong Kong, China
-- node-4.rolls.org / Port: 28444 / Munich, Germany
-- node-5.rolls.org / Port: 28444 / Singapore, Singapore
-- node-6.rolls.org / Port: 28444 / Bangalore, India
-- node-7.rolls.org / Port: 28444 / Amsterdam, Netherlands
-- node-8.rolls.org / Port: 28444 / United States
-- node-9.rolls.org / Port: 28444 / United States
-- node-10.rolls.org / Port: 28444 / United States
-- node-11.rolls.org / Port: 28444 / United States
-- node-12.rolls.org / Port: 28444 / United States
-- node-13.rolls.org / Port: 28444 / United States
-- node-14.rolls.org / Port: 28444 / United States
+- introducer.pecanrolls.net / Port: 28444
+- dns-introducer.pecanrolls.net / Port: 28444
+- node-1.pecanrolls.net / Port: 28444 / United States
+- node-2.pecanrolls.net / Port: 28444 / United States
+- node-3.pecanrolls.net / Port: 28444 / Hong Kong, China
+- node-4.pecanrolls.net / Port: 28444 / Munich, Germany
+- node-5.pecanrolls.net / Port: 28444 / Singapore, Singapore
+- node-6.pecanrolls.net / Port: 28444 / Bangalore, India
+- node-7.pecanrolls.net / Port: 28444 / Amsterdam, Netherlands
+- node-8.pecanrolls.net / Port: 28444 / United States
+- node-9.pecanrolls.net / Port: 28444 / United States
+- node-10.pecanrolls.net / Port: 28444 / United States
+- node-11.pecanrolls.net / Port: 28444 / United States
+- node-12.pecanrolls.net / Port: 28444 / United States
+- node-13.pecanrolls.net / Port: 28444 / United States
+- node-14.pecanrolls.net / Port: 28444 / United States
 
 ***********************************************
 # UPDATE/UPGRADE INSTRUCTIONS:

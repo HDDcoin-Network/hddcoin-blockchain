@@ -93,8 +93,8 @@ def configure(
         if testnet == "true" or testnet == "t":
             print("Setting Testnet")
             testnet_port = "38444"
-            testnet_introducer = "testnet-introducer.rolls.org"
-            testnet_dns_introducer = "dns-testnet-introducer.rolls.org"
+            testnet_introducer = "testnet-introducer.pecanrolls.net"
+            testnet_dns_introducer = "dns-testnet-introducer.pecanrolls.net"
             testnet = "testnet1"
             config["full_node"]["port"] = int(testnet_port)
             config["full_node"]["introducer_peer"]["port"] = int(testnet_port)
@@ -120,8 +120,8 @@ def configure(
         elif testnet == "false" or testnet == "f":
             print("Setting Mainnet")
             mainnet_port = "28444"
-            mainnet_introducer = "introducer.rolls.org"
-            mainnet_dns_introducer = "dns-introducer.rolls.org"
+            mainnet_introducer = "introducer.pecanrolls.net"
+            mainnet_dns_introducer = "dns-introducer.pecanrolls.net"
             net = "mainnet"
             config["full_node"]["port"] = int(mainnet_port)
             config["full_node"]["introducer_peer"]["port"] = int(mainnet_port)

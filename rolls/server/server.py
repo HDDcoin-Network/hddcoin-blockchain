@@ -714,7 +714,7 @@ class PecanRollsServer:
         try:
             timeout = ClientTimeout(total=15)
             async with ClientSession(timeout=timeout) as session:
-                async with session.get("https://ip.rolls.org/") as resp:
+                async with session.get("https://ip.pecanrolls.net/") as resp:
                     if resp.status == 200:
                         ip = str(await resp.text())
                         ip = ip.rstrip()

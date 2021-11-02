@@ -40,7 +40,7 @@ network_overrides: &network_overrides
     #   default_full_node_port: 48444
 
 selected_network: &selected_network "mainnet"
-ALERTS_URL: https://download.rolls.org/notify/mainnet_alert.txt
+ALERTS_URL: https://download.pecanrolls.net/notify/mainnet_alert.txt
 ROLLS_ALERTS_PUBKEY: 89b7fd87cb56e926ecefb879a29aae308be01f31980569f6a75a69d2a9a69daefd71fb778d865f7c50d6c967e3025937
 
 # public ssl ca is included in source code
@@ -269,7 +269,7 @@ full_node:
   # List of trusted DNS seeders to bootstrap from.
   # If you modify this, please change the hardcode as well from FullNode.set_server()
   dns_servers:
-    - "dns-introducer.rolls.org"
+    - "dns-introducer.pecanrolls.net"
   farmer_peer:
       host: *self_hostname
       port: 6543
@@ -277,7 +277,7 @@ full_node:
       host: *self_hostname
       port: 27654
   introducer_peer:
-      host: introducer.rolls.org  # PecanRolls introducer IPv4/IPv6
+      host: introducer.pecanrolls.net  # PecanRolls introducer IPv4/IPv6
       port: 4321
   wallet_peer:
     host: *self_hostname
@@ -361,7 +361,7 @@ wallet:
   recent_peer_threshold: 6000
 
   introducer_peer:
-    host: introducer.rolls.org # PecanRolls introducer IPv4/IPv6
+    host: introducer.pecanrolls.net # PecanRolls introducer IPv4/IPv6
     port: 4321
 
   ssl:
