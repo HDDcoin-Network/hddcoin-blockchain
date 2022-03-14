@@ -61,23 +61,14 @@ elif [ "$(uname)" = "FreeBSD" ]; then
 	pkg install node
 fi
 
-# Ubuntu before 20.04LTS has an ancient node.js
+# Ubuntu 20.04LTS and before has an ancient node.js
 echo ""
-UBUNTU_PRE_2004=false
-if $UBUNTU; then
-	UBUNTU_PRE_2004=$(python -c 'import subprocess; process = subprocess.run(["lsb_release", "-rs"], stdout=subprocess.PIPE); print(float(process.stdout) < float(20.04))')
-fi
 
-if [ "$UBUNTU_PRE_2004" = "True" ]; then
-	echo "Installing on Ubuntu older than 20.04 LTS: Ugrading node.js to stable."
-	UBUNTU_PRE_2004=true # Unfortunately Python returns True when shell expects true
+if [ "$UBUNTU" = "true" ]; then
+	echo "Installing on Ubuntu: Ugrading node.js to stable."
 	sudo npm install -g n
 	sudo n stable
 	export PATH="$PATH"
-fi
-
-if [ "$UBUNTU" = "true" ] && [ "$UBUNTU_PRE_2004" = "False" ]; then
-	echo "Installing on Ubuntu 20.04 LTS or newer: Using installed node.js version."
 fi
 
 # For Mac and Windows, we will set up node.js on GitHub Actions and Azure
